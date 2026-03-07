@@ -1,0 +1,116 @@
+{
+  "common": {
+    "name":    "solakon-one",
+    "version": "1.0.0",
+    "news": {
+      "1.0.0": {
+        "en": "Initial release",
+        "de": "Erstveröffentlichung"
+      }
+    },
+    "title": "Solakon ONE",
+    "titleLang": {
+      "en": "Solakon ONE Inverter",
+      "de": "Solakon ONE Wechselrichter"
+    },
+    "desc": {
+      "en": "Monitor and control the Solakon ONE hybrid solar inverter via Modbus TCP",
+      "de": "Überwachung und Steuerung des Solakon ONE Hybrid-Wechselrichters via Modbus TCP"
+    },
+    "authors":  ["berto-1974"],
+    "keywords": ["solar", "inverter", "solakon", "modbus", "energy", "battery"],
+    "license":  "MIT",
+    "platform": "Javascript/Node.js",
+    "main":     "main.js",
+    "icon":     "admin/solakon.png",
+    "readme":   "https://github.com/berto-1974/ioBroker.solakon-one#readme",
+    "loglevel": "info",
+    "mode":     "daemon",
+    "type":     "energy",
+    "connectionType": "local",
+    "dataSource":     "poll",
+    "enabled": true,
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      { "js-controller": ">=4.0.0" }
+    ]
+  },
+  "native": {
+    "host":         "192.168.1.100",
+    "port":         502,
+    "slaveId":      1,
+    "scanInterval": 30
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": { "name": { "en": "Connection Info", "de": "Verbindungsinformation" } },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "name":  { "en": "Connected", "de": "Verbunden" },
+        "type":  "boolean",
+        "role":  "indicator.connected",
+        "read":  true,
+        "write": false,
+        "def":   false
+      },
+      "native": {}
+    },
+    {
+      "_id": "device",
+      "type": "channel",
+      "common": { "name": { "en": "Device Information", "de": "Geräteinformationen" } },
+      "native": {}
+    },
+    {
+      "_id": "pv",
+      "type": "channel",
+      "common": { "name": { "en": "Photovoltaics", "de": "Photovoltaik" } },
+      "native": {}
+    },
+    {
+      "_id": "battery",
+      "type": "channel",
+      "common": { "name": { "en": "Battery", "de": "Batterie" } },
+      "native": {}
+    },
+    {
+      "_id": "grid",
+      "type": "channel",
+      "common": { "name": { "en": "Grid", "de": "Netz" } },
+      "native": {}
+    },
+    {
+      "_id": "inverter",
+      "type": "channel",
+      "common": { "name": { "en": "Inverter", "de": "Wechselrichter" } },
+      "native": {}
+    },
+    {
+      "_id": "eps",
+      "type": "channel",
+      "common": { "name": { "en": "Emergency Power (EPS/UPS)", "de": "Notstromversorgung (EPS/UPS)" } },
+      "native": {}
+    },
+    {
+      "_id": "status",
+      "type": "channel",
+      "common": { "name": { "en": "Status", "de": "Status" } },
+      "native": {}
+    },
+    {
+      "_id": "control",
+      "type": "channel",
+      "common": { "name": { "en": "Control", "de": "Steuerung" } },
+      "native": {}
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name":        "iobroker.solakon-one",
+  "version":     "1.0.0",
+  "description": "ioBroker Adapter für den Solakon ONE Hybrid-Wechselrichter (Modbus TCP)",
+  "author": {
+    "name": "Solakon ONE ioBroker Adapter"
+  },
+  "homepage":    "https://github.com/berto-1974/ioBroker.solakon-one",
+  "license":     "MIT",
+  "keywords":    ["ioBroker", "solakon", "solar", "inverter", "modbus", "energy", "battery"],
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/berto-1974/ioBroker.solakon-one"
+  },
+  "main":  "main.js",
+  "files": [
+    "admin/",
+    "lib/",
+    "main.js",
+    "postinstall.js",
+    "io-package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start":       "node main.js",
+    "postinstall": "node postinstall.js"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.1.6",
+    "jsmodbus":               "^4.0.10"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^4.1.3"
+  }
+}

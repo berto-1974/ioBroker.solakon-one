@@ -1,0 +1,15 @@
+# ioBroker Adapter - Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Home Assistant Quelldateien (lokal, nicht auf GitHub)
+.HomeAssistant/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+.env
+
+# Claude
+.claude/
