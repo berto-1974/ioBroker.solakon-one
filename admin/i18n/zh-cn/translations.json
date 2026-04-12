@@ -1,0 +1,9 @@
+{
+  "IP Adresse":                     "IP地址",
+  "Modbus TCP Port":                "Modbus TCP端口",
+  "Modbus Geräte-ID":               "Modbus设备ID",
+  "Update-Intervall (Sekunden)":    "更新间隔（秒）",
+  "Standard: 502":                  "默认：502",
+  "Modbus Slave-Adresse (Standard: 1)": "Modbus从站地址（默认：1）",
+  "Wie oft werden die Daten abgerufen (1–300 Sekunden)": "设备轮询频率（1–300秒）"
+}
