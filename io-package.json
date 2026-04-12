@@ -47,8 +47,7 @@
     "keywords": ["solar", "inverter", "solakon", "modbus", "energy", "battery"],
     "licenseInformation": {
       "license": "MIT",
-      "name":    "MIT License",
-      "link":    "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/LICENSE"
+      "type":    "free"
     },
     "platform": "Javascript/Node.js",
     "icon":     "admin/solakon.png",
@@ -69,7 +68,7 @@
       { "js-controller": ">=6.0.11" }
     ],
     "globalDependencies": [
-      { "admin": ">=7.6.17" }
+      { "admin": ">=7.6.20" }
     ]
   },
   "native": {
