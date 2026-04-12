@@ -17,7 +17,7 @@
       "en": "Monitor and control the Solakon ONE hybrid solar inverter via Modbus TCP",
       "de": "Überwachung und Steuerung des Solakon ONE Hybrid-Wechselrichters via Modbus TCP"
     },
-    "authors":  ["berto-1974"],
+    "authors":  ["Marco Bertulies <berto74online@gmail.com>"],
     "keywords": ["solar", "inverter", "solakon", "modbus", "energy", "battery"],
     "license":  "MIT",
     "platform": "Javascript/Node.js",
@@ -29,7 +29,9 @@
     "type":     "energy",
     "connectionType": "local",
     "dataSource":     "poll",
-    "enabled": true,
+    "enabled":  true,
+    "compact":  false,
+    "extIcon":  "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
     "adminUI": {
       "config": "json"
     },
