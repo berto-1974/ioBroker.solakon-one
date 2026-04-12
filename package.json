@@ -30,10 +30,12 @@
     "node": ">=20"
   },
   "scripts": {
-    "start":       "node main.js",
-    "test":        "mocha test/unit/*.test.js --exit",
-    "lint":        "eslint main.js lib/",
-    "postinstall": "node postinstall.js"
+    "start":        "node main.js",
+    "test":         "npm run test:unit && npm run test:package",
+    "test:unit":    "mocha test/unit/*.test.js --exit",
+    "test:package": "mocha test/package --exit",
+    "lint":         "eslint main.js lib/",
+    "postinstall":  "node postinstall.js"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.3.2",
@@ -41,6 +43,7 @@
   },
   "devDependencies": {
     "@iobroker/testing": "^5.2.2",
+    "mocha":             "^10.0.0",
     "eslint":            "^8.0.0"
   }
 }
