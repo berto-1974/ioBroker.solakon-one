@@ -12,7 +12,6 @@
 const utils   = require('@iobroker/adapter-core');
 const { SolakonModbusHub }   = require('./lib/modbus');
 const {
-    REGISTERS,
     REMOTE_CONTROL_MODES,
     EPS_OUTPUT_MODES,
     OPERATING_MODES,
