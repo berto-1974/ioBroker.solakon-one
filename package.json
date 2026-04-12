@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@iobroker/testing": "^5.2.2",
-    "mocha":             "^10.0.0",
+    "mocha":             "^11.7.5",
     "eslint":            "^8.0.0"
   }
 }
