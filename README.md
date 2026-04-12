@@ -190,4 +190,4 @@ MIT License
 
 Copyright (c) 2026 Marco Bertulies <berto74online@gmail.com>
 
-Based on the [Home Assistant integration for Solakon ONE](https://github.com/solakon/solakon-one-homeassistant).
+Based on the [Home Assistant integration for Solakon ONE](https://github.com/solakon-de/solakon-one-homeassistant).
