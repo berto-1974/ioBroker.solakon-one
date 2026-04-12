@@ -50,7 +50,7 @@
       "type":    "free"
     },
     "platform": "Javascript/Node.js",
-    "icon":     "admin/solakon.png",
+    "icon":     "solakon.png",
     "extIcon":  "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
     "readme":   "https://github.com/berto-1974/ioBroker.solakon-one#readme",
     "loglevel": "info",
