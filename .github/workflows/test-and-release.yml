@@ -1,0 +1,61 @@
+name: Test and Release
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Run unit tests
+        run: npm test
+
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Validate io-package.json version matches package.json
+        run: |
+          node -e "
+            const fs = require('fs');
+            const pkg   = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+            const ioPkg = JSON.parse(fs.readFileSync('io-package.json', 'utf8'));
+            if (pkg.version !== ioPkg.common.version) {
+              console.error('Version mismatch: package.json=' + pkg.version + ', io-package.json=' + ioPkg.common.version);
+              process.exit(1);
+            }
+            console.log('Versions match: ' + pkg.version);
+          "
+
+      - name: Validate admin/jsonConfig.json
+        run: node -e "JSON.parse(require('fs').readFileSync('admin/jsonConfig.json', 'utf8')); console.log('admin/jsonConfig.json is valid JSON');"

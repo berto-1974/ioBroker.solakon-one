@@ -1,7 +1,7 @@
 # ioBroker Adapter - Node.js
 node_modules/
 npm-debug.log*
-package-lock.json
+.commitinfo
 
 # Home Assistant Quelldateien (lokal, nicht auf GitHub)
 .HomeAssistant/
