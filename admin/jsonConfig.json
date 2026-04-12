@@ -6,8 +6,11 @@
       "type":        "text",
       "label":       "IP Adresse",
       "placeholder": "192.168.1.100",
+      "xs":          12,
       "sm":          12,
       "md":          6,
+      "lg":          6,
+      "xl":          6,
       "validator":   "^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$",
       "validatorErrorText": "Bitte eine gültige IP-Adresse eingeben",
       "help":        "IP-Adresse des Solakon ONE Geräts im lokalen Netzwerk",
@@ -19,8 +22,11 @@
       "default": 502,
       "min":     1,
       "max":     65535,
+      "xs":      12,
       "sm":      12,
       "md":      3,
+      "lg":      3,
+      "xl":      3,
       "help":    "Standard: 502"
     },
     "slaveId": {
@@ -29,8 +35,11 @@
       "default": 1,
       "min":     1,
       "max":     247,
+      "xs":      12,
       "sm":      12,
       "md":      3,
+      "lg":      3,
+      "xl":      3,
       "help":    "Modbus Slave-Adresse (Standard: 1)"
     },
     "scanInterval": {
@@ -39,8 +48,11 @@
       "default": 30,
       "min":     1,
       "max":     300,
+      "xs":      12,
       "sm":      12,
       "md":      6,
+      "lg":      6,
+      "xl":      6,
       "help":    "Wie oft werden die Daten abgerufen (1–300 Sekunden)"
     }
   }

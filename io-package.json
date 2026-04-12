@@ -5,38 +5,71 @@
     "news": {
       "1.0.0": {
         "en": "Initial release",
-        "de": "Erstveröffentlichung"
+        "de": "Erstveröffentlichung",
+        "ru": "Первый выпуск",
+        "pt": "Lançamento inicial",
+        "nl": "Eerste release",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Lanzamiento inicial",
+        "pl": "Pierwsze wydanie",
+        "uk": "Перший випуск",
+        "zh-cn": "初始版本"
       }
     },
-    "title": "Solakon ONE",
     "titleLang": {
       "en": "Solakon ONE Inverter",
-      "de": "Solakon ONE Wechselrichter"
+      "de": "Solakon ONE Wechselrichter",
+      "ru": "Инвертор Solakon ONE",
+      "pt": "Inversor Solakon ONE",
+      "nl": "Solakon ONE Omvormer",
+      "fr": "Onduleur Solakon ONE",
+      "it": "Inverter Solakon ONE",
+      "es": "Inversor Solakon ONE",
+      "pl": "Falownik Solakon ONE",
+      "uk": "Інвертор Solakon ONE",
+      "zh-cn": "Solakon ONE 逆变器"
     },
     "desc": {
       "en": "Monitor and control the Solakon ONE hybrid solar inverter via Modbus TCP",
-      "de": "Überwachung und Steuerung des Solakon ONE Hybrid-Wechselrichters via Modbus TCP"
+      "de": "Überwachung und Steuerung des Solakon ONE Hybrid-Wechselrichters via Modbus TCP",
+      "ru": "Мониторинг и управление гибридным солнечным инвертором Solakon ONE через Modbus TCP",
+      "pt": "Monitorize e controle o inversor solar híbrido Solakon ONE via Modbus TCP",
+      "nl": "Bewaak en beheer de Solakon ONE hybride zonne-omvormer via Modbus TCP",
+      "fr": "Surveiller et contrôler l'onduleur solaire hybride Solakon ONE via Modbus TCP",
+      "it": "Monitoraggio e controllo dell'inverter solare ibrido Solakon ONE tramite Modbus TCP",
+      "es": "Monitorice y controle el inversor solar híbrido Solakon ONE a través de Modbus TCP",
+      "pl": "Monitorowanie i sterowanie hybrydowym falownikiem słonecznym Solakon ONE przez Modbus TCP",
+      "uk": "Моніторинг та керування гібридним сонячним інвертором Solakon ONE через Modbus TCP",
+      "zh-cn": "通过 Modbus TCP 监控 Solakon ONE 混合太阳能逆变器"
     },
     "authors":  ["Marco Bertulies <berto74online@gmail.com>"],
     "keywords": ["solar", "inverter", "solakon", "modbus", "energy", "battery"],
-    "license":  "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "name":    "MIT License",
+      "link":    "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/LICENSE"
+    },
     "platform": "Javascript/Node.js",
-    "main":     "main.js",
     "icon":     "admin/solakon.png",
+    "extIcon":  "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
     "readme":   "https://github.com/berto-1974/ioBroker.solakon-one#readme",
     "loglevel": "info",
     "mode":     "daemon",
     "type":     "energy",
+    "tier":     3,
     "connectionType": "local",
     "dataSource":     "poll",
     "enabled":  true,
     "compact":  false,
-    "extIcon":  "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
     "adminUI": {
       "config": "json"
     },
     "dependencies": [
-      { "js-controller": ">=4.0.0" }
+      { "js-controller": ">=6.0.11" }
+    ],
+    "globalDependencies": [
+      { "admin": ">=7.6.17" }
     ]
   },
   "native": {
