@@ -1,6 +1,0 @@
-{
-  "extends": "@iobroker/eslint-config",
-  "rules": {
-    "no-unused-vars": ["warn"]
-  }
-}

@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.1 (2026-04-13)
+- Fix: Compact Mode aktiviert, ESLint auf @iobroker/eslint-config migriert, node: Präfix für eingebaute Module, automatischer Deploy-Workflow ergänzt
+
 ### 1.0.0 (2026-04-12)
 - Erstveröffentlichung
 - Modbus TCP Kommunikation

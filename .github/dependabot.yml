@@ -3,13 +3,17 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+      day: "monday"
+      time: "03:17"
     cooldown:
       default: 7
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+      day: "tuesday"
+      time: "04:23"
     cooldown:
       default: 7
