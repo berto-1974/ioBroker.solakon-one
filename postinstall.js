@@ -5,8 +5,8 @@
  * Wird nach "iobroker url ..." ausgeführt.
  */
 
-const path       = require('path');
-const { spawnSync } = require('child_process');
+const path       = require('node:path');
+const { spawnSync } = require('node:child_process');
 
 // Pfad zum iobroker-Script (liegt 2 Ebenen über dem Adapter in node_modules/.bin/)
 const iobScript = path.resolve(__dirname, '../.bin/iobroker');
