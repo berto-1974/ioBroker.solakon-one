@@ -1,0 +1,4 @@
+allowedUpdateTypes:
+    - minor
+    - patch
+ignoredDependencies: []
