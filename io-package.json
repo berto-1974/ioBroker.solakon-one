@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "news": {
+      "1.0.2": {
+        "en": "Fix: add changelog to README, remove obsolete .eslintrc.json, add release-script packages, VS Code schema, automerge workflow",
+        "de": "Fix: Changelog in README ergänzt, veraltete .eslintrc.json entfernt, release-script Pakete, VS Code Schema, Automerge-Workflow",
+        "ru": "Исправления: changelog в README, удалён .eslintrc.json, пакеты release-script, схема VS Code, автомерж",
+        "pt": "Fix: changelog no README, .eslintrc.json removido, pacotes release-script, schema VS Code, automerge",
+        "nl": "Fix: changelog in README, .eslintrc.json verwijderd, release-script packages, VS Code schema, automerge",
+        "fr": "Fix: changelog dans README, .eslintrc.json supprimé, packages release-script, schéma VS Code, automerge",
+        "it": "Fix: changelog nel README, .eslintrc.json rimosso, pacchetti release-script, schema VS Code, automerge",
+        "es": "Fix: changelog en README, .eslintrc.json eliminado, paquetes release-script, esquema VS Code, automerge",
+        "pl": "Fix: changelog w README, usunięto .eslintrc.json, pakiety release-script, schemat VS Code, automerge",
+        "uk": "Виправлення: changelog у README, видалено .eslintrc.json, пакети release-script, схема VS Code, автомердж",
+        "zh-cn": "修复：README 中添加 changelog，删除 .eslintrc.json，添加 release-script 包、VS Code schema 和自动合并工作流"
+      },
       "1.0.1": {
         "en": "Fix ioBroker checker issues: compact mode, ESLint migration, node: prefix, deploy workflow",
         "de": "ioBroker Checker-Korrekturen: Compact Mode, ESLint-Migration, node: Präfix, Deploy-Workflow",
