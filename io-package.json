@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "news": {
+      "1.0.1": {
+        "en": "Fix ioBroker checker issues: compact mode, ESLint migration, node: prefix, deploy workflow",
+        "de": "ioBroker Checker-Korrekturen: Compact Mode, ESLint-Migration, node: Präfix, Deploy-Workflow",
+        "ru": "Исправления проверки ioBroker: компактный режим, ESLint, префикс node:, деплой",
+        "pt": "Correções do verificador ioBroker: modo compacto, ESLint, prefixo node:, workflow",
+        "nl": "ioBroker checker-fixes: compact mode, ESLint, node: prefix, deploy workflow",
+        "fr": "Correctifs du vérificateur ioBroker: mode compact, ESLint, préfixe node:, workflow",
+        "it": "Correzioni checker ioBroker: modalità compact, ESLint, prefisso node:, workflow",
+        "es": "Correcciones del checker ioBroker: modo compacto, ESLint, prefijo node:, workflow",
+        "pl": "Poprawki sprawdzania ioBroker: tryb kompaktowy, ESLint, prefiks node:, workflow",
+        "uk": "Виправлення перевірки ioBroker: компактний режим, ESLint, префікс node:, workflow",
+        "zh-cn": "修复 ioBroker 检查问题：紧凑模式、ESLint 迁移、node: 前缀、部署工作流"
+      },
       "1.0.0": {
         "en": "Initial release",
         "de": "Erstveröffentlichung",
@@ -60,7 +73,7 @@
     "connectionType": "local",
     "dataSource":     "poll",
     "enabled":  true,
-    "compact":  false,
+    "compact":  true,
     "adminUI": {
       "config": "json"
     },
