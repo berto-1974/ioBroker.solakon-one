@@ -60,7 +60,7 @@
     "connectionType": "local",
     "dataSource":     "poll",
     "enabled":  true,
-    "compact":  false,
+    "compact":  true,
     "adminUI": {
       "config": "json"
     },
