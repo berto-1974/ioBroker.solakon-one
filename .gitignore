@@ -5,6 +5,7 @@ npm-debug.log*
 
 # Home Assistant Quelldateien (lokal, nicht auf GitHub)
 .HomeAssistant/
+.HomeAssistant-v1.5.4/
 
 # Betriebssystem
 .DS_Store
