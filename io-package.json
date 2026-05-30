@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "news": {
+      "1.0.3": {
+        "en": "Add Node.js 24 to CI test matrix; use Node 24 for lint and deploy",
+        "de": "Node.js 24 in CI-Testmatrix aufgenommen; Node 24 für Lint und Deploy verwendet",
+        "ru": "Добавлен Node.js 24 в матрицу тестирования CI; Node 24 используется для lint и деплоя",
+        "pt": "Adicionado Node.js 24 à matriz de testes CI; Node 24 usado para lint e deploy",
+        "nl": "Node.js 24 toegevoegd aan CI-testmatrix; Node 24 gebruikt voor lint en deploy",
+        "fr": "Ajout de Node.js 24 à la matrice de tests CI; Node 24 utilisé pour lint et déploiement",
+        "it": "Aggiunto Node.js 24 alla matrice di test CI; Node 24 usato per lint e deploy",
+        "es": "Añadido Node.js 24 a la matriz de pruebas CI; Node 24 usado para lint y despliegue",
+        "pl": "Dodano Node.js 24 do macierzy testów CI; Node 24 używany do lint i deploy",
+        "uk": "Додано Node.js 24 до матриці тестів CI; Node 24 використовується для lint та deploy",
+        "zh-cn": "在 CI 测试矩阵中添加 Node.js 24；使用 Node 24 进行 lint 和部署"
+      },
       "1.0.2": {
         "en": "Fix: add changelog to README, remove obsolete .eslintrc.json, add release-script packages, VS Code schema, automerge workflow",
         "de": "Fix: Changelog in README ergänzt, veraltete .eslintrc.json entfernt, release-script Pakete, VS Code Schema, Automerge-Workflow",
