@@ -175,6 +175,9 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
+### 1.0.3 (2026-05-30)
+- Add Node.js 24 to CI test matrix; use Node 24 for lint and deploy
+
 ### 1.0.2 (2026-04-13)
 - Fix: add changelog to README, remove obsolete .eslintrc.json, add release-script packages, VS Code schema, automerge workflow
 
