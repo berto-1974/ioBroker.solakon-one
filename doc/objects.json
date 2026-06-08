@@ -1,0 +1,1188 @@
+[
+  {
+    "_id": "info",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Connection Info",
+        "de": "Verbindungsinformation"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "device",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Device Information",
+        "de": "Geräteinformationen"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Photovoltaics",
+        "de": "Photovoltaik"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Battery",
+        "de": "Batterie"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Grid",
+        "de": "Netz"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Inverter",
+        "de": "Wechselrichter"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "eps",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Emergency Power (EPS/UPS)",
+        "de": "Notstromversorgung (EPS/UPS)"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "status",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Status",
+        "de": "Status"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "control",
+    "type": "channel",
+    "common": {
+      "name": {
+        "en": "Control",
+        "de": "Steuerung"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "info.connection",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Connected",
+        "de": "Verbunden"
+      },
+      "type": "boolean",
+      "role": "indicator.connected",
+      "read": true,
+      "write": false,
+      "def": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "device.model",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Model name",
+        "de": "Modellbezeichnung"
+      },
+      "type": "string",
+      "role": "info.name",
+      "read": true,
+      "write": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "device.serial",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Serial number",
+        "de": "Seriennummer"
+      },
+      "type": "string",
+      "role": "info.serial",
+      "read": true,
+      "write": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "device.fw_master",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Firmware Master",
+        "de": "Firmware Master"
+      },
+      "type": "number",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "device.fw_slave",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Firmware Slave",
+        "de": "Firmware Slave"
+      },
+      "type": "number",
+      "role": "info.firmware",
+      "read": true,
+      "write": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.total_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV total power",
+        "de": "PV Gesamtleistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.total_energy",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV total energy",
+        "de": "PV Energie gesamt"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv1_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV1 voltage",
+        "de": "PV1 Spannung"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv1_current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV1 current",
+        "de": "PV1 Strom"
+      },
+      "type": "number",
+      "role": "value.current",
+      "read": true,
+      "write": false,
+      "unit": "A"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv1_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV1 power",
+        "de": "PV1 Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv2_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV2 voltage",
+        "de": "PV2 Spannung"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv2_current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV2 current",
+        "de": "PV2 Strom"
+      },
+      "type": "number",
+      "role": "value.current",
+      "read": true,
+      "write": false,
+      "unit": "A"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv2_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV2 power",
+        "de": "PV2 Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv3_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV3 voltage",
+        "de": "PV3 Spannung"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv3_current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV3 current",
+        "de": "PV3 Strom"
+      },
+      "type": "number",
+      "role": "value.current",
+      "read": true,
+      "write": false,
+      "unit": "A"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv3_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV3 power",
+        "de": "PV3 Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv4_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV4 voltage",
+        "de": "PV4 Spannung"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv4_current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV4 current",
+        "de": "PV4 Strom"
+      },
+      "type": "number",
+      "role": "value.current",
+      "read": true,
+      "write": false,
+      "unit": "A"
+    },
+    "native": {}
+  },
+  {
+    "_id": "pv.pv4_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "PV4 power",
+        "de": "PV4 Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.soc",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "State of Charge (SoC)",
+        "de": "Ladestand (SoC)"
+      },
+      "type": "number",
+      "role": "value.battery",
+      "read": true,
+      "write": false,
+      "unit": "%"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Voltage",
+        "de": "Spannung"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Current",
+        "de": "Strom"
+      },
+      "type": "number",
+      "role": "value.current",
+      "read": true,
+      "write": false,
+      "unit": "A"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Power",
+        "de": "Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.combined_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Combined power",
+        "de": "Kombinierte Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.total_charge",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Total charge energy",
+        "de": "Ladeenergie gesamt"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.total_discharge",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Total discharge energy",
+        "de": "Entladeenergie gesamt"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.bms1_soh",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "State of Health (SoH)",
+        "de": "Gesundheitszustand (SoH)"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "unit": "%"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.design_energy",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Design capacity",
+        "de": "Nennkapazität"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "unit": "Wh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.ambient_temp",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Ambient temperature",
+        "de": "Umgebungstemperatur"
+      },
+      "type": "number",
+      "role": "value.temperature",
+      "read": true,
+      "write": false,
+      "unit": "°C"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.max_temp",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Max temperature",
+        "de": "Max. Temperatur"
+      },
+      "type": "number",
+      "role": "value.temperature",
+      "read": true,
+      "write": false,
+      "unit": "°C"
+    },
+    "native": {}
+  },
+  {
+    "_id": "battery.min_temp",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Min temperature",
+        "de": "Min. Temperatur"
+      },
+      "type": "number",
+      "role": "value.temperature",
+      "read": true,
+      "write": false,
+      "unit": "°C"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.off_grid",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Off-grid mode",
+        "de": "Inselbetrieb"
+      },
+      "type": "boolean",
+      "role": "indicator",
+      "read": true,
+      "write": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.r_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Grid voltage (R)",
+        "de": "Netzspannung (R)"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.s_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Grid voltage (S)",
+        "de": "Netzspannung (S)"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.t_voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Grid voltage (T)",
+        "de": "Netzspannung (T)"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.frequency",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Grid frequency",
+        "de": "Netzfrequenz"
+      },
+      "type": "number",
+      "role": "value.frequency",
+      "read": true,
+      "write": false,
+      "unit": "Hz"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.active_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Active power",
+        "de": "Wirkleistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.reactive_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Reactive power",
+        "de": "Blindleistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "kvar"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.power_factor",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Power factor",
+        "de": "Leistungsfaktor"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.total_export",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Total export energy",
+        "de": "Einspeisung gesamt"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.total_import",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Total import energy",
+        "de": "Bezug gesamt"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "grid.standard",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Grid standard",
+        "de": "Netzstandard"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "states": {
+        "6": "VDE0126",
+        "7": "VDE4105_DE"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter.temperature",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Temperature",
+        "de": "Temperatur"
+      },
+      "type": "number",
+      "role": "value.temperature",
+      "read": true,
+      "write": false,
+      "unit": "°C"
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter.frequency",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Inverter frequency",
+        "de": "Wechselrichterfrequenz"
+      },
+      "type": "number",
+      "role": "value.frequency",
+      "read": true,
+      "write": false,
+      "unit": "Hz"
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter.daily_energy",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Daily generation",
+        "de": "Tagesernte"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter.total_energy",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Total generation",
+        "de": "Gesamtertrag"
+      },
+      "type": "number",
+      "role": "value.energy",
+      "read": true,
+      "write": false,
+      "unit": "kWh"
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter.operating_mode",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Operating mode",
+        "de": "Betriebsmodus"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "states": {
+        "0": "Nicht festgelegt",
+        "1": "Eigenverbrauch",
+        "2": "Einspeisepriorität",
+        "3": "Backup",
+        "4": "Spitzenlastkappung",
+        "6": "Laden erzwingen",
+        "7": "Entladen erzwingen"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "inverter.network_status",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Network status",
+        "de": "Netzwerkstatus"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "states": {
+        "0": "Aus",
+        "1": "Getrennt",
+        "2": "Verbunden"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "eps.voltage",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "EPS voltage",
+        "de": "EPS Spannung"
+      },
+      "type": "number",
+      "role": "value.voltage",
+      "read": true,
+      "write": false,
+      "unit": "V"
+    },
+    "native": {}
+  },
+  {
+    "_id": "eps.current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "EPS current",
+        "de": "EPS Strom"
+      },
+      "type": "number",
+      "role": "value.current",
+      "read": true,
+      "write": false,
+      "unit": "A"
+    },
+    "native": {}
+  },
+  {
+    "_id": "eps.power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "EPS power",
+        "de": "EPS Leistung"
+      },
+      "type": "number",
+      "role": "value.power",
+      "read": true,
+      "write": false,
+      "unit": "W"
+    },
+    "native": {}
+  },
+  {
+    "_id": "status.remote_control",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Remote control mode",
+        "de": "Fernsteuerung Modus"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "states": {
+        "0": "Aus",
+        "1": "Wechselrichter Export (PV Priorität)",
+        "3": "Wechselrichter Import (PV Priorität)",
+        "5": "Batterie Entladen",
+        "7": "Batterie Laden",
+        "9": "Netz Export",
+        "11": "Netz Import",
+        "13": "Wechselrichter Export (Netz Priorität)",
+        "15": "Wechselrichter Import (Netz Priorität)"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "status.remote_countdown",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Remote control countdown",
+        "de": "Fernsteuerung Countdown"
+      },
+      "type": "number",
+      "role": "value",
+      "read": true,
+      "write": false,
+      "unit": "s"
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.remote_control_mode",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Remote control mode",
+        "de": "Fernsteuerung Modus"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "min": 0,
+      "max": 15,
+      "states": {
+        "0": "Aus",
+        "1": "Wechselrichter Export (PV Priorität)",
+        "3": "Wechselrichter Import (PV Priorität)",
+        "5": "Batterie Entladen",
+        "7": "Batterie Laden",
+        "9": "Netz Export",
+        "11": "Netz Import",
+        "13": "Wechselrichter Export (Netz Priorität)",
+        "15": "Wechselrichter Import (Netz Priorität)"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.remote_timeout",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Remote control timeout",
+        "de": "Fernsteuerung Timeout"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "unit": "s",
+      "min": 0,
+      "max": 3600
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.remote_active_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Remote active power",
+        "de": "Fernsteuerung Wirkleistung"
+      },
+      "type": "number",
+      "role": "level.power",
+      "read": true,
+      "write": true,
+      "unit": "W",
+      "min": -100000,
+      "max": 100000
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.remote_reactive_power",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Remote reactive power",
+        "de": "Fernsteuerung Blindleistung"
+      },
+      "type": "number",
+      "role": "level.power",
+      "read": true,
+      "write": true,
+      "unit": "var",
+      "min": -100000,
+      "max": 100000
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.eps_output",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "EPS/UPS output mode",
+        "de": "EPS/UPS Ausgang"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "min": 0,
+      "max": 3,
+      "states": {
+        "0": "Aus",
+        "2": "Notstromversorgung (EPS)",
+        "3": "Unterbrechungsfreie Stromversorgung (UPS)"
+      }
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.minimum_soc",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Minimum SoC",
+        "de": "Minimaler Ladestand"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "unit": "%",
+      "min": 10,
+      "max": 100
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.maximum_soc",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Maximum SoC",
+        "de": "Maximaler Ladestand"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "unit": "%",
+      "min": 0,
+      "max": 100
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.minimum_soc_ongrid",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Minimum SoC on-grid",
+        "de": "Minimaler Ladestand Netzbetrieb"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "unit": "%",
+      "min": 10,
+      "max": 100
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.max_charge_current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Max charge current",
+        "de": "Max. Ladestrom"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "unit": "A",
+      "min": 0,
+      "max": 40
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.max_discharge_current",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Max discharge current",
+        "de": "Max. Entladestrom"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "unit": "A",
+      "min": 0,
+      "max": 40
+    },
+    "native": {}
+  },
+  {
+    "_id": "control.operating_mode",
+    "type": "state",
+    "common": {
+      "name": {
+        "en": "Operating mode",
+        "de": "Betriebsmodus"
+      },
+      "type": "number",
+      "role": "level",
+      "read": true,
+      "write": true,
+      "min": 0,
+      "max": 7,
+      "states": {
+        "0": "Nicht festgelegt",
+        "1": "Eigenverbrauch",
+        "2": "Einspeisepriorität",
+        "3": "Backup",
+        "4": "Spitzenlastkappung",
+        "6": "Laden erzwingen",
+        "7": "Entladen erzwingen"
+      }
+    },
+    "native": {}
+  }
+]
