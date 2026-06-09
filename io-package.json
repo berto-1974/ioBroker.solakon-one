@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "news": {
+      "1.0.6": {
+        "en": "Fix Node.js requirement in README (>=22); add @types/node devDependency",
+        "de": "Node.js-Anforderung in README korrigiert (>=22); @types/node devDependency ergänzt",
+        "ru": "Исправлено требование Node.js в README (>=22); добавлена devDependency @types/node",
+        "pt": "Corrigido requisito Node.js no README (>=22); adicionada devDependency @types/node",
+        "nl": "Node.js-vereiste gecorrigeerd in README (>=22); @types/node devDependency toegevoegd",
+        "fr": "Correction de la version Node.js requise dans README (>=22); ajout devDependency @types/node",
+        "it": "Correcto requisito Node.js nel README (>=22); aggiunta devDependency @types/node",
+        "es": "Corregido requisito Node.js en README (>=22); añadida devDependency @types/node",
+        "pl": "Poprawiono wymaganie Node.js w README (>=22); dodano devDependency @types/node",
+        "uk": "Виправлено вимогу Node.js у README (>=22); додано devDependency @types/node",
+        "zh-cn": "修正 README 中 Node.js 版本要求（>=22）；添加 @types/node devDependency"
+      },
       "1.0.5": {
         "en": "Fix repo checker errors: Node.js >=22, release-script update, remove redundant eslint, add macOS CI, fix setInterval/setTimeout usage",
         "de": "Repo-Checker-Fehler behoben: Node.js >=22, release-script aktualisiert, redundantes eslint entfernt, macOS CI ergänzt, setInterval/setTimeout korrigiert",

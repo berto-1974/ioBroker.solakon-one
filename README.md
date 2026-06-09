@@ -175,6 +175,9 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
+### 1.0.6 (2026-06-09)
+- Fix Node.js requirement in README (>=22); add @types/node devDependency
+
 ### 1.0.5 (2026-06-09)
 - Fix repo checker errors: require Node.js >=22, update release-script packages, remove redundant eslint devDependency, add macOS to CI test matrix, use this.setInterval/clearTimeout correctly
 

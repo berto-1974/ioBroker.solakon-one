@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.6 (2026-06-09)
+- Node.js-Anforderung in README korrigiert (>=22); @types/node devDependency ergänzt
+
 ### 1.0.5 (2026-06-09)
 - Repo-Checker-Fehler behoben: Node.js >=22 vorausgesetzt, release-script aktualisiert, redundantes eslint entfernt, macOS in CI-Testmatrix ergänzt, this.setInterval/clearTimeout korrekt verwendet
 

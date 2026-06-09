@@ -1,6 +1,6 @@
 {
   "name":        "iobroker.solakon-one",
-  "version":     "1.0.5",
+  "version":     "1.0.6",
   "description": "ioBroker Adapter für den Solakon ONE Hybrid-Wechselrichter (Modbus TCP)",
   "author": {
     "name":  "Marco Bertulies",
@@ -51,6 +51,7 @@
     "@alcalzone/release-script-plugin-manual-review": "^5.2.0",
     "@iobroker/adapter-dev":  "^1.5.0",
     "@iobroker/eslint-config":"^2.2.0",
-    "@iobroker/testing":      "^5.2.2"
+    "@iobroker/testing":      "^5.2.2",
+    "@types/node":            ">=22"
   }
 }
