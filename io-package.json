@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "news": {
+      "1.0.5": {
+        "en": "Fix repo checker errors: Node.js >=22, release-script update, remove redundant eslint, add macOS CI, fix setInterval/setTimeout usage",
+        "de": "Repo-Checker-Fehler behoben: Node.js >=22, release-script aktualisiert, redundantes eslint entfernt, macOS CI ergänzt, setInterval/setTimeout korrigiert",
+        "ru": "Исправлены ошибки repo checker: Node.js >=22, обновление release-script, удалён лишний eslint, добавлен macOS в CI, исправлено использование setInterval/setTimeout",
+        "pt": "Correcção de erros do repo checker: Node.js >=22, actualização do release-script, eslint redundante removido, CI macOS adicionado, setInterval/setTimeout corrigido",
+        "nl": "Repo checker fouten opgelost: Node.js >=22, release-script bijgewerkt, redundante eslint verwijderd, macOS CI toegevoegd, setInterval/setTimeout gecorrigeerd",
+        "fr": "Correction des erreurs du repo checker: Node.js >=22, mise à jour release-script, eslint redondant supprimé, CI macOS ajouté, setInterval/setTimeout corrigé",
+        "it": "Corretti errori repo checker: Node.js >=22, aggiornamento release-script, eslint ridondante rimosso, CI macOS aggiunto, setInterval/setTimeout corretto",
+        "es": "Corrección de errores del repo checker: Node.js >=22, actualización release-script, eslint redundante eliminado, CI macOS añadido, setInterval/setTimeout corregido",
+        "pl": "Poprawki błędów repo checker: Node.js >=22, aktualizacja release-script, usunięto zbędny eslint, dodano macOS CI, poprawiono setInterval/setTimeout",
+        "uk": "Виправлено помилки repo checker: Node.js >=22, оновлення release-script, видалено зайвий eslint, додано macOS CI, виправлено setInterval/setTimeout",
+        "zh-cn": "修复 repo checker 错误：Node.js >=22，更新 release-script，移除冗余 eslint，添加 macOS CI，修正 setInterval/setTimeout 用法"
+      },
       "1.0.4": {
         "en": "Add multilingual names (11 languages) to all datapoints",
         "de": "Mehrsprachige Bezeichnungen (11 Sprachen) für alle Datenpunkte ergänzt",
