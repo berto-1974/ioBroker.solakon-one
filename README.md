@@ -175,8 +175,8 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
-### 1.0.8 (2026-06-09)
-- Limit news entries to 7 in io-package.json (E1032)
+### 1.0.9 (2026-06-09)
+- Fix JSON syntax error in io-package.json; limit news entries to 7 (E1032)
 
 ### 1.0.7 (2026-06-09)
 - Fix @types/node version specifier: change >=22 to ^22.0.0 (W0066)

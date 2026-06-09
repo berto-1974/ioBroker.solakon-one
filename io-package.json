@@ -1,20 +1,20 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "news": {
-      "1.0.8": {
-        "en": "Limit news entries to 7 in io-package.json to comply with ioBroker checker (E1032)",
-        "de": "News-Einträge in io-package.json auf 7 begrenzt (ioBroker Checker E1032)",
-        "ru": "Ограничено количество записей новостей до 7 в io-package.json (E1032)",
-        "pt": "Entradas de notícias limitadas a 7 em io-package.json (E1032)",
-        "nl": "Nieuwsvermeldingen beperkt tot 7 in io-package.json (E1032)",
-        "fr": "Entrées de news limitées à 7 dans io-package.json (E1032)",
-        "it": "Voci news limitate a 7 in io-package.json (E1032)",
-        "es": "Entradas de noticias limitadas a 7 en io-package.json (E1032)",
-        "pl": "Wpisy news ograniczone do 7 w io-package.json (E1032)",
-        "uk": "Кількість записів новин обмежена до 7 у io-package.json (E1032)",
-        "zh-cn": "将 io-package.json 中的新闻条目限制为 7 条（E1032）"
+      "1.0.9": {
+        "en": "Fix JSON syntax error in io-package.json (trailing comma); limit news entries to 7 (E1032)",
+        "de": "JSON-Syntaxfehler in io-package.json behoben (Trailing Comma); News-Einträge auf 7 begrenzt (E1032)",
+        "ru": "Исправлена синтаксическая ошибка JSON в io-package.json; количество новостей ограничено до 7 (E1032)",
+        "pt": "Corrigido erro de sintaxe JSON em io-package.json; entradas de notícias limitadas a 7 (E1032)",
+        "nl": "JSON-syntaxfout hersteld in io-package.json; nieuwsvermeldingen beperkt tot 7 (E1032)",
+        "fr": "Correction d'erreur de syntaxe JSON dans io-package.json; news limitées à 7 (E1032)",
+        "it": "Corretto errore di sintassi JSON in io-package.json; voci news limitate a 7 (E1032)",
+        "es": "Corregido error de sintaxis JSON en io-package.json; entradas de noticias limitadas a 7 (E1032)",
+        "pl": "Naprawiono błąd składni JSON w io-package.json; wpisy news ograniczone do 7 (E1032)",
+        "uk": "Виправлено синтаксичну помилку JSON у io-package.json; новини обмежені до 7 (E1032)",
+        "zh-cn": "修复 io-package.json 中的 JSON 语法错误（多余逗号）；新闻条目限制为 7 条（E1032）"
       },
       "1.0.7": {
         "en": "Fix @types/node version specifier: change >=22 to ^22.0.0 (W0066)",
@@ -93,7 +93,7 @@
         "pl": "Fix: changelog w README, usunięto .eslintrc.json, pakiety release-script, schemat VS Code, automerge",
         "uk": "Виправлення: changelog у README, видалено .eslintrc.json, пакети release-script, схема VS Code, автомердж",
         "zh-cn": "修复：README 中添加 changelog，删除 .eslintrc.json，添加 release-script 包、VS Code schema 和自动合并工作流"
-      },
+      }
     },
     "titleLang": {
       "en": "Solakon ONE Inverter",
