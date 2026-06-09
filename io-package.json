@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "news": {
+      "1.0.4": {
+        "en": "Add multilingual names (11 languages) to all datapoints",
+        "de": "Mehrsprachige Bezeichnungen (11 Sprachen) für alle Datenpunkte ergänzt",
+        "ru": "Добавлены многоязычные названия (11 языков) для всех точек данных",
+        "pt": "Adicionados nomes multilingues (11 idiomas) a todos os pontos de dados",
+        "nl": "Meertalige namen (11 talen) toegevoegd aan alle datapunten",
+        "fr": "Ajout de noms multilingues (11 langues) à tous les points de données",
+        "it": "Aggiunti nomi multilingua (11 lingue) a tutti i punti dati",
+        "es": "Añadidos nombres multilingues (11 idiomas) a todos los puntos de datos",
+        "pl": "Dodano wielojęzyczne nazwy (11 języków) do wszystkich punktów danych",
+        "uk": "Додано багатомовні назви (11 мов) до всіх точок даних",
+        "zh-cn": "为所有数据点添加多语言名称（11 种语言）"
+      },
       "1.0.3": {
         "en": "Add Node.js 24 to CI test matrix; use Node 24 for lint and deploy",
         "de": "Node.js 24 in CI-Testmatrix aufgenommen; Node 24 für Lint und Deploy verwendet",

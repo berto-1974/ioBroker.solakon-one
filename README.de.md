@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.4 (2026-06-09)
+- Mehrsprachige Bezeichnungen (11 Sprachen) für alle Datenpunkte ergänzt
+
 ### 1.0.3 (2026-05-30)
 - Node.js 24 in CI-Testmatrix aufgenommen; Node 24 für Lint und Deploy verwendet
 

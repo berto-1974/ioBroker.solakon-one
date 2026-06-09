@@ -175,6 +175,9 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
+### 1.0.4 (2026-06-09)
+- Add multilingual names (11 languages) to all datapoints
+
 ### 1.0.3 (2026-05-30)
 - Add Node.js 24 to CI test matrix; use Node 24 for lint and deploy
 
