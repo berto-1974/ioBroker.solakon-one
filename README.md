@@ -14,7 +14,7 @@ Monitors and controls the Solakon ONE hybrid solar inverter with battery storage
 ## Requirements
 
 - ioBroker with js-controller >= 6.0.0
-- Node.js >= 20
+- Node.js >= 22
 - Solakon ONE inverter reachable in the local network
 - Modbus TCP enabled on the device (Port 502)
 

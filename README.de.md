@@ -11,7 +11,7 @@
 ## Voraussetzungen
 
 - ioBroker mit js-controller >= 6.0.0
-- Node.js >= 20
+- Node.js >= 22
 - Solakon ONE Wechselrichter im lokalen Netzwerk erreichbar
 - Modbus TCP auf dem Gerät aktiviert (Port 502)
 
