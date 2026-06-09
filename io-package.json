@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "news": {
+      "1.0.7": {
+        "en": "Fix @types/node version specifier: change >=22 to ^22.0.0 (W0066)",
+        "de": "@types/node Versionsangabe korrigiert: >=22 auf ^22.0.0 geändert (W0066)",
+        "ru": "Исправлена версия @types/node: >=22 заменено на ^22.0.0 (W0066)",
+        "pt": "Corrigida especificação de versão @types/node: >=22 alterado para ^22.0.0 (W0066)",
+        "nl": "@types/node versiespecificatie gecorrigeerd: >=22 gewijzigd naar ^22.0.0 (W0066)",
+        "fr": "Correction de la spécification de version @types/node: >=22 remplacé par ^22.0.0 (W0066)",
+        "it": "Corretta specifica versione @types/node: >=22 modificato in ^22.0.0 (W0066)",
+        "es": "Corregida especificación de versión @types/node: >=22 cambiado a ^22.0.0 (W0066)",
+        "pl": "Poprawiono specyfikację wersji @types/node: >=22 zmieniono na ^22.0.0 (W0066)",
+        "uk": "Виправлено специфікацію версії @types/node: >=22 змінено на ^22.0.0 (W0066)",
+        "zh-cn": "修正 @types/node 版本规范：将 >=22 改为 ^22.0.0（W0066）"
+      },
       "1.0.6": {
         "en": "Fix Node.js requirement in README (>=22); add @types/node devDependency",
         "de": "Node.js-Anforderung in README korrigiert (>=22); @types/node devDependency ergänzt",

@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.7 (2026-06-09)
+- @types/node Versionsangabe korrigiert: >=22 auf ^22.0.0 geändert (W0066)
+
 ### 1.0.6 (2026-06-09)
 - Node.js-Anforderung in README korrigiert (>=22); @types/node devDependency ergänzt
 
