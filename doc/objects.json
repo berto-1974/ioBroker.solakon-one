@@ -5,7 +5,16 @@
     "common": {
       "name": {
         "en": "Connection Info",
-        "de": "Verbindungsinformation"
+        "de": "Verbindungsinformation",
+        "ru": "Информация о подключении",
+        "pt": "Informação de ligação",
+        "nl": "Verbindingsinformatie",
+        "fr": "Informations de connexion",
+        "it": "Informazioni connessione",
+        "es": "Información de conexión",
+        "pl": "Informacje o połączeniu",
+        "uk": "Інформація про з'єднання",
+        "zh-cn": "连接信息"
       }
     },
     "native": {}
@@ -16,7 +25,16 @@
     "common": {
       "name": {
         "en": "Device Information",
-        "de": "Geräteinformationen"
+        "de": "Geräteinformationen",
+        "ru": "Информация об устройстве",
+        "pt": "Informações do dispositivo",
+        "nl": "Apparaatinformatie",
+        "fr": "Informations sur l'appareil",
+        "it": "Informazioni dispositivo",
+        "es": "Información del dispositivo",
+        "pl": "Informacje o urządzeniu",
+        "uk": "Інформація про пристрій",
+        "zh-cn": "设备信息"
       }
     },
     "native": {}
@@ -27,7 +45,16 @@
     "common": {
       "name": {
         "en": "Photovoltaics",
-        "de": "Photovoltaik"
+        "de": "Photovoltaik",
+        "ru": "Фотовольтаика",
+        "pt": "Fotovoltaico",
+        "nl": "Fotovoltaïsch",
+        "fr": "Photovoltaïque",
+        "it": "Fotovoltaico",
+        "es": "Fotovoltaico",
+        "pl": "Fotowoltaika",
+        "uk": "Фотовольтаїка",
+        "zh-cn": "光伏"
       }
     },
     "native": {}
@@ -38,7 +65,16 @@
     "common": {
       "name": {
         "en": "Battery",
-        "de": "Batterie"
+        "de": "Batterie",
+        "ru": "Аккумулятор",
+        "pt": "Bateria",
+        "nl": "Batterij",
+        "fr": "Batterie",
+        "it": "Batteria",
+        "es": "Batería",
+        "pl": "Bateria",
+        "uk": "Акумулятор",
+        "zh-cn": "电池"
       }
     },
     "native": {}
@@ -49,7 +85,16 @@
     "common": {
       "name": {
         "en": "Grid",
-        "de": "Netz"
+        "de": "Netz",
+        "ru": "Сеть",
+        "pt": "Rede",
+        "nl": "Net",
+        "fr": "Réseau",
+        "it": "Rete",
+        "es": "Red",
+        "pl": "Sieć",
+        "uk": "Мережа",
+        "zh-cn": "电网"
       }
     },
     "native": {}
@@ -60,7 +105,16 @@
     "common": {
       "name": {
         "en": "Inverter",
-        "de": "Wechselrichter"
+        "de": "Wechselrichter",
+        "ru": "Инвертор",
+        "pt": "Inversor",
+        "nl": "Omvormer",
+        "fr": "Onduleur",
+        "it": "Inverter",
+        "es": "Inversor",
+        "pl": "Falownik",
+        "uk": "Інвертор",
+        "zh-cn": "逆变器"
       }
     },
     "native": {}
@@ -71,7 +125,16 @@
     "common": {
       "name": {
         "en": "Emergency Power (EPS/UPS)",
-        "de": "Notstromversorgung (EPS/UPS)"
+        "de": "Notstromversorgung (EPS/UPS)",
+        "ru": "Аварийное питание (EPS/UPS)",
+        "pt": "Energia de emergência (EPS/UPS)",
+        "nl": "Noodstroom (EPS/UPS)",
+        "fr": "Alimentation de secours (EPS/UPS)",
+        "it": "Alimentazione di emergenza (EPS/UPS)",
+        "es": "Energía de emergencia (EPS/UPS)",
+        "pl": "Zasilanie awaryjne (EPS/UPS)",
+        "uk": "Аварійне живлення (EPS/UPS)",
+        "zh-cn": "应急电源 (EPS/UPS)"
       }
     },
     "native": {}
@@ -82,7 +145,16 @@
     "common": {
       "name": {
         "en": "Status",
-        "de": "Status"
+        "de": "Status",
+        "ru": "Статус",
+        "pt": "Estado",
+        "nl": "Status",
+        "fr": "Statut",
+        "it": "Stato",
+        "es": "Estado",
+        "pl": "Status",
+        "uk": "Статус",
+        "zh-cn": "状态"
       }
     },
     "native": {}
@@ -93,7 +165,16 @@
     "common": {
       "name": {
         "en": "Control",
-        "de": "Steuerung"
+        "de": "Steuerung",
+        "ru": "Управление",
+        "pt": "Controlo",
+        "nl": "Bediening",
+        "fr": "Commande",
+        "it": "Controllo",
+        "es": "Control",
+        "pl": "Sterowanie",
+        "uk": "Керування",
+        "zh-cn": "控制"
       }
     },
     "native": {}
@@ -104,7 +185,16 @@
     "common": {
       "name": {
         "en": "Connected",
-        "de": "Verbunden"
+        "de": "Verbunden",
+        "ru": "Подключено",
+        "pt": "Ligado",
+        "nl": "Verbonden",
+        "fr": "Connecté",
+        "it": "Connesso",
+        "es": "Conectado",
+        "pl": "Połączony",
+        "uk": "Підключено",
+        "zh-cn": "已连接"
       },
       "type": "boolean",
       "role": "indicator.connected",
@@ -120,7 +210,16 @@
     "common": {
       "name": {
         "en": "Model name",
-        "de": "Modellbezeichnung"
+        "de": "Modellbezeichnung",
+        "ru": "Наименование модели",
+        "pt": "Nome do modelo",
+        "nl": "Modelnaam",
+        "fr": "Nom du modèle",
+        "it": "Nome modello",
+        "es": "Nombre del modelo",
+        "pl": "Nazwa modelu",
+        "uk": "Назва моделі",
+        "zh-cn": "型号名称"
       },
       "type": "string",
       "role": "info.name",
@@ -135,7 +234,16 @@
     "common": {
       "name": {
         "en": "Serial number",
-        "de": "Seriennummer"
+        "de": "Seriennummer",
+        "ru": "Серийный номер",
+        "pt": "Número de série",
+        "nl": "Serienummer",
+        "fr": "Numéro de série",
+        "it": "Numero di serie",
+        "es": "Número de serie",
+        "pl": "Numer seryjny",
+        "uk": "Серійний номер",
+        "zh-cn": "序列号"
       },
       "type": "string",
       "role": "info.serial",
@@ -150,7 +258,16 @@
     "common": {
       "name": {
         "en": "Firmware Master",
-        "de": "Firmware Master"
+        "de": "Firmware Master",
+        "ru": "Прошивка Master",
+        "pt": "Firmware Master",
+        "nl": "Firmware Master",
+        "fr": "Firmware Master",
+        "it": "Firmware Master",
+        "es": "Firmware Master",
+        "pl": "Firmware Master",
+        "uk": "Прошивка Master",
+        "zh-cn": "主固件"
       },
       "type": "number",
       "role": "info.firmware",
@@ -165,7 +282,16 @@
     "common": {
       "name": {
         "en": "Firmware Slave",
-        "de": "Firmware Slave"
+        "de": "Firmware Slave",
+        "ru": "Прошивка Slave",
+        "pt": "Firmware Slave",
+        "nl": "Firmware Slave",
+        "fr": "Firmware Slave",
+        "it": "Firmware Slave",
+        "es": "Firmware Slave",
+        "pl": "Firmware Slave",
+        "uk": "Прошивка Slave",
+        "zh-cn": "从固件"
       },
       "type": "number",
       "role": "info.firmware",
@@ -180,7 +306,16 @@
     "common": {
       "name": {
         "en": "PV total power",
-        "de": "PV Gesamtleistung"
+        "de": "PV Gesamtleistung",
+        "ru": "Суммарная мощность PV",
+        "pt": "Potência total PV",
+        "nl": "Totaal PV-vermogen",
+        "fr": "Puissance totale PV",
+        "it": "Potenza totale PV",
+        "es": "Potencia total PV",
+        "pl": "Całkowita moc PV",
+        "uk": "Загальна потужність PV",
+        "zh-cn": "光伏总功率"
       },
       "type": "number",
       "role": "value.power",
@@ -196,7 +331,16 @@
     "common": {
       "name": {
         "en": "PV total energy",
-        "de": "PV Energie gesamt"
+        "de": "PV Energie gesamt",
+        "ru": "Суммарная энергия PV",
+        "pt": "Energia total PV",
+        "nl": "Totale PV-energie",
+        "fr": "Énergie totale PV",
+        "it": "Energia totale PV",
+        "es": "Energía total PV",
+        "pl": "Całkowita energia PV",
+        "uk": "Загальна енергія PV",
+        "zh-cn": "光伏总电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -212,7 +356,16 @@
     "common": {
       "name": {
         "en": "PV1 voltage",
-        "de": "PV1 Spannung"
+        "de": "PV1 Spannung",
+        "ru": "Напряжение PV1",
+        "pt": "Tensão PV1",
+        "nl": "PV1 spanning",
+        "fr": "Tension PV1",
+        "it": "Tensione PV1",
+        "es": "Tensión PV1",
+        "pl": "Napięcie PV1",
+        "uk": "Напруга PV1",
+        "zh-cn": "PV1电压"
       },
       "type": "number",
       "role": "value.voltage",
@@ -228,7 +381,16 @@
     "common": {
       "name": {
         "en": "PV1 current",
-        "de": "PV1 Strom"
+        "de": "PV1 Strom",
+        "ru": "Ток PV1",
+        "pt": "Corrente PV1",
+        "nl": "PV1 stroom",
+        "fr": "Courant PV1",
+        "it": "Corrente PV1",
+        "es": "Corriente PV1",
+        "pl": "Prąd PV1",
+        "uk": "Струм PV1",
+        "zh-cn": "PV1电流"
       },
       "type": "number",
       "role": "value.current",
@@ -244,7 +406,16 @@
     "common": {
       "name": {
         "en": "PV1 power",
-        "de": "PV1 Leistung"
+        "de": "PV1 Leistung",
+        "ru": "Мощность PV1",
+        "pt": "Potência PV1",
+        "nl": "PV1 vermogen",
+        "fr": "Puissance PV1",
+        "it": "Potenza PV1",
+        "es": "Potencia PV1",
+        "pl": "Moc PV1",
+        "uk": "Потужність PV1",
+        "zh-cn": "PV1功率"
       },
       "type": "number",
       "role": "value.power",
@@ -260,7 +431,16 @@
     "common": {
       "name": {
         "en": "PV2 voltage",
-        "de": "PV2 Spannung"
+        "de": "PV2 Spannung",
+        "ru": "Напряжение PV2",
+        "pt": "Tensão PV2",
+        "nl": "PV2 spanning",
+        "fr": "Tension PV2",
+        "it": "Tensione PV2",
+        "es": "Tensión PV2",
+        "pl": "Napięcie PV2",
+        "uk": "Напруга PV2",
+        "zh-cn": "PV2电压"
       },
       "type": "number",
       "role": "value.voltage",
@@ -276,7 +456,16 @@
     "common": {
       "name": {
         "en": "PV2 current",
-        "de": "PV2 Strom"
+        "de": "PV2 Strom",
+        "ru": "Ток PV2",
+        "pt": "Corrente PV2",
+        "nl": "PV2 stroom",
+        "fr": "Courant PV2",
+        "it": "Corrente PV2",
+        "es": "Corriente PV2",
+        "pl": "Prąd PV2",
+        "uk": "Струм PV2",
+        "zh-cn": "PV2电流"
       },
       "type": "number",
       "role": "value.current",
@@ -292,7 +481,16 @@
     "common": {
       "name": {
         "en": "PV2 power",
-        "de": "PV2 Leistung"
+        "de": "PV2 Leistung",
+        "ru": "Мощность PV2",
+        "pt": "Potência PV2",
+        "nl": "PV2 vermogen",
+        "fr": "Puissance PV2",
+        "it": "Potenza PV2",
+        "es": "Potencia PV2",
+        "pl": "Moc PV2",
+        "uk": "Потужність PV2",
+        "zh-cn": "PV2功率"
       },
       "type": "number",
       "role": "value.power",
@@ -308,7 +506,16 @@
     "common": {
       "name": {
         "en": "PV3 voltage",
-        "de": "PV3 Spannung"
+        "de": "PV3 Spannung",
+        "ru": "Напряжение PV3",
+        "pt": "Tensão PV3",
+        "nl": "PV3 spanning",
+        "fr": "Tension PV3",
+        "it": "Tensione PV3",
+        "es": "Tensión PV3",
+        "pl": "Napięcie PV3",
+        "uk": "Напруга PV3",
+        "zh-cn": "PV3电压"
       },
       "type": "number",
       "role": "value.voltage",
@@ -324,7 +531,16 @@
     "common": {
       "name": {
         "en": "PV3 current",
-        "de": "PV3 Strom"
+        "de": "PV3 Strom",
+        "ru": "Ток PV3",
+        "pt": "Corrente PV3",
+        "nl": "PV3 stroom",
+        "fr": "Courant PV3",
+        "it": "Corrente PV3",
+        "es": "Corriente PV3",
+        "pl": "Prąd PV3",
+        "uk": "Струм PV3",
+        "zh-cn": "PV3电流"
       },
       "type": "number",
       "role": "value.current",
@@ -340,7 +556,16 @@
     "common": {
       "name": {
         "en": "PV3 power",
-        "de": "PV3 Leistung"
+        "de": "PV3 Leistung",
+        "ru": "Мощность PV3",
+        "pt": "Potência PV3",
+        "nl": "PV3 vermogen",
+        "fr": "Puissance PV3",
+        "it": "Potenza PV3",
+        "es": "Potencia PV3",
+        "pl": "Moc PV3",
+        "uk": "Потужність PV3",
+        "zh-cn": "PV3功率"
       },
       "type": "number",
       "role": "value.power",
@@ -356,7 +581,16 @@
     "common": {
       "name": {
         "en": "PV4 voltage",
-        "de": "PV4 Spannung"
+        "de": "PV4 Spannung",
+        "ru": "Напряжение PV4",
+        "pt": "Tensão PV4",
+        "nl": "PV4 spanning",
+        "fr": "Tension PV4",
+        "it": "Tensione PV4",
+        "es": "Tensión PV4",
+        "pl": "Napięcie PV4",
+        "uk": "Напруга PV4",
+        "zh-cn": "PV4电压"
       },
       "type": "number",
       "role": "value.voltage",
@@ -372,7 +606,16 @@
     "common": {
       "name": {
         "en": "PV4 current",
-        "de": "PV4 Strom"
+        "de": "PV4 Strom",
+        "ru": "Ток PV4",
+        "pt": "Corrente PV4",
+        "nl": "PV4 stroom",
+        "fr": "Courant PV4",
+        "it": "Corrente PV4",
+        "es": "Corriente PV4",
+        "pl": "Prąd PV4",
+        "uk": "Струм PV4",
+        "zh-cn": "PV4电流"
       },
       "type": "number",
       "role": "value.current",
@@ -388,7 +631,16 @@
     "common": {
       "name": {
         "en": "PV4 power",
-        "de": "PV4 Leistung"
+        "de": "PV4 Leistung",
+        "ru": "Мощность PV4",
+        "pt": "Potência PV4",
+        "nl": "PV4 vermogen",
+        "fr": "Puissance PV4",
+        "it": "Potenza PV4",
+        "es": "Potencia PV4",
+        "pl": "Moc PV4",
+        "uk": "Потужність PV4",
+        "zh-cn": "PV4功率"
       },
       "type": "number",
       "role": "value.power",
@@ -404,7 +656,16 @@
     "common": {
       "name": {
         "en": "State of Charge (SoC)",
-        "de": "Ladestand (SoC)"
+        "de": "Ladestand (SoC)",
+        "ru": "Уровень заряда (SoC)",
+        "pt": "Estado de carga (SoC)",
+        "nl": "Laadtoestand (SoC)",
+        "fr": "État de charge (SoC)",
+        "it": "Stato di carica (SoC)",
+        "es": "Estado de carga (SoC)",
+        "pl": "Stan naładowania (SoC)",
+        "uk": "Рівень заряду (SoC)",
+        "zh-cn": "荷电状态 (SoC)"
       },
       "type": "number",
       "role": "value.battery",
@@ -420,7 +681,16 @@
     "common": {
       "name": {
         "en": "Voltage",
-        "de": "Spannung"
+        "de": "Spannung",
+        "ru": "Напряжение",
+        "pt": "Tensão",
+        "nl": "Spanning",
+        "fr": "Tension",
+        "it": "Tensione",
+        "es": "Tensión",
+        "pl": "Napięcie",
+        "uk": "Напруга",
+        "zh-cn": "电压"
       },
       "type": "number",
       "role": "value.voltage",
@@ -436,7 +706,16 @@
     "common": {
       "name": {
         "en": "Current",
-        "de": "Strom"
+        "de": "Strom",
+        "ru": "Ток",
+        "pt": "Corrente",
+        "nl": "Stroom",
+        "fr": "Courant",
+        "it": "Corrente",
+        "es": "Corriente",
+        "pl": "Prąd",
+        "uk": "Струм",
+        "zh-cn": "电流"
       },
       "type": "number",
       "role": "value.current",
@@ -452,7 +731,16 @@
     "common": {
       "name": {
         "en": "Power",
-        "de": "Leistung"
+        "de": "Leistung",
+        "ru": "Мощность",
+        "pt": "Potência",
+        "nl": "Vermogen",
+        "fr": "Puissance",
+        "it": "Potenza",
+        "es": "Potencia",
+        "pl": "Moc",
+        "uk": "Потужність",
+        "zh-cn": "功率"
       },
       "type": "number",
       "role": "value.power",
@@ -468,7 +756,16 @@
     "common": {
       "name": {
         "en": "Combined power",
-        "de": "Kombinierte Leistung"
+        "de": "Kombinierte Leistung",
+        "ru": "Суммарная мощность",
+        "pt": "Potência combinada",
+        "nl": "Gecombineerd vermogen",
+        "fr": "Puissance combinée",
+        "it": "Potenza combinata",
+        "es": "Potencia combinada",
+        "pl": "Moc łączna",
+        "uk": "Сукупна потужність",
+        "zh-cn": "综合功率"
       },
       "type": "number",
       "role": "value.power",
@@ -484,7 +781,16 @@
     "common": {
       "name": {
         "en": "Total charge energy",
-        "de": "Ladeenergie gesamt"
+        "de": "Ladeenergie gesamt",
+        "ru": "Суммарная энергия зарядки",
+        "pt": "Energia total de carga",
+        "nl": "Totale laadenergie",
+        "fr": "Énergie de charge totale",
+        "it": "Energia totale di carica",
+        "es": "Energía total de carga",
+        "pl": "Całkowita energia ładowania",
+        "uk": "Загальна енергія заряджання",
+        "zh-cn": "总充电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -500,7 +806,16 @@
     "common": {
       "name": {
         "en": "Total discharge energy",
-        "de": "Entladeenergie gesamt"
+        "de": "Entladeenergie gesamt",
+        "ru": "Суммарная энергия разрядки",
+        "pt": "Energia total de descarga",
+        "nl": "Totale ontlaadenergie",
+        "fr": "Énergie de décharge totale",
+        "it": "Energia totale di scarica",
+        "es": "Energía total de descarga",
+        "pl": "Całkowita energia rozładowania",
+        "uk": "Загальна енергія розряджання",
+        "zh-cn": "总放电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -516,7 +831,16 @@
     "common": {
       "name": {
         "en": "State of Health (SoH)",
-        "de": "Gesundheitszustand (SoH)"
+        "de": "Gesundheitszustand (SoH)",
+        "ru": "Состояние здоровья (SoH)",
+        "pt": "Estado de saúde (SoH)",
+        "nl": "Gezondheidsconditie (SoH)",
+        "fr": "État de santé (SoH)",
+        "it": "Stato di salute (SoH)",
+        "es": "Estado de salud (SoH)",
+        "pl": "Stan zdrowia (SoH)",
+        "uk": "Стан здоров'я (SoH)",
+        "zh-cn": "电池健康状态 (SoH)"
       },
       "type": "number",
       "role": "value",
@@ -532,7 +856,16 @@
     "common": {
       "name": {
         "en": "Design capacity",
-        "de": "Nennkapazität"
+        "de": "Nennkapazität",
+        "ru": "Номинальная ёмкость",
+        "pt": "Capacidade nominal",
+        "nl": "Nominale capaciteit",
+        "fr": "Capacité nominale",
+        "it": "Capacità nominale",
+        "es": "Capacidad nominal",
+        "pl": "Pojemność nominalna",
+        "uk": "Номінальна ємність",
+        "zh-cn": "设计容量"
       },
       "type": "number",
       "role": "value",
@@ -548,7 +881,16 @@
     "common": {
       "name": {
         "en": "Ambient temperature",
-        "de": "Umgebungstemperatur"
+        "de": "Umgebungstemperatur",
+        "ru": "Температура окружающей среды",
+        "pt": "Temperatura ambiente",
+        "nl": "Omgevingstemperatuur",
+        "fr": "Température ambiante",
+        "it": "Temperatura ambiente",
+        "es": "Temperatura ambiente",
+        "pl": "Temperatura otoczenia",
+        "uk": "Температура навколишнього середовища",
+        "zh-cn": "环境温度"
       },
       "type": "number",
       "role": "value.temperature",
@@ -564,7 +906,16 @@
     "common": {
       "name": {
         "en": "Max temperature",
-        "de": "Max. Temperatur"
+        "de": "Max. Temperatur",
+        "ru": "Макс. температура",
+        "pt": "Temperatura máx.",
+        "nl": "Max. temperatuur",
+        "fr": "Température max.",
+        "it": "Temperatura max.",
+        "es": "Temperatura máx.",
+        "pl": "Maks. temperatura",
+        "uk": "Макс. температура",
+        "zh-cn": "最高温度"
       },
       "type": "number",
       "role": "value.temperature",
@@ -580,7 +931,16 @@
     "common": {
       "name": {
         "en": "Min temperature",
-        "de": "Min. Temperatur"
+        "de": "Min. Temperatur",
+        "ru": "Мин. температура",
+        "pt": "Temperatura mín.",
+        "nl": "Min. temperatuur",
+        "fr": "Température min.",
+        "it": "Temperatura min.",
+        "es": "Temperatura mín.",
+        "pl": "Min. temperatura",
+        "uk": "Мін. температура",
+        "zh-cn": "最低温度"
       },
       "type": "number",
       "role": "value.temperature",
@@ -596,7 +956,16 @@
     "common": {
       "name": {
         "en": "Off-grid mode",
-        "de": "Inselbetrieb"
+        "de": "Inselbetrieb",
+        "ru": "Автономный режим",
+        "pt": "Modo isolado",
+        "nl": "Off-grid modus",
+        "fr": "Mode hors réseau",
+        "it": "Modalità off-grid",
+        "es": "Modo aislado",
+        "pl": "Tryb wyspowy",
+        "uk": "Автономний режим",
+        "zh-cn": "离网模式"
       },
       "type": "boolean",
       "role": "indicator",
@@ -611,7 +980,16 @@
     "common": {
       "name": {
         "en": "Grid voltage (R)",
-        "de": "Netzspannung (R)"
+        "de": "Netzspannung (R)",
+        "ru": "Напряжение сети (R)",
+        "pt": "Tensão de rede (R)",
+        "nl": "Netspanning (R)",
+        "fr": "Tension du réseau (R)",
+        "it": "Tensione di rete (R)",
+        "es": "Tensión de red (R)",
+        "pl": "Napięcie sieci (R)",
+        "uk": "Напруга мережі (R)",
+        "zh-cn": "电网电压 (R)"
       },
       "type": "number",
       "role": "value.voltage",
@@ -627,7 +1005,16 @@
     "common": {
       "name": {
         "en": "Grid voltage (S)",
-        "de": "Netzspannung (S)"
+        "de": "Netzspannung (S)",
+        "ru": "Напряжение сети (S)",
+        "pt": "Tensão de rede (S)",
+        "nl": "Netspanning (S)",
+        "fr": "Tension du réseau (S)",
+        "it": "Tensione di rete (S)",
+        "es": "Tensión de red (S)",
+        "pl": "Napięcie sieci (S)",
+        "uk": "Напруга мережі (S)",
+        "zh-cn": "电网电压 (S)"
       },
       "type": "number",
       "role": "value.voltage",
@@ -643,7 +1030,16 @@
     "common": {
       "name": {
         "en": "Grid voltage (T)",
-        "de": "Netzspannung (T)"
+        "de": "Netzspannung (T)",
+        "ru": "Напряжение сети (T)",
+        "pt": "Tensão de rede (T)",
+        "nl": "Netspanning (T)",
+        "fr": "Tension du réseau (T)",
+        "it": "Tensione di rete (T)",
+        "es": "Tensión de red (T)",
+        "pl": "Napięcie sieci (T)",
+        "uk": "Напруга мережі (T)",
+        "zh-cn": "电网电压 (T)"
       },
       "type": "number",
       "role": "value.voltage",
@@ -659,7 +1055,16 @@
     "common": {
       "name": {
         "en": "Grid frequency",
-        "de": "Netzfrequenz"
+        "de": "Netzfrequenz",
+        "ru": "Частота сети",
+        "pt": "Frequência da rede",
+        "nl": "Netfrequentie",
+        "fr": "Fréquence du réseau",
+        "it": "Frequenza di rete",
+        "es": "Frecuencia de red",
+        "pl": "Częstotliwość sieci",
+        "uk": "Частота мережі",
+        "zh-cn": "电网频率"
       },
       "type": "number",
       "role": "value.frequency",
@@ -675,7 +1080,16 @@
     "common": {
       "name": {
         "en": "Active power",
-        "de": "Wirkleistung"
+        "de": "Wirkleistung",
+        "ru": "Активная мощность",
+        "pt": "Potência ativa",
+        "nl": "Actief vermogen",
+        "fr": "Puissance active",
+        "it": "Potenza attiva",
+        "es": "Potencia activa",
+        "pl": "Moc czynna",
+        "uk": "Активна потужність",
+        "zh-cn": "有功功率"
       },
       "type": "number",
       "role": "value.power",
@@ -691,7 +1105,16 @@
     "common": {
       "name": {
         "en": "Reactive power",
-        "de": "Blindleistung"
+        "de": "Blindleistung",
+        "ru": "Реактивная мощность",
+        "pt": "Potência reativa",
+        "nl": "Reactief vermogen",
+        "fr": "Puissance réactive",
+        "it": "Potenza reattiva",
+        "es": "Potencia reactiva",
+        "pl": "Moc bierna",
+        "uk": "Реактивна потужність",
+        "zh-cn": "无功功率"
       },
       "type": "number",
       "role": "value.power",
@@ -707,7 +1130,16 @@
     "common": {
       "name": {
         "en": "Power factor",
-        "de": "Leistungsfaktor"
+        "de": "Leistungsfaktor",
+        "ru": "Коэффициент мощности",
+        "pt": "Fator de potência",
+        "nl": "Vermogensfactor",
+        "fr": "Facteur de puissance",
+        "it": "Fattore di potenza",
+        "es": "Factor de potencia",
+        "pl": "Współczynnik mocy",
+        "uk": "Коефіцієнт потужності",
+        "zh-cn": "功率因数"
       },
       "type": "number",
       "role": "value",
@@ -722,7 +1154,16 @@
     "common": {
       "name": {
         "en": "Total export energy",
-        "de": "Einspeisung gesamt"
+        "de": "Einspeisung gesamt",
+        "ru": "Суммарная выработка в сеть",
+        "pt": "Energia total exportada",
+        "nl": "Totale exportenergie",
+        "fr": "Énergie totale exportée",
+        "it": "Energia totale esportata",
+        "es": "Energía total exportada",
+        "pl": "Całkowita energia eksportowana",
+        "uk": "Загальна віддана енергія",
+        "zh-cn": "总上网电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -738,7 +1179,16 @@
     "common": {
       "name": {
         "en": "Total import energy",
-        "de": "Bezug gesamt"
+        "de": "Bezug gesamt",
+        "ru": "Суммарное потребление из сети",
+        "pt": "Energia total importada",
+        "nl": "Totale importenergie",
+        "fr": "Énergie totale importée",
+        "it": "Energia totale importata",
+        "es": "Energía total importada",
+        "pl": "Całkowita energia importowana",
+        "uk": "Загальне споживання з мережі",
+        "zh-cn": "总用网电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -754,7 +1204,16 @@
     "common": {
       "name": {
         "en": "Grid standard",
-        "de": "Netzstandard"
+        "de": "Netzstandard",
+        "ru": "Стандарт сети",
+        "pt": "Norma de rede",
+        "nl": "Netnorm",
+        "fr": "Norme de réseau",
+        "it": "Norma di rete",
+        "es": "Norma de red",
+        "pl": "Norma sieci",
+        "uk": "Стандарт мережі",
+        "zh-cn": "电网标准"
       },
       "type": "number",
       "role": "value",
@@ -773,7 +1232,16 @@
     "common": {
       "name": {
         "en": "Temperature",
-        "de": "Temperatur"
+        "de": "Temperatur",
+        "ru": "Температура",
+        "pt": "Temperatura",
+        "nl": "Temperatuur",
+        "fr": "Température",
+        "it": "Temperatura",
+        "es": "Temperatura",
+        "pl": "Temperatura",
+        "uk": "Температура",
+        "zh-cn": "温度"
       },
       "type": "number",
       "role": "value.temperature",
@@ -789,7 +1257,16 @@
     "common": {
       "name": {
         "en": "Inverter frequency",
-        "de": "Wechselrichterfrequenz"
+        "de": "Wechselrichterfrequenz",
+        "ru": "Частота инвертора",
+        "pt": "Frequência do inversor",
+        "nl": "Omvormerfrequentie",
+        "fr": "Fréquence de l'onduleur",
+        "it": "Frequenza dell'inverter",
+        "es": "Frecuencia del inversor",
+        "pl": "Częstotliwość falownika",
+        "uk": "Частота інвертора",
+        "zh-cn": "逆变器频率"
       },
       "type": "number",
       "role": "value.frequency",
@@ -805,7 +1282,16 @@
     "common": {
       "name": {
         "en": "Daily generation",
-        "de": "Tagesernte"
+        "de": "Tagesernte",
+        "ru": "Суточная выработка",
+        "pt": "Geração diária",
+        "nl": "Dagelijkse opbrengst",
+        "fr": "Production journalière",
+        "it": "Produzione giornaliera",
+        "es": "Generación diaria",
+        "pl": "Dzienna produkcja",
+        "uk": "Добова виробіток",
+        "zh-cn": "日发电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -821,7 +1307,16 @@
     "common": {
       "name": {
         "en": "Total generation",
-        "de": "Gesamtertrag"
+        "de": "Gesamtertrag",
+        "ru": "Суммарная выработка",
+        "pt": "Geração total",
+        "nl": "Totale opbrengst",
+        "fr": "Production totale",
+        "it": "Produzione totale",
+        "es": "Generación total",
+        "pl": "Całkowita produkcja",
+        "uk": "Загальний виробіток",
+        "zh-cn": "总发电量"
       },
       "type": "number",
       "role": "value.energy",
@@ -837,7 +1332,16 @@
     "common": {
       "name": {
         "en": "Operating mode",
-        "de": "Betriebsmodus"
+        "de": "Betriebsmodus",
+        "ru": "Режим работы",
+        "pt": "Modo de operação",
+        "nl": "Bedrijfsmodus",
+        "fr": "Mode de fonctionnement",
+        "it": "Modalità operativa",
+        "es": "Modo de operación",
+        "pl": "Tryb pracy",
+        "uk": "Режим роботи",
+        "zh-cn": "运行模式"
       },
       "type": "number",
       "role": "value",
@@ -861,7 +1365,16 @@
     "common": {
       "name": {
         "en": "Network status",
-        "de": "Netzwerkstatus"
+        "de": "Netzwerkstatus",
+        "ru": "Состояние сети",
+        "pt": "Estado da rede",
+        "nl": "Netwerkstatus",
+        "fr": "État du réseau",
+        "it": "Stato della rete",
+        "es": "Estado de la red",
+        "pl": "Stan sieci",
+        "uk": "Статус мережі",
+        "zh-cn": "网络状态"
       },
       "type": "number",
       "role": "value",
@@ -881,7 +1394,16 @@
     "common": {
       "name": {
         "en": "EPS voltage",
-        "de": "EPS Spannung"
+        "de": "EPS Spannung",
+        "ru": "Напряжение EPS",
+        "pt": "Tensão EPS",
+        "nl": "EPS spanning",
+        "fr": "Tension EPS",
+        "it": "Tensione EPS",
+        "es": "Tensión EPS",
+        "pl": "Napięcie EPS",
+        "uk": "Напруга EPS",
+        "zh-cn": "EPS电压"
       },
       "type": "number",
       "role": "value.voltage",
@@ -897,7 +1419,16 @@
     "common": {
       "name": {
         "en": "EPS current",
-        "de": "EPS Strom"
+        "de": "EPS Strom",
+        "ru": "Ток EPS",
+        "pt": "Corrente EPS",
+        "nl": "EPS stroom",
+        "fr": "Courant EPS",
+        "it": "Corrente EPS",
+        "es": "Corriente EPS",
+        "pl": "Prąd EPS",
+        "uk": "Струм EPS",
+        "zh-cn": "EPS电流"
       },
       "type": "number",
       "role": "value.current",
@@ -913,7 +1444,16 @@
     "common": {
       "name": {
         "en": "EPS power",
-        "de": "EPS Leistung"
+        "de": "EPS Leistung",
+        "ru": "Мощность EPS",
+        "pt": "Potência EPS",
+        "nl": "EPS vermogen",
+        "fr": "Puissance EPS",
+        "it": "Potenza EPS",
+        "es": "Potencia EPS",
+        "pl": "Moc EPS",
+        "uk": "Потужність EPS",
+        "zh-cn": "EPS功率"
       },
       "type": "number",
       "role": "value.power",
@@ -929,7 +1469,16 @@
     "common": {
       "name": {
         "en": "Remote control mode",
-        "de": "Fernsteuerung Modus"
+        "de": "Fernsteuerung Modus",
+        "ru": "Режим дистанционного управления",
+        "pt": "Modo de controlo remoto",
+        "nl": "Afstandsbedieningsmodus",
+        "fr": "Mode de contrôle à distance",
+        "it": "Modalità controllo remoto",
+        "es": "Modo de control remoto",
+        "pl": "Tryb zdalnego sterowania",
+        "uk": "Режим дистанційного керування",
+        "zh-cn": "远程控制模式"
       },
       "type": "number",
       "role": "value",
@@ -955,7 +1504,16 @@
     "common": {
       "name": {
         "en": "Remote control countdown",
-        "de": "Fernsteuerung Countdown"
+        "de": "Fernsteuerung Countdown",
+        "ru": "Обратный отсчёт дистанционного управления",
+        "pt": "Contagem decrescente do controlo remoto",
+        "nl": "Aftelklok afstandsbediening",
+        "fr": "Décompte du contrôle à distance",
+        "it": "Conto alla rovescia controllo remoto",
+        "es": "Cuenta atrás del control remoto",
+        "pl": "Odliczanie zdalnego sterowania",
+        "uk": "Зворотний відлік дистанційного керування",
+        "zh-cn": "远程控制倒计时"
       },
       "type": "number",
       "role": "value",
@@ -971,7 +1529,16 @@
     "common": {
       "name": {
         "en": "Remote control mode",
-        "de": "Fernsteuerung Modus"
+        "de": "Fernsteuerung Modus",
+        "ru": "Режим дистанционного управления",
+        "pt": "Modo de controlo remoto",
+        "nl": "Afstandsbedieningsmodus",
+        "fr": "Mode de contrôle à distance",
+        "it": "Modalità controllo remoto",
+        "es": "Modo de control remoto",
+        "pl": "Tryb zdalnego sterowania",
+        "uk": "Режим дистанційного керування",
+        "zh-cn": "远程控制模式"
       },
       "type": "number",
       "role": "level",
@@ -999,7 +1566,16 @@
     "common": {
       "name": {
         "en": "Remote control timeout",
-        "de": "Fernsteuerung Timeout"
+        "de": "Fernsteuerung Timeout",
+        "ru": "Таймаут дистанционного управления",
+        "pt": "Tempo limite do controlo remoto",
+        "nl": "Time-out afstandsbediening",
+        "fr": "Délai d'expiration du contrôle à distance",
+        "it": "Timeout controllo remoto",
+        "es": "Tiempo de espera del control remoto",
+        "pl": "Limit czasu zdalnego sterowania",
+        "uk": "Тайм-аут дистанційного керування",
+        "zh-cn": "远程控制超时"
       },
       "type": "number",
       "role": "level",
@@ -1017,7 +1593,16 @@
     "common": {
       "name": {
         "en": "Remote active power",
-        "de": "Fernsteuerung Wirkleistung"
+        "de": "Fernsteuerung Wirkleistung",
+        "ru": "Активная мощность дистанционного управления",
+        "pt": "Potência ativa de controlo remoto",
+        "nl": "Actief vermogen afstandsbediening",
+        "fr": "Puissance active de contrôle à distance",
+        "it": "Potenza attiva controllo remoto",
+        "es": "Potencia activa de control remoto",
+        "pl": "Moc czynna zdalnego sterowania",
+        "uk": "Активна потужність дистанційного керування",
+        "zh-cn": "远程有功功率"
       },
       "type": "number",
       "role": "level.power",
@@ -1035,7 +1620,16 @@
     "common": {
       "name": {
         "en": "Remote reactive power",
-        "de": "Fernsteuerung Blindleistung"
+        "de": "Fernsteuerung Blindleistung",
+        "ru": "Реактивная мощность дистанционного управления",
+        "pt": "Potência reativa de controlo remoto",
+        "nl": "Reactief vermogen afstandsbediening",
+        "fr": "Puissance réactive de contrôle à distance",
+        "it": "Potenza reattiva controllo remoto",
+        "es": "Potencia reactiva de control remoto",
+        "pl": "Moc bierna zdalnego sterowania",
+        "uk": "Реактивна потужність дистанційного керування",
+        "zh-cn": "远程无功功率"
       },
       "type": "number",
       "role": "level.power",
@@ -1053,7 +1647,16 @@
     "common": {
       "name": {
         "en": "EPS/UPS output mode",
-        "de": "EPS/UPS Ausgang"
+        "de": "EPS/UPS Ausgang",
+        "ru": "Режим выхода EPS/UPS",
+        "pt": "Modo de saída EPS/UPS",
+        "nl": "EPS/UPS uitvoermodus",
+        "fr": "Mode de sortie EPS/UPS",
+        "it": "Modalità uscita EPS/UPS",
+        "es": "Modo de salida EPS/UPS",
+        "pl": "Tryb wyjścia EPS/UPS",
+        "uk": "Режим виходу EPS/UPS",
+        "zh-cn": "EPS/UPS输出模式"
       },
       "type": "number",
       "role": "level",
@@ -1075,7 +1678,16 @@
     "common": {
       "name": {
         "en": "Minimum SoC",
-        "de": "Minimaler Ladestand"
+        "de": "Minimaler Ladestand",
+        "ru": "Минимальный SoC",
+        "pt": "SoC mínimo",
+        "nl": "Minimale SoC",
+        "fr": "SoC minimum",
+        "it": "SoC minimo",
+        "es": "SoC mínimo",
+        "pl": "Minimalny SoC",
+        "uk": "Мінімальний SoC",
+        "zh-cn": "最低荷电状态"
       },
       "type": "number",
       "role": "level",
@@ -1093,7 +1705,16 @@
     "common": {
       "name": {
         "en": "Maximum SoC",
-        "de": "Maximaler Ladestand"
+        "de": "Maximaler Ladestand",
+        "ru": "Максимальный SoC",
+        "pt": "SoC máximo",
+        "nl": "Maximale SoC",
+        "fr": "SoC maximum",
+        "it": "SoC massimo",
+        "es": "SoC máximo",
+        "pl": "Maksymalny SoC",
+        "uk": "Максимальний SoC",
+        "zh-cn": "最高荷电状态"
       },
       "type": "number",
       "role": "level",
@@ -1111,7 +1732,16 @@
     "common": {
       "name": {
         "en": "Minimum SoC on-grid",
-        "de": "Minimaler Ladestand Netzbetrieb"
+        "de": "Minimaler Ladestand Netzbetrieb",
+        "ru": "Минимальный SoC при работе в сети",
+        "pt": "SoC mínimo em rede",
+        "nl": "Minimale SoC op net",
+        "fr": "SoC minimum sur réseau",
+        "it": "SoC minimo in rete",
+        "es": "SoC mínimo en red",
+        "pl": "Minimalny SoC przy pracy sieciowej",
+        "uk": "Мінімальний SoC при роботі в мережі",
+        "zh-cn": "并网最低荷电状态"
       },
       "type": "number",
       "role": "level",
@@ -1129,7 +1759,16 @@
     "common": {
       "name": {
         "en": "Max charge current",
-        "de": "Max. Ladestrom"
+        "de": "Max. Ladestrom",
+        "ru": "Макс. ток зарядки",
+        "pt": "Corrente de carga máx.",
+        "nl": "Max. laadstroom",
+        "fr": "Courant de charge max.",
+        "it": "Corrente di carica max.",
+        "es": "Corriente de carga máx.",
+        "pl": "Maks. prąd ładowania",
+        "uk": "Макс. струм зарядки",
+        "zh-cn": "最大充电电流"
       },
       "type": "number",
       "role": "level",
@@ -1147,7 +1786,16 @@
     "common": {
       "name": {
         "en": "Max discharge current",
-        "de": "Max. Entladestrom"
+        "de": "Max. Entladestrom",
+        "ru": "Макс. ток разрядки",
+        "pt": "Corrente de descarga máx.",
+        "nl": "Max. ontlaadstroom",
+        "fr": "Courant de décharge max.",
+        "it": "Corrente di scarica max.",
+        "es": "Corriente de descarga máx.",
+        "pl": "Maks. prąd rozładowania",
+        "uk": "Макс. струм розрядки",
+        "zh-cn": "最大放电电流"
       },
       "type": "number",
       "role": "level",
@@ -1165,7 +1813,16 @@
     "common": {
       "name": {
         "en": "Operating mode",
-        "de": "Betriebsmodus"
+        "de": "Betriebsmodus",
+        "ru": "Режим работы",
+        "pt": "Modo de operação",
+        "nl": "Bedrijfsmodus",
+        "fr": "Mode de fonctionnement",
+        "it": "Modalità operativa",
+        "es": "Modo de operación",
+        "pl": "Tryb pracy",
+        "uk": "Режим роботи",
+        "zh-cn": "运行模式"
       },
       "type": "number",
       "role": "level",
