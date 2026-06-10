@@ -208,6 +208,8 @@ All data points are created under `solakon-one.0.*`.
 
 ---
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 
 MIT License
