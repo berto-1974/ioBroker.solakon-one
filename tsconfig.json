@@ -4,8 +4,7 @@
         "checkJs": false,
         "allowJs": true,
         "noEmit": true,
-        "strict": false,
-        "moduleResolution": "node"
+        "strict": false
     },
     "include": ["main.js", "lib/**/*.js"]
 }
