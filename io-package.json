@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "news": {
+      "1.0.10": {
+        "en": "Fix W5005: use adapter.setTimeout in modbus.js; update eslint-config to 2.3.4; remove CHANGELOG_OLD.md",
+        "de": "W5005 behoben: adapter.setTimeout in modbus.js verwendet; eslint-config auf 2.3.4 aktualisiert; CHANGELOG_OLD.md entfernt",
+        "ru": "Исправлен W5005: adapter.setTimeout в modbus.js; eslint-config обновлён до 2.3.4; удалён CHANGELOG_OLD.md",
+        "pt": "Corrigido W5005: adapter.setTimeout em modbus.js; eslint-config actualizado para 2.3.4; CHANGELOG_OLD.md removido",
+        "nl": "W5005 opgelost: adapter.setTimeout in modbus.js; eslint-config bijgewerkt naar 2.3.4; CHANGELOG_OLD.md verwijderd",
+        "fr": "W5005 corrigé: adapter.setTimeout dans modbus.js; eslint-config mis à jour vers 2.3.4; CHANGELOG_OLD.md supprimé",
+        "it": "W5005 corretto: adapter.setTimeout in modbus.js; eslint-config aggiornato a 2.3.4; CHANGELOG_OLD.md rimosso",
+        "es": "W5005 corregido: adapter.setTimeout en modbus.js; eslint-config actualizado a 2.3.4; CHANGELOG_OLD.md eliminado",
+        "pl": "Naprawiono W5005: adapter.setTimeout w modbus.js; eslint-config zaktualizowano do 2.3.4; usunięto CHANGELOG_OLD.md",
+        "uk": "Виправлено W5005: adapter.setTimeout у modbus.js; eslint-config оновлено до 2.3.4; видалено CHANGELOG_OLD.md",
+        "zh-cn": "修复 W5005：在 modbus.js 中使用 adapter.setTimeout；eslint-config 更新至 2.3.4；删除 CHANGELOG_OLD.md"
+      },
       "1.0.9": {
         "en": "Fix JSON syntax error in io-package.json (trailing comma); limit news entries to 7 (E1032)",
         "de": "JSON-Syntaxfehler in io-package.json behoben (Trailing Comma); News-Einträge auf 7 begrenzt (E1032)",
@@ -80,19 +93,6 @@
         "pl": "Dodano Node.js 24 do macierzy testów CI; Node 24 używany do lint i deploy",
         "uk": "Додано Node.js 24 до матриці тестів CI; Node 24 використовується для lint та deploy",
         "zh-cn": "在 CI 测试矩阵中添加 Node.js 24；使用 Node 24 进行 lint 和部署"
-      },
-      "1.0.2": {
-        "en": "Fix: add changelog to README, remove obsolete .eslintrc.json, add release-script packages, VS Code schema, automerge workflow",
-        "de": "Fix: Changelog in README ergänzt, veraltete .eslintrc.json entfernt, release-script Pakete, VS Code Schema, Automerge-Workflow",
-        "ru": "Исправления: changelog в README, удалён .eslintrc.json, пакеты release-script, схема VS Code, автомерж",
-        "pt": "Fix: changelog no README, .eslintrc.json removido, pacotes release-script, schema VS Code, automerge",
-        "nl": "Fix: changelog in README, .eslintrc.json verwijderd, release-script packages, VS Code schema, automerge",
-        "fr": "Fix: changelog dans README, .eslintrc.json supprimé, packages release-script, schéma VS Code, automerge",
-        "it": "Fix: changelog nel README, .eslintrc.json rimosso, pacchetti release-script, schema VS Code, automerge",
-        "es": "Fix: changelog en README, .eslintrc.json eliminado, paquetes release-script, esquema VS Code, automerge",
-        "pl": "Fix: changelog w README, usunięto .eslintrc.json, pakiety release-script, schemat VS Code, automerge",
-        "uk": "Виправлення: changelog у README, видалено .eslintrc.json, пакети release-script, схема VS Code, автомердж",
-        "zh-cn": "修复：README 中添加 changelog，删除 .eslintrc.json，添加 release-script 包、VS Code schema 和自动合并工作流"
       }
     },
     "titleLang": {

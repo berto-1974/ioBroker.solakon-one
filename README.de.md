@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.10 (2026-06-10)
+- W5005 behoben: adapter.setTimeout in modbus.js; eslint-config auf 2.3.4 aktualisiert; CHANGELOG_OLD.md entfernt
+
 ### 1.0.9 (2026-06-09)
 - JSON-Syntaxfehler in io-package.json behoben; News-Einträge auf 7 begrenzt (E1032)
 

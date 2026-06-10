@@ -1419,7 +1419,7 @@ class SolakonOneAdapter extends utils.Adapter {
         await this.createAllObjects();
 
         // Modbus Hub initialisieren
-        this.hub = new SolakonModbusHub(host, port || 502, slaveId || 1, this.log);
+        this.hub = new SolakonModbusHub(host, port || 502, slaveId || 1, this.log, this);
 
         // Auf schreibbare States abonnieren
         this.subscribeStates('control.*');
