@@ -175,6 +175,10 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
+
+### **WORK IN PROGRESS**
+- (ioBroker-Bot) Adapter requires admin >= 7.8.23 now.
+
 ### 1.0.9 (2026-06-09)
 - Fix JSON syntax error in io-package.json; limit news entries to 7 (E1032)
 
