@@ -1,9 +1,0 @@
-{
-  "IP Adresse":                     "IP-адрес",
-  "Modbus TCP Port":                "Порт Modbus TCP",
-  "Modbus Geräte-ID":               "ID устройства Modbus",
-  "Update-Intervall (Sekunden)":    "Интервал обновления (секунды)",
-  "Standard: 502":                  "По умолчанию: 502",
-  "Modbus Slave-Adresse (Standard: 1)": "Адрес ведомого Modbus (по умолчанию: 1)",
-  "Wie oft werden die Daten abgerufen (1–300 Sekunden)": "Как часто опрашивается устройство (1–300 секунд)"
-}

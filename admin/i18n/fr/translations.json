@@ -1,9 +1,0 @@
-{
-  "IP Adresse":                     "Adresse IP",
-  "Modbus TCP Port":                "Port Modbus TCP",
-  "Modbus Geräte-ID":               "ID de l'appareil Modbus",
-  "Update-Intervall (Sekunden)":    "Intervalle de mise à jour (secondes)",
-  "Standard: 502":                  "Par défaut: 502",
-  "Modbus Slave-Adresse (Standard: 1)": "Adresse esclave Modbus (par défaut: 1)",
-  "Wie oft werden die Daten abgerufen (1–300 Sekunden)": "À quelle fréquence l'appareil est interrogé (1–300 secondes)"
-}

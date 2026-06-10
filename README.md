@@ -175,6 +175,9 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
+### 1.0.12 (2026-06-10)
+- Update @tsconfig/node22 to ^22.0.5 (W0083); migrate i18n to short format (S5601)
+
 ### 1.0.11 (2026-06-10)
 - Add CHANGELOG_OLD.md for older entries (W6020); add tsconfig.json and @tsconfig/node22 (S0085/S0087); add README link to CHANGELOG_OLD.md
 

@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "news": {
+      "1.0.12": {
+        "en": "Update @tsconfig/node22 to ^22.0.5 (W0083); migrate i18n to short format (S5601)",
+        "de": "@tsconfig/node22 auf ^22.0.5 aktualisiert (W0083); i18n auf Kurzformat migriert (S5601)",
+        "ru": "Обновлён @tsconfig/node22 до ^22.0.5 (W0083); i18n переведён в короткий формат (S5601)",
+        "pt": "@tsconfig/node22 actualizado para ^22.0.5 (W0083); i18n migrado para formato curto (S5601)",
+        "nl": "@tsconfig/node22 bijgewerkt naar ^22.0.5 (W0083); i18n gemigreerd naar kort formaat (S5601)",
+        "fr": "@tsconfig/node22 mis à jour vers ^22.0.5 (W0083); i18n migré vers le format court (S5601)",
+        "it": "@tsconfig/node22 aggiornato a ^22.0.5 (W0083); i18n migrato al formato breve (S5601)",
+        "es": "@tsconfig/node22 actualizado a ^22.0.5 (W0083); i18n migrado a formato corto (S5601)",
+        "pl": "@tsconfig/node22 zaktualizowany do ^22.0.5 (W0083); i18n zmigrowany do krótkiego formatu (S5601)",
+        "uk": "@tsconfig/node22 оновлено до ^22.0.5 (W0083); i18n переведено у короткий формат (S5601)",
+        "zh-cn": "将 @tsconfig/node22 更新至 ^22.0.5（W0083）；i18n 迁移至短格式（S5601）"
+      },
       "1.0.11": {
         "en": "Add CHANGELOG_OLD.md (W6020); add tsconfig.json and @tsconfig/node22 (S0085/S0087); add README link",
         "de": "CHANGELOG_OLD.md ergänzt (W6020); tsconfig.json und @tsconfig/node22 hinzugefügt (S0085/S0087); README-Link ergänzt",
@@ -80,19 +93,6 @@
         "pl": "Poprawki błędów repo checker: Node.js >=22, aktualizacja release-script, usunięto zbędny eslint, dodano macOS CI, poprawiono setInterval/setTimeout",
         "uk": "Виправлено помилки repo checker: Node.js >=22, оновлення release-script, видалено зайвий eslint, додано macOS CI, виправлено setInterval/setTimeout",
         "zh-cn": "修复 repo checker 错误：Node.js >=22，更新 release-script，移除冗余 eslint，添加 macOS CI，修正 setInterval/setTimeout 用法"
-      },
-      "1.0.4": {
-        "en": "Add multilingual names (11 languages) to all datapoints",
-        "de": "Mehrsprachige Bezeichnungen (11 Sprachen) für alle Datenpunkte ergänzt",
-        "ru": "Добавлены многоязычные названия (11 языков) для всех точек данных",
-        "pt": "Adicionados nomes multilingues (11 idiomas) a todos os pontos de dados",
-        "nl": "Meertalige namen (11 talen) toegevoegd aan alle datapunten",
-        "fr": "Ajout de noms multilingues (11 langues) à tous les points de données",
-        "it": "Aggiunti nomi multilingua (11 lingue) a tutti i punti dati",
-        "es": "Añadidos nombres multilingues (11 idiomas) a todos los puntos de datos",
-        "pl": "Dodano wielojęzyczne nazwy (11 języków) do wszystkich punktów danych",
-        "uk": "Додано багатомовні назви (11 мов) до всіх точок даних",
-        "zh-cn": "为所有数据点添加多语言名称（11 种语言）"
       }
     },
     "titleLang": {
