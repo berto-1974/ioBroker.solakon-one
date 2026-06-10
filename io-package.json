@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "news": {
+      "1.0.13": {
+        "en": "Fix invalid role 'level.power' (E1008): use 'level' for power setpoint states",
+        "de": "Ungültige Rolle 'level.power' behoben (E1008): 'level' für Leistungs-Sollwerte verwendet",
+        "ru": "Исправлена недопустимая роль 'level.power' (E1008): используется 'level' для уставок мощности",
+        "pt": "Corrigida role inválida 'level.power' (E1008): 'level' usado para estados de setpoint de potência",
+        "nl": "Ongeldige role 'level.power' gecorrigeerd (E1008): 'level' gebruikt voor vermogen setpoint-staten",
+        "fr": "Correction du rôle invalide 'level.power' (E1008): 'level' utilisé pour les états de consigne de puissance",
+        "it": "Corretta role non valida 'level.power' (E1008): 'level' usato per stati setpoint di potenza",
+        "es": "Corregida role inválida 'level.power' (E1008): 'level' usado para estados de punto de ajuste de potencia",
+        "pl": "Poprawiono nieprawidłową rolę 'level.power' (E1008): 'level' używane dla stanów punktu nastawczego mocy",
+        "uk": "Виправлено недійсну роль 'level.power' (E1008): 'level' для станів уставки потужності",
+        "zh-cn": "修复无效角色 'level.power'（E1008）：功率设定点状态改用 'level'"
+      },
       "1.0.12": {
         "en": "Update @tsconfig/node22 to ^22.0.5 (W0083); migrate i18n to short format (S5601)",
         "de": "@tsconfig/node22 auf ^22.0.5 aktualisiert (W0083); i18n auf Kurzformat migriert (S5601)",
@@ -80,19 +93,6 @@
         "pl": "Poprawiono wymaganie Node.js w README (>=22); dodano devDependency @types/node",
         "uk": "Виправлено вимогу Node.js у README (>=22); додано devDependency @types/node",
         "zh-cn": "修正 README 中 Node.js 版本要求（>=22）；添加 @types/node devDependency"
-      },
-      "1.0.5": {
-        "en": "Fix repo checker errors: Node.js >=22, release-script update, remove redundant eslint, add macOS CI, fix setInterval/setTimeout usage",
-        "de": "Repo-Checker-Fehler behoben: Node.js >=22, release-script aktualisiert, redundantes eslint entfernt, macOS CI ergänzt, setInterval/setTimeout korrigiert",
-        "ru": "Исправлены ошибки repo checker: Node.js >=22, обновление release-script, удалён лишний eslint, добавлен macOS в CI, исправлено использование setInterval/setTimeout",
-        "pt": "Correcção de erros do repo checker: Node.js >=22, actualização do release-script, eslint redundante removido, CI macOS adicionado, setInterval/setTimeout corrigido",
-        "nl": "Repo checker fouten opgelost: Node.js >=22, release-script bijgewerkt, redundante eslint verwijderd, macOS CI toegevoegd, setInterval/setTimeout gecorrigeerd",
-        "fr": "Correction des erreurs du repo checker: Node.js >=22, mise à jour release-script, eslint redondant supprimé, CI macOS ajouté, setInterval/setTimeout corrigé",
-        "it": "Corretti errori repo checker: Node.js >=22, aggiornamento release-script, eslint ridondante rimosso, CI macOS aggiunto, setInterval/setTimeout corretto",
-        "es": "Corrección de errores del repo checker: Node.js >=22, actualización release-script, eslint redundante eliminado, CI macOS añadido, setInterval/setTimeout corregido",
-        "pl": "Poprawki błędów repo checker: Node.js >=22, aktualizacja release-script, usunięto zbędny eslint, dodano macOS CI, poprawiono setInterval/setTimeout",
-        "uk": "Виправлено помилки repo checker: Node.js >=22, оновлення release-script, видалено зайвий eslint, додано macOS CI, виправлено setInterval/setTimeout",
-        "zh-cn": "修复 repo checker 错误：Node.js >=22，更新 release-script，移除冗余 eslint，添加 macOS CI，修正 setInterval/setTimeout 用法"
       }
     },
     "titleLang": {

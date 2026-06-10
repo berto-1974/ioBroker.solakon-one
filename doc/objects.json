@@ -1605,7 +1605,7 @@
         "zh-cn": "远程有功功率"
       },
       "type": "number",
-      "role": "level.power",
+      "role": "level",
       "read": true,
       "write": true,
       "unit": "W",
@@ -1632,7 +1632,7 @@
         "zh-cn": "远程无功功率"
       },
       "type": "number",
-      "role": "level.power",
+      "role": "level",
       "read": true,
       "write": true,
       "unit": "var",

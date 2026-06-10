@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.13 (2026-06-11)
+- Ungültige Rolle 'level.power' für Leistungs-Sollwerte behoben (E1008)
+
 ### 1.0.12 (2026-06-10)
 - @tsconfig/node22 auf ^22.0.5 aktualisiert (W0083); i18n auf Kurzformat migriert (S5601)
 

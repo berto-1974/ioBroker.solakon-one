@@ -175,6 +175,9 @@ All data points are created under `solakon-one.0.*`.
 
 ## Changelog
 
+### 1.0.13 (2026-06-11)
+- Fix invalid role 'level.power' for power setpoint states (E1008)
+
 ### 1.0.12 (2026-06-10)
 - Update @tsconfig/node22 to ^22.0.5 (W0083); migrate i18n to short format (S5601)
 
