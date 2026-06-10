@@ -1,6 +1,6 @@
-[
-  {
-    "_id": "info",
+{
+  "solakon-one.0.info": {
+    "_id": "solakon-one.0.info",
     "type": "channel",
     "common": {
       "name": {
@@ -19,8 +19,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "device",
+  "solakon-one.0.device": {
+    "_id": "solakon-one.0.device",
     "type": "channel",
     "common": {
       "name": {
@@ -39,8 +39,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv",
+  "solakon-one.0.pv": {
+    "_id": "solakon-one.0.pv",
     "type": "channel",
     "common": {
       "name": {
@@ -59,8 +59,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery",
+  "solakon-one.0.battery": {
+    "_id": "solakon-one.0.battery",
     "type": "channel",
     "common": {
       "name": {
@@ -79,8 +79,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid",
+  "solakon-one.0.grid": {
+    "_id": "solakon-one.0.grid",
     "type": "channel",
     "common": {
       "name": {
@@ -99,8 +99,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter",
+  "solakon-one.0.inverter": {
+    "_id": "solakon-one.0.inverter",
     "type": "channel",
     "common": {
       "name": {
@@ -119,8 +119,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "eps",
+  "solakon-one.0.eps": {
+    "_id": "solakon-one.0.eps",
     "type": "channel",
     "common": {
       "name": {
@@ -139,8 +139,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "status",
+  "solakon-one.0.status": {
+    "_id": "solakon-one.0.status",
     "type": "channel",
     "common": {
       "name": {
@@ -159,8 +159,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control",
+  "solakon-one.0.control": {
+    "_id": "solakon-one.0.control",
     "type": "channel",
     "common": {
       "name": {
@@ -179,8 +179,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "info.connection",
+  "solakon-one.0.info.connection": {
+    "_id": "solakon-one.0.info.connection",
     "type": "state",
     "common": {
       "name": {
@@ -204,8 +204,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "device.model",
+  "solakon-one.0.device.model": {
+    "_id": "solakon-one.0.device.model",
     "type": "state",
     "common": {
       "name": {
@@ -228,8 +228,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "device.serial",
+  "solakon-one.0.device.serial": {
+    "_id": "solakon-one.0.device.serial",
     "type": "state",
     "common": {
       "name": {
@@ -252,8 +252,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "device.fw_master",
+  "solakon-one.0.device.fw_master": {
+    "_id": "solakon-one.0.device.fw_master",
     "type": "state",
     "common": {
       "name": {
@@ -276,8 +276,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "device.fw_slave",
+  "solakon-one.0.device.fw_slave": {
+    "_id": "solakon-one.0.device.fw_slave",
     "type": "state",
     "common": {
       "name": {
@@ -300,8 +300,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.total_power",
+  "solakon-one.0.pv.total_power": {
+    "_id": "solakon-one.0.pv.total_power",
     "type": "state",
     "common": {
       "name": {
@@ -325,8 +325,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.total_energy",
+  "solakon-one.0.pv.total_energy": {
+    "_id": "solakon-one.0.pv.total_energy",
     "type": "state",
     "common": {
       "name": {
@@ -350,8 +350,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv1_voltage",
+  "solakon-one.0.pv.pv1_voltage": {
+    "_id": "solakon-one.0.pv.pv1_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -375,8 +375,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv1_current",
+  "solakon-one.0.pv.pv1_current": {
+    "_id": "solakon-one.0.pv.pv1_current",
     "type": "state",
     "common": {
       "name": {
@@ -400,8 +400,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv1_power",
+  "solakon-one.0.pv.pv1_power": {
+    "_id": "solakon-one.0.pv.pv1_power",
     "type": "state",
     "common": {
       "name": {
@@ -425,8 +425,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv2_voltage",
+  "solakon-one.0.pv.pv2_voltage": {
+    "_id": "solakon-one.0.pv.pv2_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -450,8 +450,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv2_current",
+  "solakon-one.0.pv.pv2_current": {
+    "_id": "solakon-one.0.pv.pv2_current",
     "type": "state",
     "common": {
       "name": {
@@ -475,8 +475,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv2_power",
+  "solakon-one.0.pv.pv2_power": {
+    "_id": "solakon-one.0.pv.pv2_power",
     "type": "state",
     "common": {
       "name": {
@@ -500,8 +500,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv3_voltage",
+  "solakon-one.0.pv.pv3_voltage": {
+    "_id": "solakon-one.0.pv.pv3_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -525,8 +525,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv3_current",
+  "solakon-one.0.pv.pv3_current": {
+    "_id": "solakon-one.0.pv.pv3_current",
     "type": "state",
     "common": {
       "name": {
@@ -550,8 +550,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv3_power",
+  "solakon-one.0.pv.pv3_power": {
+    "_id": "solakon-one.0.pv.pv3_power",
     "type": "state",
     "common": {
       "name": {
@@ -575,8 +575,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv4_voltage",
+  "solakon-one.0.pv.pv4_voltage": {
+    "_id": "solakon-one.0.pv.pv4_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -600,8 +600,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv4_current",
+  "solakon-one.0.pv.pv4_current": {
+    "_id": "solakon-one.0.pv.pv4_current",
     "type": "state",
     "common": {
       "name": {
@@ -625,8 +625,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "pv.pv4_power",
+  "solakon-one.0.pv.pv4_power": {
+    "_id": "solakon-one.0.pv.pv4_power",
     "type": "state",
     "common": {
       "name": {
@@ -650,8 +650,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.soc",
+  "solakon-one.0.battery.soc": {
+    "_id": "solakon-one.0.battery.soc",
     "type": "state",
     "common": {
       "name": {
@@ -675,8 +675,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.voltage",
+  "solakon-one.0.battery.voltage": {
+    "_id": "solakon-one.0.battery.voltage",
     "type": "state",
     "common": {
       "name": {
@@ -700,8 +700,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.current",
+  "solakon-one.0.battery.current": {
+    "_id": "solakon-one.0.battery.current",
     "type": "state",
     "common": {
       "name": {
@@ -725,8 +725,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.power",
+  "solakon-one.0.battery.power": {
+    "_id": "solakon-one.0.battery.power",
     "type": "state",
     "common": {
       "name": {
@@ -750,8 +750,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.combined_power",
+  "solakon-one.0.battery.combined_power": {
+    "_id": "solakon-one.0.battery.combined_power",
     "type": "state",
     "common": {
       "name": {
@@ -775,8 +775,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.total_charge",
+  "solakon-one.0.battery.total_charge": {
+    "_id": "solakon-one.0.battery.total_charge",
     "type": "state",
     "common": {
       "name": {
@@ -800,8 +800,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.total_discharge",
+  "solakon-one.0.battery.total_discharge": {
+    "_id": "solakon-one.0.battery.total_discharge",
     "type": "state",
     "common": {
       "name": {
@@ -825,8 +825,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.bms1_soh",
+  "solakon-one.0.battery.bms1_soh": {
+    "_id": "solakon-one.0.battery.bms1_soh",
     "type": "state",
     "common": {
       "name": {
@@ -850,8 +850,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.design_energy",
+  "solakon-one.0.battery.design_energy": {
+    "_id": "solakon-one.0.battery.design_energy",
     "type": "state",
     "common": {
       "name": {
@@ -875,8 +875,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.ambient_temp",
+  "solakon-one.0.battery.ambient_temp": {
+    "_id": "solakon-one.0.battery.ambient_temp",
     "type": "state",
     "common": {
       "name": {
@@ -900,8 +900,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.max_temp",
+  "solakon-one.0.battery.max_temp": {
+    "_id": "solakon-one.0.battery.max_temp",
     "type": "state",
     "common": {
       "name": {
@@ -925,8 +925,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "battery.min_temp",
+  "solakon-one.0.battery.min_temp": {
+    "_id": "solakon-one.0.battery.min_temp",
     "type": "state",
     "common": {
       "name": {
@@ -950,8 +950,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.off_grid",
+  "solakon-one.0.grid.off_grid": {
+    "_id": "solakon-one.0.grid.off_grid",
     "type": "state",
     "common": {
       "name": {
@@ -974,8 +974,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.r_voltage",
+  "solakon-one.0.grid.r_voltage": {
+    "_id": "solakon-one.0.grid.r_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -999,8 +999,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.s_voltage",
+  "solakon-one.0.grid.s_voltage": {
+    "_id": "solakon-one.0.grid.s_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -1024,8 +1024,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.t_voltage",
+  "solakon-one.0.grid.t_voltage": {
+    "_id": "solakon-one.0.grid.t_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -1049,8 +1049,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.frequency",
+  "solakon-one.0.grid.frequency": {
+    "_id": "solakon-one.0.grid.frequency",
     "type": "state",
     "common": {
       "name": {
@@ -1074,8 +1074,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.active_power",
+  "solakon-one.0.grid.active_power": {
+    "_id": "solakon-one.0.grid.active_power",
     "type": "state",
     "common": {
       "name": {
@@ -1099,8 +1099,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.reactive_power",
+  "solakon-one.0.grid.reactive_power": {
+    "_id": "solakon-one.0.grid.reactive_power",
     "type": "state",
     "common": {
       "name": {
@@ -1124,8 +1124,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.power_factor",
+  "solakon-one.0.grid.power_factor": {
+    "_id": "solakon-one.0.grid.power_factor",
     "type": "state",
     "common": {
       "name": {
@@ -1148,8 +1148,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.total_export",
+  "solakon-one.0.grid.total_export": {
+    "_id": "solakon-one.0.grid.total_export",
     "type": "state",
     "common": {
       "name": {
@@ -1173,8 +1173,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.total_import",
+  "solakon-one.0.grid.total_import": {
+    "_id": "solakon-one.0.grid.total_import",
     "type": "state",
     "common": {
       "name": {
@@ -1198,8 +1198,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "grid.standard",
+  "solakon-one.0.grid.standard": {
+    "_id": "solakon-one.0.grid.standard",
     "type": "state",
     "common": {
       "name": {
@@ -1226,8 +1226,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter.temperature",
+  "solakon-one.0.inverter.temperature": {
+    "_id": "solakon-one.0.inverter.temperature",
     "type": "state",
     "common": {
       "name": {
@@ -1251,8 +1251,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter.frequency",
+  "solakon-one.0.inverter.frequency": {
+    "_id": "solakon-one.0.inverter.frequency",
     "type": "state",
     "common": {
       "name": {
@@ -1276,8 +1276,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter.daily_energy",
+  "solakon-one.0.inverter.daily_energy": {
+    "_id": "solakon-one.0.inverter.daily_energy",
     "type": "state",
     "common": {
       "name": {
@@ -1301,8 +1301,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter.total_energy",
+  "solakon-one.0.inverter.total_energy": {
+    "_id": "solakon-one.0.inverter.total_energy",
     "type": "state",
     "common": {
       "name": {
@@ -1326,8 +1326,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter.operating_mode",
+  "solakon-one.0.inverter.operating_mode": {
+    "_id": "solakon-one.0.inverter.operating_mode",
     "type": "state",
     "common": {
       "name": {
@@ -1359,8 +1359,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "inverter.network_status",
+  "solakon-one.0.inverter.network_status": {
+    "_id": "solakon-one.0.inverter.network_status",
     "type": "state",
     "common": {
       "name": {
@@ -1388,8 +1388,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "eps.voltage",
+  "solakon-one.0.eps.voltage": {
+    "_id": "solakon-one.0.eps.voltage",
     "type": "state",
     "common": {
       "name": {
@@ -1413,8 +1413,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "eps.current",
+  "solakon-one.0.eps.current": {
+    "_id": "solakon-one.0.eps.current",
     "type": "state",
     "common": {
       "name": {
@@ -1438,8 +1438,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "eps.power",
+  "solakon-one.0.eps.power": {
+    "_id": "solakon-one.0.eps.power",
     "type": "state",
     "common": {
       "name": {
@@ -1463,8 +1463,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "status.remote_control",
+  "solakon-one.0.status.remote_control": {
+    "_id": "solakon-one.0.status.remote_control",
     "type": "state",
     "common": {
       "name": {
@@ -1498,8 +1498,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "status.remote_countdown",
+  "solakon-one.0.status.remote_countdown": {
+    "_id": "solakon-one.0.status.remote_countdown",
     "type": "state",
     "common": {
       "name": {
@@ -1523,8 +1523,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.remote_control_mode",
+  "solakon-one.0.control.remote_control_mode": {
+    "_id": "solakon-one.0.control.remote_control_mode",
     "type": "state",
     "common": {
       "name": {
@@ -1560,8 +1560,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.remote_timeout",
+  "solakon-one.0.control.remote_timeout": {
+    "_id": "solakon-one.0.control.remote_timeout",
     "type": "state",
     "common": {
       "name": {
@@ -1587,8 +1587,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.remote_active_power",
+  "solakon-one.0.control.remote_active_power": {
+    "_id": "solakon-one.0.control.remote_active_power",
     "type": "state",
     "common": {
       "name": {
@@ -1614,8 +1614,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.remote_reactive_power",
+  "solakon-one.0.control.remote_reactive_power": {
+    "_id": "solakon-one.0.control.remote_reactive_power",
     "type": "state",
     "common": {
       "name": {
@@ -1641,8 +1641,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.eps_output",
+  "solakon-one.0.control.eps_output": {
+    "_id": "solakon-one.0.control.eps_output",
     "type": "state",
     "common": {
       "name": {
@@ -1672,8 +1672,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.minimum_soc",
+  "solakon-one.0.control.minimum_soc": {
+    "_id": "solakon-one.0.control.minimum_soc",
     "type": "state",
     "common": {
       "name": {
@@ -1699,8 +1699,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.maximum_soc",
+  "solakon-one.0.control.maximum_soc": {
+    "_id": "solakon-one.0.control.maximum_soc",
     "type": "state",
     "common": {
       "name": {
@@ -1726,8 +1726,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.minimum_soc_ongrid",
+  "solakon-one.0.control.minimum_soc_ongrid": {
+    "_id": "solakon-one.0.control.minimum_soc_ongrid",
     "type": "state",
     "common": {
       "name": {
@@ -1753,8 +1753,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.max_charge_current",
+  "solakon-one.0.control.max_charge_current": {
+    "_id": "solakon-one.0.control.max_charge_current",
     "type": "state",
     "common": {
       "name": {
@@ -1780,8 +1780,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.max_discharge_current",
+  "solakon-one.0.control.max_discharge_current": {
+    "_id": "solakon-one.0.control.max_discharge_current",
     "type": "state",
     "common": {
       "name": {
@@ -1807,8 +1807,8 @@
     },
     "native": {}
   },
-  {
-    "_id": "control.operating_mode",
+  "solakon-one.0.control.operating_mode": {
+    "_id": "solakon-one.0.control.operating_mode",
     "type": "state",
     "common": {
       "name": {
@@ -1842,4 +1842,4 @@
     },
     "native": {}
   }
-]
+}
