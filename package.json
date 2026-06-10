@@ -1,22 +1,30 @@
 {
-  "name":        "iobroker.solakon-one",
-  "version":     "1.0.9",
+  "name": "iobroker.solakon-one",
+  "version": "1.0.9",
   "description": "ioBroker Adapter für den Solakon ONE Hybrid-Wechselrichter (Modbus TCP)",
   "author": {
-    "name":  "Marco Bertulies",
+    "name": "Marco Bertulies",
     "email": "berto74online@gmail.com"
   },
-  "homepage":    "https://github.com/berto-1974/ioBroker.solakon-one",
-  "license":     "MIT",
-  "keywords":    ["ioBroker", "solakon", "solar", "inverter", "modbus", "energy", "battery"],
+  "homepage": "https://github.com/berto-1974/ioBroker.solakon-one",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "solakon",
+    "solar",
+    "inverter",
+    "modbus",
+    "energy",
+    "battery"
+  ],
   "repository": {
     "type": "git",
-    "url":  "https://github.com/berto-1974/ioBroker.solakon-one"
+    "url": "https://github.com/berto-1974/ioBroker.solakon-one"
   },
   "bugs": {
     "url": "https://github.com/berto-1974/ioBroker.solakon-one/issues"
   },
-  "main":  "main.js",
+  "main": "main.js",
   "files": [
     "admin/",
     "lib/",
@@ -30,28 +38,29 @@
     "node": ">=22"
   },
   "scripts": {
-    "start":        "node main.js",
-    "test":         "npm run test:unit && npm run test:package",
-    "test:unit":        "mocha test/unit/*.test.js --exit",
-    "test:package":     "mocha test/package --exit",
+    "start": "node main.js",
+    "test": "npm run test:unit && npm run test:package",
+    "test:unit": "mocha test/unit/*.test.js --exit",
+    "test:package": "mocha test/package --exit",
     "test:integration": "echo No integration tests defined",
-    "lint":         "eslint main.js lib/",
-    "translate":    "translate-adapter",
-    "release":      "release-script",
-    "postinstall":  "node postinstall.js"
+    "lint": "eslint main.js lib/",
+    "translate": "translate-adapter",
+    "release": "release-script",
+    "postinstall": "node postinstall.js"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.3.2",
-    "jsmodbus":               "^4.0.10"
+    "jsmodbus": "^4.0.10"
   },
   "devDependencies": {
-    "@alcalzone/release-script":                    "^5.2.1",
-    "@alcalzone/release-script-plugin-iobroker":   "^5.2.0",
-    "@alcalzone/release-script-plugin-license":    "^5.2.0",
+    "@alcalzone/release-script": "^5.2.1",
+    "@alcalzone/release-script-plugin-iobroker": "^5.2.0",
+    "@alcalzone/release-script-plugin-license": "^5.2.0",
     "@alcalzone/release-script-plugin-manual-review": "^5.2.0",
-    "@iobroker/adapter-dev":  "^1.5.0",
-    "@iobroker/eslint-config":"^2.2.0",
-    "@iobroker/testing":      "^5.2.2",
-    "@types/node":            "^22.0.0"
+    "@iobroker/adapter-dev": "^1.5.0",
+    "@iobroker/eslint-config": "^2.2.0",
+    "@iobroker/testing": "^5.2.2",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^22.0.0"
   }
 }
