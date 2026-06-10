@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "news": {
+      "1.0.11": {
+        "en": "Add CHANGELOG_OLD.md (W6020); add tsconfig.json and @tsconfig/node22 (S0085/S0087); add README link",
+        "de": "CHANGELOG_OLD.md ergänzt (W6020); tsconfig.json und @tsconfig/node22 hinzugefügt (S0085/S0087); README-Link ergänzt",
+        "ru": "Добавлен CHANGELOG_OLD.md (W6020); добавлены tsconfig.json и @tsconfig/node22 (S0085/S0087); ссылка в README",
+        "pt": "Adicionado CHANGELOG_OLD.md (W6020); tsconfig.json e @tsconfig/node22 adicionados (S0085/S0087); link no README",
+        "nl": "CHANGELOG_OLD.md toegevoegd (W6020); tsconfig.json en @tsconfig/node22 toegevoegd (S0085/S0087); link in README",
+        "fr": "Ajout de CHANGELOG_OLD.md (W6020); tsconfig.json et @tsconfig/node22 ajoutés (S0085/S0087); lien dans README",
+        "it": "Aggiunto CHANGELOG_OLD.md (W6020); tsconfig.json e @tsconfig/node22 aggiunti (S0085/S0087); link nel README",
+        "es": "Añadido CHANGELOG_OLD.md (W6020); tsconfig.json y @tsconfig/node22 añadidos (S0085/S0087); enlace en README",
+        "pl": "Dodano CHANGELOG_OLD.md (W6020); tsconfig.json i @tsconfig/node22 dodane (S0085/S0087); link w README",
+        "uk": "Додано CHANGELOG_OLD.md (W6020); tsconfig.json та @tsconfig/node22 додані (S0085/S0087); посилання у README",
+        "zh-cn": "添加 CHANGELOG_OLD.md（W6020）；添加 tsconfig.json 和 @tsconfig/node22（S0085/S0087）；README 链接"
+      },
       "1.0.10": {
         "en": "Fix W5005: use adapter.setTimeout in modbus.js; update eslint-config to 2.3.4; remove CHANGELOG_OLD.md",
         "de": "W5005 behoben: adapter.setTimeout in modbus.js verwendet; eslint-config auf 2.3.4 aktualisiert; CHANGELOG_OLD.md entfernt",
@@ -80,19 +93,6 @@
         "pl": "Dodano wielojęzyczne nazwy (11 języków) do wszystkich punktów danych",
         "uk": "Додано багатомовні назви (11 мов) до всіх точок даних",
         "zh-cn": "为所有数据点添加多语言名称（11 种语言）"
-      },
-      "1.0.3": {
-        "en": "Add Node.js 24 to CI test matrix; use Node 24 for lint and deploy",
-        "de": "Node.js 24 in CI-Testmatrix aufgenommen; Node 24 für Lint und Deploy verwendet",
-        "ru": "Добавлен Node.js 24 в матрицу тестирования CI; Node 24 используется для lint и деплоя",
-        "pt": "Adicionado Node.js 24 à matriz de testes CI; Node 24 usado para lint e deploy",
-        "nl": "Node.js 24 toegevoegd aan CI-testmatrix; Node 24 gebruikt voor lint en deploy",
-        "fr": "Ajout de Node.js 24 à la matrice de tests CI; Node 24 utilisé pour lint et déploiement",
-        "it": "Aggiunto Node.js 24 alla matrice di test CI; Node 24 usato per lint e deploy",
-        "es": "Añadido Node.js 24 a la matriz de pruebas CI; Node 24 usado para lint y despliegue",
-        "pl": "Dodano Node.js 24 do macierzy testów CI; Node 24 używany do lint i deploy",
-        "uk": "Додано Node.js 24 до матриці тестів CI; Node 24 використовується для lint та deploy",
-        "zh-cn": "在 CI 测试矩阵中添加 Node.js 24；使用 Node 24 进行 lint 和部署"
       }
     },
     "titleLang": {

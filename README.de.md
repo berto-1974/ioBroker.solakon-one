@@ -172,6 +172,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 
 ## Changelog
 
+### 1.0.11 (2026-06-10)
+- CHANGELOG_OLD.md für ältere Einträge ergänzt (W6020); tsconfig.json und @tsconfig/node22 hinzugefügt (S0085/S0087); README-Link zu CHANGELOG_OLD.md ergänzt
+
 ### 1.0.10 (2026-06-10)
 - W5005 behoben: adapter.setTimeout in modbus.js; eslint-config auf 2.3.4 aktualisiert; CHANGELOG_OLD.md entfernt
 
@@ -205,6 +208,8 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 - Alle Sensor-Datenpunkte (PV, Batterie, Netz, Wechselrichter, EPS)
 - Alle Steuerungs-Datenpunkte (Betriebsmodus, SoC-Grenzen, Fernsteuerung, EPS)
 - Admin-UI mit jsonConfig
+
+Ältere Changelog-Einträge befinden sich in [CHANGELOG_OLD.md](CHANGELOG_OLD.md).
 
 ---
 
