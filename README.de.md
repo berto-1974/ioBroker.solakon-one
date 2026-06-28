@@ -2,7 +2,7 @@
 
 **ioBroker Adapter für den Solakon ONE Hybrid-Wechselrichter**
 
-Überwacht und steuert den Solakon ONE Hybrid-Solar-Wechselrichter mit Batteriespeicher über das lokale Netzwerk via **Modbus TCP** (Port 502). Hintergrundinformationen zum Gerät und seiner Modbus-Schnittstelle siehe [Solakon ONE Home Assistant Integration](https://github.com/solakon-de/solakon-one-homeassistant).
+Überwacht und steuert den Solakon ONE Hybrid-Solar-Wechselrichter ([www.solakon.de](https://www.solakon.de)) mit Batteriespeicher über das lokale Netzwerk via **Modbus TCP** (Port 502).
 
 **[English documentation](README.md)**
 
@@ -167,6 +167,9 @@ Alle Datenpunkte werden unter `solakon-one.<Instanz>.*` erstellt (z.B. `solakon-
 ---
 
 ## Changelog
+
+### 1.0.15 (2026-06-28)
+- README-Herstellerlink korrigiert: solakon.de statt des nicht verwandten Home-Assistant-Integration-Repos
 
 ### 1.0.14 (2026-06-28)
 - Manuelles Review umgesetzt: postinstall-Skript entfernt, englische Log-Meldungen, i18n für Statuswerte und instanceObjects, übersetzbare Admin-Labels, sequentielles Polling, README-Korrekturen, Integrationstests

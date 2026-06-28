@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "news": {
+      "1.0.15": {
+        "en": "Fix README manufacturer link: use solakon.de instead of the unrelated Home Assistant integration repo",
+        "de": "README-Herstellerlink korrigiert: solakon.de statt des nicht verwandten Home-Assistant-Integration-Repos",
+        "ru": "Исправлена ссылка производителя в README: solakon.de вместо репозитория интеграции Home Assistant",
+        "pt": "Corrigida a ligação do fabricante no README: solakon.de em vez do repositório da integração Home Assistant",
+        "nl": "Fabrikantlink in README gecorrigeerd: solakon.de in plaats van de Home Assistant-integratierepo",
+        "fr": "Correction du lien fabricant dans README: solakon.de au lieu du dépôt d'intégration Home Assistant",
+        "it": "Corretto il link al produttore nel README: solakon.de invece del repository dell'integrazione Home Assistant",
+        "es": "Corregido el enlace del fabricante en README: solakon.de en lugar del repositorio de la integración Home Assistant",
+        "pl": "Poprawiono link do producenta w README: solakon.de zamiast repozytorium integracji Home Assistant",
+        "uk": "Виправлено посилання на виробника в README: solakon.de замість репозиторію інтеграції Home Assistant",
+        "zh-cn": "修正 README 中的制造商链接：改为 solakon.de，而非无关的 Home Assistant 集成仓库"
+      },
       "1.0.14": {
         "en": "Address manual review feedback: remove postinstall script, English log messages, i18n state labels and instanceObjects, translatable admin labels, sequential polling, README fixes, integration tests",
         "de": "Manuelles Review umgesetzt: postinstall-Skript entfernt, englische Log-Meldungen, i18n für Statuswerte und instanceObjects, übersetzbare Admin-Labels, sequentielles Polling, README-Korrekturen, Integrationstests",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono błąd składni JSON w io-package.json; wpisy news ograniczone do 7 (E1032)",
         "uk": "Виправлено синтаксичну помилку JSON у io-package.json; новини обмежені до 7 (E1032)",
         "zh-cn": "修复 io-package.json 中的 JSON 语法错误（多余逗号）；新闻条目限制为 7 条（E1032）"
-      },
-      "1.0.7": {
-        "en": "Fix @types/node version specifier: change >=22 to ^22.0.0 (W0066)",
-        "de": "@types/node Versionsangabe korrigiert: >=22 auf ^22.0.0 geändert (W0066)",
-        "ru": "Исправлена версия @types/node: >=22 заменено на ^22.0.0 (W0066)",
-        "pt": "Corrigida especificação de versão @types/node: >=22 alterado para ^22.0.0 (W0066)",
-        "nl": "@types/node versiespecificatie gecorrigeerd: >=22 gewijzigd naar ^22.0.0 (W0066)",
-        "fr": "Correction de la spécification de version @types/node: >=22 remplacé par ^22.0.0 (W0066)",
-        "it": "Corretta specifica versione @types/node: >=22 modificato in ^22.0.0 (W0066)",
-        "es": "Corregida especificación de versión @types/node: >=22 cambiado a ^22.0.0 (W0066)",
-        "pl": "Poprawiono specyfikację wersji @types/node: >=22 zmieniono na ^22.0.0 (W0066)",
-        "uk": "Виправлено специфікацію версії @types/node: >=22 змінено на ^22.0.0 (W0066)",
-        "zh-cn": "修正 @types/node 版本规范：将 >=22 改为 ^22.0.0（W0066）"
       }
     },
     "titleLang": {
