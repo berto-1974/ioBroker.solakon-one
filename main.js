@@ -1409,11 +1409,11 @@ class SolakonOneAdapter extends utils.Adapter {
         const { host, port, slaveId, scanInterval } = this.config;
 
         if (!host) {
-            this.log.error('Keine IP-Adresse konfiguriert. Bitte im Admin-Panel einstellen.');
+            this.log.error('No IP address configured. Please set it in the admin panel.');
             return;
         }
 
-        this.log.info(`Verbinde mit Solakon ONE: ${host}:${port || 502} (Unit ID: ${slaveId || 1})`);
+        this.log.info(`Connecting to Solakon ONE: ${host}:${port || 502} (Unit ID: ${slaveId || 1})`);
 
         // Alle ioBroker-Objekte (Datenpunkte) anlegen
         await this.createAllObjects();
@@ -1424,20 +1424,19 @@ class SolakonOneAdapter extends utils.Adapter {
         // Auf schreibbare States abonnieren
         this.subscribeStates('control.*');
 
-        // Ersten Poll sofort starten
+        // Polling-Intervall berechnen
+        this.pollInterval = Math.max(1, Math.min(300, scanInterval || 30)) * 1000;
+        this.log.info(`Polling started – interval: ${this.pollInterval / 1000}s`);
+
+        // Ersten Poll sofort starten, danach jeweils erst nach Abschluss erneut planen
         await this.doPoll();
-
-        // Polling-Intervall einrichten
-        const interval = Math.max(1, Math.min(300, scanInterval || 30)) * 1000;
-        this.pollTimer = this.setInterval(() => this.doPoll(), interval);
-
-        this.log.info(`Polling gestartet – Intervall: ${interval / 1000}s`);
     }
 
     onUnload(callback) {
         try {
+            this.unloaded = true;
             if (this.pollTimer) {
-                this.clearInterval(this.pollTimer);
+                this.clearTimeout(this.pollTimer);
                 this.pollTimer = null;
             }
             if (this.hub) {
@@ -1462,7 +1461,7 @@ class SolakonOneAdapter extends utils.Adapter {
             const data = await this.hub.readAllRegisters();
 
             if (Object.keys(data).length === 0) {
-                this.log.warn('Keine Daten vom Gerät empfangen');
+                this.log.warn('No data received from device');
                 await this.setStateAsync('info.connection', { val: false, ack: true });
                 return;
             }
@@ -1470,11 +1469,16 @@ class SolakonOneAdapter extends utils.Adapter {
             await this.updateAllStates(data);
             await this.setStateAsync('info.connection', { val: true, ack: true });
         } catch (err) {
-            this.log.error(`Poll-Fehler: ${err.message}`);
+            this.log.error(`Poll error: ${err.message}`);
             await this.setStateAsync('info.connection', { val: false, ack: true });
             // Verbindung trennen, damit beim nächsten Poll neu verbunden wird
             if (this.hub) {
                 this.hub.disconnect();
+            }
+        } finally {
+            // Nächsten Poll erst nach Abschluss des aktuellen planen (kein Overlap)
+            if (!this.unloaded) {
+                this.pollTimer = this.setTimeout(() => this.doPoll(), this.pollInterval);
             }
         }
     }
@@ -1493,22 +1497,22 @@ class SolakonOneAdapter extends utils.Adapter {
 
         const ctrlDef = CONTROL_STATES.find(c => c.id === key);
         if (!ctrlDef) {
-            this.log.warn(`Unbekannter Steuer-State: ${id}`);
+            this.log.warn(`Unknown control state: ${id}`);
             return;
         }
 
         if (!this.hub || !this.hub.isConnected()) {
-            this.log.warn(`Schreiben nicht möglich – nicht verbunden (${key})`);
+            this.log.warn(`Cannot write – not connected (${key})`);
             return;
         }
 
         try {
             await this.hub.writeNamedRegister(ctrlDef.writeReg, state.val);
-            this.log.info(`Register '${ctrlDef.writeReg}' geschrieben: ${state.val}`);
+            this.log.info(`Register '${ctrlDef.writeReg}' written: ${state.val}`);
             // State mit ack bestätigen
             await this.setStateAsync(id, { val: state.val, ack: true });
         } catch (err) {
-            this.log.error(`Schreiben von '${ctrlDef.writeReg}' fehlgeschlagen: ${err.message}`);
+            this.log.error(`Writing '${ctrlDef.writeReg}' failed: ${err.message}`);
         }
     }
 

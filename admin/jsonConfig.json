@@ -13,8 +13,7 @@
       "xl":          6,
       "validator":   "^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$",
       "validatorErrorText": "Bitte eine gültige IP-Adresse eingeben",
-      "help":        "IP-Adresse des Solakon ONE Geräts im lokalen Netzwerk",
-      "noTranslation": true
+      "help":        "IP-Adresse des Solakon ONE Geräts im lokalen Netzwerk"
     },
     "port": {
       "type":    "number",

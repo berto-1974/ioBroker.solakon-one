@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "news": {
+      "1.0.14": {
+        "en": "Address manual review feedback: remove postinstall script, English log messages, i18n state labels and instanceObjects, translatable admin labels, sequential polling, README fixes, integration tests",
+        "de": "Manuelles Review umgesetzt: postinstall-Skript entfernt, englische Log-Meldungen, i18n für Statuswerte und instanceObjects, übersetzbare Admin-Labels, sequentielles Polling, README-Korrekturen, Integrationstests",
+        "ru": "Учтены замечания ручного обзора: удалён postinstall, английские логи, i18n для статусов и instanceObjects, переводимые метки админки, последовательный опрос, исправления README, интеграционные тесты",
+        "pt": "Feedback da revisão manual implementado: script postinstall removido, mensagens de log em inglês, i18n para estados e instanceObjects, etiquetas admin traduzíveis, polling sequencial, correções no README, testes de integração",
+        "nl": "Feedback van handmatige review verwerkt: postinstall-script verwijderd, Engelse logmeldingen, i18n voor statuswaarden en instanceObjects, vertaalbare adminlabels, sequentiële polling, README-correcties, integratietests",
+        "fr": "Retour de la revue manuelle pris en compte: script postinstall supprimé, messages de log en anglais, i18n pour les états et instanceObjects, libellés admin traduisibles, polling séquentiel, corrections README, tests d'intégration",
+        "it": "Feedback della revisione manuale recepito: script postinstall rimosso, messaggi di log in inglese, i18n per stati e instanceObjects, etichette admin traducibili, polling sequenziale, correzioni README, test di integrazione",
+        "es": "Comentarios de la revisión manual aplicados: script postinstall eliminado, mensajes de registro en inglés, i18n para estados e instanceObjects, etiquetas de admin traducibles, sondeo secuencial, correcciones en README, pruebas de integración",
+        "pl": "Uwzględniono uwagi z manualnego przeglądu: usunięto skrypt postinstall, angielskie komunikaty logów, i18n dla stanów i instanceObjects, tłumaczone etykiety admina, sekwencyjne odpytywanie, poprawki README, testy integracyjne",
+        "uk": "Враховано зауваження ручного огляду: видалено скрипт postinstall, англійські повідомлення журналу, i18n для станів та instanceObjects, перекладні мітки адмінки, послідовний опитування, виправлення README, інтеграційні тести",
+        "zh-cn": "落实人工审查反馈：移除 postinstall 脚本，日志改为英文，状态值和 instanceObjects 支持多语言，管理界面标签可翻译，改为顺序轮询，修正 README，添加集成测试"
+      },
       "1.0.13": {
         "en": "Fix invalid role 'level.power' (E1008): use 'level' for power setpoint states",
         "de": "Ungültige Rolle 'level.power' behoben (E1008): 'level' für Leistungs-Sollwerte verwendet",
@@ -80,19 +93,6 @@
         "pl": "Poprawiono specyfikację wersji @types/node: >=22 zmieniono na ^22.0.0 (W0066)",
         "uk": "Виправлено специфікацію версії @types/node: >=22 змінено на ^22.0.0 (W0066)",
         "zh-cn": "修正 @types/node 版本规范：将 >=22 改为 ^22.0.0（W0066）"
-      },
-      "1.0.6": {
-        "en": "Fix Node.js requirement in README (>=22); add @types/node devDependency",
-        "de": "Node.js-Anforderung in README korrigiert (>=22); @types/node devDependency ergänzt",
-        "ru": "Исправлено требование Node.js в README (>=22); добавлена devDependency @types/node",
-        "pt": "Corrigido requisito Node.js no README (>=22); adicionada devDependency @types/node",
-        "nl": "Node.js-vereiste gecorrigeerd in README (>=22); @types/node devDependency toegevoegd",
-        "fr": "Correction de la version Node.js requise dans README (>=22); ajout devDependency @types/node",
-        "it": "Correcto requisito Node.js nel README (>=22); aggiunta devDependency @types/node",
-        "es": "Corregido requisito Node.js en README (>=22); añadida devDependency @types/node",
-        "pl": "Poprawiono wymaganie Node.js w README (>=22); dodano devDependency @types/node",
-        "uk": "Виправлено вимогу Node.js у README (>=22); додано devDependency @types/node",
-        "zh-cn": "修正 README 中 Node.js 版本要求（>=22）；添加 @types/node devDependency"
       }
     },
     "titleLang": {
@@ -160,14 +160,40 @@
     {
       "_id": "info",
       "type": "channel",
-      "common": { "name": { "en": "Connection Info", "de": "Verbindungsinformation" } },
+      "common": {
+        "name": {
+          "en": "Connection Info",
+          "de": "Verbindungsinformation",
+          "ru": "Информация о подключении",
+          "pt": "Informação de ligação",
+          "nl": "Verbindingsinformatie",
+          "fr": "Informations de connexion",
+          "it": "Informazioni connessione",
+          "es": "Información de conexión",
+          "pl": "Informacje o połączeniu",
+          "uk": "Інформація про з'єднання",
+          "zh-cn": "连接信息"
+        }
+      },
       "native": {}
     },
     {
       "_id": "info.connection",
       "type": "state",
       "common": {
-        "name":  { "en": "Connected", "de": "Verbunden" },
+        "name": {
+          "en": "Connected",
+          "de": "Verbunden",
+          "ru": "Подключено",
+          "pt": "Ligado",
+          "nl": "Verbonden",
+          "fr": "Connecté",
+          "it": "Connesso",
+          "es": "Conectado",
+          "pl": "Połączono",
+          "uk": "Підключено",
+          "zh-cn": "已连接"
+        },
         "type":  "boolean",
         "role":  "indicator.connected",
         "read":  true,
@@ -179,49 +205,161 @@
     {
       "_id": "device",
       "type": "channel",
-      "common": { "name": { "en": "Device Information", "de": "Geräteinformationen" } },
+      "common": {
+        "name": {
+          "en": "Device Information",
+          "de": "Geräteinformationen",
+          "ru": "Информация об устройстве",
+          "pt": "Informações do dispositivo",
+          "nl": "Apparaatinformatie",
+          "fr": "Informations sur l'appareil",
+          "it": "Informazioni dispositivo",
+          "es": "Información del dispositivo",
+          "pl": "Informacje o urządzeniu",
+          "uk": "Інформація про пристрій",
+          "zh-cn": "设备信息"
+        }
+      },
       "native": {}
     },
     {
       "_id": "pv",
       "type": "channel",
-      "common": { "name": { "en": "Photovoltaics", "de": "Photovoltaik" } },
+      "common": {
+        "name": {
+          "en": "Photovoltaics",
+          "de": "Photovoltaik",
+          "ru": "Фотовольтаика",
+          "pt": "Fotovoltaico",
+          "nl": "Fotovoltaïsch",
+          "fr": "Photovoltaïque",
+          "it": "Fotovoltaico",
+          "es": "Fotovoltaico",
+          "pl": "Fotowoltaika",
+          "uk": "Фотовольтаїка",
+          "zh-cn": "光伏"
+        }
+      },
       "native": {}
     },
     {
       "_id": "battery",
       "type": "channel",
-      "common": { "name": { "en": "Battery", "de": "Batterie" } },
+      "common": {
+        "name": {
+          "en": "Battery",
+          "de": "Batterie",
+          "ru": "Аккумулятор",
+          "pt": "Bateria",
+          "nl": "Batterij",
+          "fr": "Batterie",
+          "it": "Batteria",
+          "es": "Batería",
+          "pl": "Bateria",
+          "uk": "Акумулятор",
+          "zh-cn": "电池"
+        }
+      },
       "native": {}
     },
     {
       "_id": "grid",
       "type": "channel",
-      "common": { "name": { "en": "Grid", "de": "Netz" } },
+      "common": {
+        "name": {
+          "en": "Grid",
+          "de": "Netz",
+          "ru": "Сеть",
+          "pt": "Rede",
+          "nl": "Net",
+          "fr": "Réseau",
+          "it": "Rete",
+          "es": "Red",
+          "pl": "Sieć",
+          "uk": "Мережа",
+          "zh-cn": "电网"
+        }
+      },
       "native": {}
     },
     {
       "_id": "inverter",
       "type": "channel",
-      "common": { "name": { "en": "Inverter", "de": "Wechselrichter" } },
+      "common": {
+        "name": {
+          "en": "Inverter",
+          "de": "Wechselrichter",
+          "ru": "Инвертор",
+          "pt": "Inversor",
+          "nl": "Omvormer",
+          "fr": "Onduleur",
+          "it": "Inverter",
+          "es": "Inversor",
+          "pl": "Falownik",
+          "uk": "Інвертор",
+          "zh-cn": "逆变器"
+        }
+      },
       "native": {}
     },
     {
       "_id": "eps",
       "type": "channel",
-      "common": { "name": { "en": "Emergency Power (EPS/UPS)", "de": "Notstromversorgung (EPS/UPS)" } },
+      "common": {
+        "name": {
+          "en": "Emergency Power (EPS/UPS)",
+          "de": "Notstromversorgung (EPS/UPS)",
+          "ru": "Аварийное питание (EPS/UPS)",
+          "pt": "Energia de emergência (EPS/UPS)",
+          "nl": "Noodstroom (EPS/UPS)",
+          "fr": "Alimentation de secours (EPS/UPS)",
+          "it": "Alimentazione di emergenza (EPS/UPS)",
+          "es": "Energía de emergencia (EPS/UPS)",
+          "pl": "Zasilanie awaryjne (EPS/UPS)",
+          "uk": "Аварійне живлення (EPS/UPS)",
+          "zh-cn": "应急电源 (EPS/UPS)"
+        }
+      },
       "native": {}
     },
     {
       "_id": "status",
       "type": "channel",
-      "common": { "name": { "en": "Status", "de": "Status" } },
+      "common": {
+        "name": {
+          "en": "Status",
+          "de": "Status",
+          "ru": "Статус",
+          "pt": "Estado",
+          "nl": "Status",
+          "fr": "Statut",
+          "it": "Stato",
+          "es": "Estado",
+          "pl": "Status",
+          "uk": "Статус",
+          "zh-cn": "状态"
+        }
+      },
       "native": {}
     },
     {
       "_id": "control",
       "type": "channel",
-      "common": { "name": { "en": "Control", "de": "Steuerung" } },
+      "common": {
+        "name": {
+          "en": "Control",
+          "de": "Steuerung",
+          "ru": "Управление",
+          "pt": "Controlo",
+          "nl": "Bediening",
+          "fr": "Commande",
+          "it": "Controllo",
+          "es": "Control",
+          "pl": "Sterowanie",
+          "uk": "Керування",
+          "zh-cn": "控制"
+        }
+      },
       "native": {}
     }
   ]

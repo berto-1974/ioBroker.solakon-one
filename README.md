@@ -5,7 +5,7 @@
 
 **ioBroker adapter for the Solakon ONE hybrid solar inverter**
 
-Monitors and controls the Solakon ONE hybrid solar inverter with battery storage over the local network via **Modbus TCP** (Port 502).
+Monitors and controls the Solakon ONE hybrid solar inverter with battery storage over the local network via **Modbus TCP** (Port 502). See the [Solakon ONE Home Assistant integration project](https://github.com/solakon-de/solakon-one-homeassistant) for background on the device and its Modbus interface.
 
 **[Deutsch / German documentation](README.de.md)**
 
@@ -22,11 +22,7 @@ Monitors and controls the Solakon ONE hybrid solar inverter with battery storage
 
 ## Installation
 
-1. Open ioBroker Admin interface
-2. **Adapters** → **+ Add adapter**
-3. Select the tab **"Install from URL"** (GitHub icon)
-4. Enter URL: `https://github.com/berto-1974/ioBroker.solakon-one`
-5. Click **Install**
+Install via the ioBroker Admin interface: **Adapters** → search for **"solakon-one"** → **Install**.
 
 ---
 
@@ -43,7 +39,7 @@ Monitors and controls the Solakon ONE hybrid solar inverter with battery storage
 
 ## Data Points
 
-All data points are created under `solakon-one.0.*`.
+All data points are created under `solakon-one.<instance>.*` (e.g. `solakon-one.0.*` for the default instance number 0; multiple instances are possible).
 
 ### Connection Status
 
@@ -174,6 +170,9 @@ All data points are created under `solakon-one.0.*`.
 ---
 
 ## Changelog
+
+### 1.0.14 (2026-06-28)
+- Address manual review feedback: remove postinstall script, English log messages, i18n state labels and instanceObjects, translatable admin labels, sequential polling, README fixes, integration tests
 
 ### 1.0.13 (2026-06-11)
 - Fix invalid role 'level.power' for power setpoint states (E1008)

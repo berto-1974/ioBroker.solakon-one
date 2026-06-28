@@ -1,6 +1,6 @@
 {
   "name":        "iobroker.solakon-one",
-  "version":     "1.0.13",
+  "version":     "1.0.14",
   "description": "ioBroker Adapter für den Solakon ONE Hybrid-Wechselrichter (Modbus TCP)",
   "author": {
     "name":  "Marco Bertulies",
@@ -21,7 +21,6 @@
     "admin/",
     "lib/",
     "main.js",
-    "postinstall.js",
     "io-package.json",
     "LICENSE",
     "README.md"
@@ -34,14 +33,13 @@
     "test":         "npm run test:unit && npm run test:package",
     "test:unit":        "mocha test/unit/*.test.js --exit",
     "test:package":     "mocha test/package --exit",
-    "test:integration": "echo No integration tests defined",
+    "test:integration": "mocha test/integration.js --exit --timeout 60000",
     "lint":         "eslint main.js lib/",
     "translate":    "translate-adapter",
-    "release":      "release-script",
-    "postinstall":  "node postinstall.js"
+    "release":      "release-script"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.3.2",
+    "@iobroker/adapter-core": "^3.4.1",
     "jsmodbus":               "^4.0.10"
   },
   "devDependencies": {
@@ -53,6 +51,7 @@
     "@iobroker/eslint-config":"^2.3.4",
     "@iobroker/testing":      "^5.2.2",
     "@tsconfig/node22":       "^22.0.5",
-    "@types/node":            "^22.0.0"
+    "@types/node":            "^22.0.0",
+    "chai":                   "^4.5.0"
   }
 }

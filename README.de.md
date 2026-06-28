@@ -2,7 +2,7 @@
 
 **ioBroker Adapter für den Solakon ONE Hybrid-Wechselrichter**
 
-Überwacht und steuert den Solakon ONE Hybrid-Solar-Wechselrichter mit Batteriespeicher über das lokale Netzwerk via **Modbus TCP** (Port 502).
+Überwacht und steuert den Solakon ONE Hybrid-Solar-Wechselrichter mit Batteriespeicher über das lokale Netzwerk via **Modbus TCP** (Port 502). Hintergrundinformationen zum Gerät und seiner Modbus-Schnittstelle siehe [Solakon ONE Home Assistant Integration](https://github.com/solakon-de/solakon-one-homeassistant).
 
 **[English documentation](README.md)**
 
@@ -19,11 +19,7 @@
 
 ## Installation
 
-1. ioBroker Admin-Oberfläche öffnen
-2. **Adapter** → **+ Adapter hinzufügen**
-3. Tab **"Von URL installieren"** (GitHub-Icon) wählen
-4. URL eingeben: `https://github.com/berto-1974/ioBroker.solakon-one`
-5. **Installieren** klicken
+Installation über die ioBroker Admin-Oberfläche: **Adapter** → nach **„solakon-one"** suchen → **Installieren**.
 
 ---
 
@@ -40,7 +36,7 @@
 
 ## Datenpunkte
 
-Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
+Alle Datenpunkte werden unter `solakon-one.<Instanz>.*` erstellt (z.B. `solakon-one.0.*` für die Standard-Instanznummer 0; mehrere Instanzen sind möglich).
 
 ### Verbindungsstatus
 
@@ -171,6 +167,9 @@ Alle Datenpunkte werden unter `solakon-one.0.*` erstellt.
 ---
 
 ## Changelog
+
+### 1.0.14 (2026-06-28)
+- Manuelles Review umgesetzt: postinstall-Skript entfernt, englische Log-Meldungen, i18n für Statuswerte und instanceObjects, übersetzbare Admin-Labels, sequentielles Polling, README-Korrekturen, Integrationstests
 
 ### 1.0.13 (2026-06-11)
 - Ungültige Rolle 'level.power' für Leistungs-Sollwerte behoben (E1008)

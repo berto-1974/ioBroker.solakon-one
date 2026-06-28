@@ -1,5 +1,7 @@
 {
     "IP Adresse": "Endereço IP",
+    "Bitte eine gültige IP-Adresse eingeben": "Introduza um endereço IP válido",
+    "IP-Adresse des Solakon ONE Geräts im lokalen Netzwerk": "Endereço IP do dispositivo Solakon ONE na rede local",
     "Modbus Geräte-ID": "ID do dispositivo Modbus",
     "Modbus Slave-Adresse (Standard: 1)": "Endereço slave Modbus (padrão: 1)",
     "Modbus TCP Port": "Porta Modbus TCP",

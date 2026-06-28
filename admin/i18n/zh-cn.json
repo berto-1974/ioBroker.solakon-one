@@ -1,5 +1,7 @@
 {
     "IP Adresse": "IP地址",
+    "Bitte eine gültige IP-Adresse eingeben": "请输入有效的IP地址",
+    "IP-Adresse des Solakon ONE Geräts im lokalen Netzwerk": "本地网络中Solakon ONE设备的IP地址",
     "Modbus Geräte-ID": "Modbus设备ID",
     "Modbus Slave-Adresse (Standard: 1)": "Modbus从站地址（默认：1）",
     "Modbus TCP Port": "Modbus TCP端口",
