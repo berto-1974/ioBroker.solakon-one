@@ -171,6 +171,10 @@ All data points are created under `solakon-one.<instance>.*` (e.g. `solakon-one.
 
 ## Changelog
 
+
+### **WORK IN PROGRESS**
+- (ioBroker-Bot) Adapter requires admin >= 7.8.23 now.
+
 ### 1.0.15 (2026-06-28)
 - Fix README manufacturer link: use solakon.de instead of the unrelated Home Assistant integration repo
 

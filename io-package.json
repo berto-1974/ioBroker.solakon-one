@@ -1,6 +1,6 @@
 {
   "common": {
-    "name":    "solakon-one",
+    "name": "solakon-one",
     "version": "1.0.15",
     "news": {
       "1.0.15": {
@@ -121,38 +121,51 @@
       "uk": "Моніторинг та керування гібридним сонячним інвертором Solakon ONE через Modbus TCP",
       "zh-cn": "通过 Modbus TCP 监控 Solakon ONE 混合太阳能逆变器"
     },
-    "authors":  ["Marco Bertulies <berto74online@gmail.com>"],
-    "keywords": ["solar", "inverter", "solakon", "modbus", "energy", "battery"],
+    "authors": [
+      "Marco Bertulies <berto74online@gmail.com>"
+    ],
+    "keywords": [
+      "solar",
+      "inverter",
+      "solakon",
+      "modbus",
+      "energy",
+      "battery"
+    ],
     "licenseInformation": {
       "license": "MIT",
-      "type":    "free"
+      "type": "free"
     },
     "platform": "Javascript/Node.js",
-    "icon":     "solakon.png",
-    "extIcon":  "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
-    "readme":   "https://github.com/berto-1974/ioBroker.solakon-one#readme",
+    "icon": "solakon.png",
+    "extIcon": "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
+    "readme": "https://github.com/berto-1974/ioBroker.solakon-one#readme",
     "loglevel": "info",
-    "mode":     "daemon",
-    "type":     "energy",
-    "tier":     3,
+    "mode": "daemon",
+    "type": "energy",
+    "tier": 3,
     "connectionType": "local",
-    "dataSource":     "poll",
-    "enabled":  true,
-    "compact":  true,
+    "dataSource": "poll",
+    "enabled": true,
+    "compact": true,
     "adminUI": {
       "config": "json"
     },
     "dependencies": [
-      { "js-controller": ">=6.0.11" }
+      {
+        "js-controller": ">=6.0.11"
+      }
     ],
     "globalDependencies": [
-      { "admin": ">=7.6.20" }
+      {
+        "admin": ">=7.8.23"
+      }
     ]
   },
   "native": {
-    "host":         "192.168.1.100",
-    "port":         502,
-    "slaveId":      1,
+    "host": "192.168.1.100",
+    "port": 502,
+    "slaveId": 1,
     "scanInterval": 30
   },
   "objects": [],
@@ -194,11 +207,11 @@
           "uk": "Підключено",
           "zh-cn": "已连接"
         },
-        "type":  "boolean",
-        "role":  "indicator.connected",
-        "read":  true,
+        "type": "boolean",
+        "role": "indicator.connected",
+        "read": true,
         "write": false,
-        "def":   false
+        "def": false
       },
       "native": {}
     },
