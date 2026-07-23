@@ -1518,7 +1518,9 @@ class SolakonOneAdapter extends utils.Adapter {
                 this.pollTimer = null;
             }
             if (this.hub) {
-                this.hub.disconnect();
+                // Shutdown muss zügig bleiben – nicht auf die grazile Trennung warten,
+                // ggf. Ablehnung stillschweigend verwerfen (disconnect() sollte nie ablehnen).
+                this.hub.disconnect().catch(() => {});
                 this.hub = null;
             }
             this.setState('info.connection', { val: false, ack: true });
@@ -1530,10 +1532,40 @@ class SolakonOneAdapter extends utils.Adapter {
 
     // ─── Polling ───────────────────────────────────────────────────────────
 
+    /**
+     * Baut die Verbindung auf, mit einem kurzen Retry bei transienten Fehlern
+     * (z. B. ECONNRESET direkt beim Verbindungsaufbau). Wirft den letzten
+     * Fehler weiter, falls auch der zweite Versuch fehlschlägt.
+     *
+     * @returns {Promise<void>}
+     */
+    async _connectWithRetry() {
+        const maxAttempts = 2;
+        const retryDelayMs = 1500;
+        let lastErr;
+
+        for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+            try {
+                await this.hub.connect();
+                return;
+            } catch (err) {
+                lastErr = err;
+                if (attempt < maxAttempts) {
+                    this.log.debug(
+                        `Connect attempt ${attempt}/${maxAttempts} failed: ${err.message}. Retrying in ${retryDelayMs}ms...`,
+                    );
+                    await new Promise(resolve => this.setTimeout(resolve, retryDelayMs));
+                }
+            }
+        }
+
+        throw lastErr;
+    }
+
     async doPoll() {
         try {
             if (!this.hub.isConnected()) {
-                await this.hub.connect();
+                await this._connectWithRetry();
             }
 
             const data = await this.hub.readAllRegisters();
@@ -1549,9 +1581,10 @@ class SolakonOneAdapter extends utils.Adapter {
         } catch (err) {
             this.log.error(`Poll error: ${err.message}`);
             await this.setStateAsync('info.connection', { val: false, ack: true });
-            // Verbindung trennen, damit beim nächsten Poll neu verbunden wird
+            // Verbindung grazil trennen, damit beim nächsten Poll neu verbunden wird
+            // (kurze Gnadenfrist gibt dem Gerät Zeit, seinen Verbindungs-Slot freizugeben)
             if (this.hub) {
-                this.hub.disconnect();
+                await this.hub.disconnect();
             }
         } finally {
             // Nächsten Poll erst nach Abschluss des aktuellen planen (kein Overlap)
@@ -1610,7 +1643,16 @@ class SolakonOneAdapter extends utils.Adapter {
      * @param {object} common - vorbereitetes common-Objekt für dieses State-Objekt
      */
     async _createOrHealStateObject(fullId, common) {
-        await this.setObjectNotExistsAsync(fullId, { type: 'state', common, native: {} });
+        const created = await this.setObjectNotExistsAsync(fullId, { type: 'state', common, native: {} });
+
+        // setObjectNotExistsAsync liefert {id} zurück, wenn das Objekt gerade NEU
+        // angelegt wurde – dann ist common.states/common.desc bereits garantiert
+        // korrekt (identisch zu dem, was gerade geschrieben wurde) und der
+        // zusätzliche Heilungs-Check unten kann entfallen. Existierte das Objekt
+        // schon (falsy Rückgabe), läuft die Heilung wie gehabt weiter (Issue #44).
+        if (created && created.id) {
+            return;
+        }
 
         if (!common.states && !common.desc) {
             return;
@@ -1745,69 +1787,78 @@ class SolakonOneAdapter extends utils.Adapter {
             },
         };
 
-        for (const ch of channels) {
-            await this.setObjectNotExistsAsync(ch, {
-                type: 'channel',
-                common: { name: channelNames[ch] || ch },
-                native: {},
-            });
-        }
+        // Drei Phasen nacheinander (Channels vor States, für eine saubere Baumansicht),
+        // aber jede Phase intern parallel statt sequentiell – vermeidet ~90 einzeln
+        // awaitete Objekt-DB-Aufrufe vor dem Verbindungsaufbau zum Wechselrichter.
+        await Promise.all(
+            channels.map(ch =>
+                this.setObjectNotExistsAsync(ch, {
+                    type: 'channel',
+                    common: { name: channelNames[ch] || ch },
+                    native: {},
+                }),
+            ),
+        );
 
         // Sensor-States anlegen (nur lesen)
-        for (const def of SENSOR_STATES) {
-            const fullId = `${def.ch}.${def.id}`;
-            const common = {
-                name: def.name,
-                type: def.type,
-                role: def.role || 'value',
-                read: true,
-                write: false,
-            };
-            if (def.unit) {
-                common.unit = def.unit;
-            }
-            if (def.desc) {
-                common.desc = def.desc;
-            }
-            if (def.states) {
-                common.states = def.states; // GRID_STANDARD: bereits reine Strings
-            } else if (def.statesKey) {
-                common.states = this.resolvedStatesByKey[def.statesKey];
-            }
+        await Promise.all(
+            SENSOR_STATES.map(def => {
+                const fullId = `${def.ch}.${def.id}`;
+                const common = {
+                    name: def.name,
+                    type: def.type,
+                    role: def.role || 'value',
+                    read: true,
+                    write: false,
+                };
+                if (def.unit) {
+                    common.unit = def.unit;
+                }
+                if (def.desc) {
+                    common.desc = def.desc;
+                }
+                if (def.states) {
+                    common.states = def.states; // GRID_STANDARD: bereits reine Strings
+                } else if (def.statesKey) {
+                    common.states = this.resolvedStatesByKey[def.statesKey];
+                }
 
-            await this._createOrHealStateObject(fullId, common);
-        }
+                return this._createOrHealStateObject(fullId, common);
+            }),
+        );
 
         // Steuer-States anlegen (lesen und schreiben)
-        for (const def of CONTROL_STATES) {
-            const fullId = `control.${def.id}`;
-            const common = {
-                name: def.name,
-                type: def.type,
-                role: def.role || 'level',
-                read: true,
-                write: true,
-            };
-            if (def.unit) {
-                common.unit = def.unit;
-            }
-            if (def.min !== undefined) {
-                common.min = def.min;
-            }
-            if (def.max !== undefined) {
-                common.max = def.max;
-            }
-            if (def.desc) {
-                common.desc = def.desc;
-            }
-            if (def.states) {
-                common.states = def.states; // GRID_STANDARD: bereits reine Strings
-            } else if (def.statesKey) {
-                common.states = this.resolvedStatesByKey[def.statesKey];
-            }
+        await Promise.all(
+            CONTROL_STATES.map(def => {
+                const fullId = `control.${def.id}`;
+                const common = {
+                    name: def.name,
+                    type: def.type,
+                    role: def.role || 'level',
+                    read: true,
+                    write: true,
+                };
+                if (def.unit) {
+                    common.unit = def.unit;
+                }
+                if (def.min !== undefined) {
+                    common.min = def.min;
+                }
+                if (def.max !== undefined) {
+                    common.max = def.max;
+                }
+                if (def.desc) {
+                    common.desc = def.desc;
+                }
+                if (def.states) {
+                    common.states = def.states; // GRID_STANDARD: bereits reine Strings
+                } else if (def.statesKey) {
+                    common.states = this.resolvedStatesByKey[def.statesKey];
+                }
 
-            await this._createOrHealStateObject(fullId, common);
-        }
+                return this._createOrHealStateObject(fullId, common);
+            }),
+        );
     }
 
     // ─── States aktualisieren ──────────────────────────────────────────────

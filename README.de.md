@@ -168,6 +168,10 @@ Alle Datenpunkte werden unter `solakon-one.<Instanz>.*` erstellt (z.B. `solakon-
 
 ## Changelog
 
+### 1.0.17 (2026-07-24)
+- Adapter-Start beschleunigt: alle Datenpunkte werden jetzt parallel statt sequentiell angelegt/geheilt
+- Modbus-Reconnect robuster gemacht (graziler Verbindungsabbau, automatischer Verbindungs-Retry), um ECONNRESET-Trennungen zu reduzieren
+
 ### 1.0.16 (2026-07-23)
 - Admin-GUI-Absturz beim Hovern von Enum-Werten im Object Tree behoben (#44): common.states wird jetzt pro Sprache auf reine Strings statt Übersetzungsobjekte aufgelöst, bestehende Installationen werden automatisch selbst geheilt
 - common.desc (Englisch/Deutsch) für Steuer- und Status-Datenpunkte ergänzt

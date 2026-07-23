@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "news": {
+      "1.0.17": {
+        "en": "Speed up adapter startup by creating/healing all datapoints in parallel instead of sequentially; make Modbus reconnect more robust (graceful socket close, automatic connect retry) to reduce ECONNRESET disconnects.",
+        "de": "Adapter-Start beschleunigt: alle Datenpunkte werden jetzt parallel statt sequentiell angelegt/geheilt; Modbus-Reconnect robuster gemacht (graziler Verbindungsabbau, automatischer Verbindungs-Retry), um ECONNRESET-Trennungen zu reduzieren.",
+        "ru": "Ускорен запуск адаптера: все точки данных теперь создаются/восстанавливаются параллельно, а не последовательно; повышена устойчивость переподключения Modbus (аккуратное закрытие сокета, автоматический повтор подключения) для снижения количества обрывов ECONNRESET.",
+        "pt": "Início do adaptador acelerado: todos os pontos de dados agora são criados/reparados em paralelo em vez de sequencialmente; reconexão Modbus tornada mais robusta (fecho gracioso do socket, nova tentativa automática de ligação) para reduzir desconexões ECONNRESET.",
+        "nl": "Adapterstart versneld: alle datapunten worden nu parallel in plaats van sequentieel aangemaakt/hersteld; Modbus-herverbinding robuuster gemaakt (nette socket-afsluiting, automatische verbindingspoging) om ECONNRESET-onderbrekingen te verminderen.",
+        "fr": "Démarrage de l'adaptateur accéléré : tous les points de données sont désormais créés/réparés en parallèle plutôt que séquentiellement ; reconnexion Modbus rendue plus robuste (fermeture propre du socket, nouvelle tentative de connexion automatique) afin de réduire les déconnexions ECONNRESET.",
+        "it": "Avvio dell'adapter accelerato: tutti i datapoint vengono ora creati/riparati in parallelo anziché in sequenza; riconnessione Modbus resa più robusta (chiusura pulita del socket, nuovo tentativo di connessione automatico) per ridurre le disconnessioni ECONNRESET.",
+        "es": "Inicio del adaptador acelerado: todos los puntos de datos ahora se crean/reparan en paralelo en lugar de secuencialmente; se hizo más robusta la reconexión Modbus (cierre elegante del socket, reintento automático de conexión) para reducir las desconexiones ECONNRESET.",
+        "pl": "Przyspieszono uruchamianie adaptera: wszystkie punkty danych są teraz tworzone/naprawiane równolegle zamiast sekwencyjnie; zwiększono odporność ponownego łączenia Modbus (eleganckie zamykanie gniazda, automatyczna ponowna próba połączenia), aby ograniczyć rozłączenia ECONNRESET.",
+        "uk": "Прискорено запуск адаптера: усі точки даних тепер створюються/відновлюються паралельно, а не послідовно; підвищено стійкість перепідключення Modbus (акуратне закриття сокета, автоматична повторна спроба з'єднання) для зменшення розривів ECONNRESET.",
+        "zh-cn": "加快适配器启动速度：所有数据点现在并行而非顺序创建/修复；增强了 Modbus 重连的稳定性（优雅关闭连接、自动重试连接），以减少 ECONNRESET 断连情况。"
+      },
       "1.0.16": {
         "en": "Fix Admin GUI crash when hovering enum values in the object tree (#44): common.states is now resolved to plain per-language strings instead of translation objects, with automatic self-healing for existing installations. Add common.desc (English/German) for control and status datapoints.",
         "de": "Admin-GUI-Absturz beim Hovern von Enum-Werten im Object Tree behoben (#44): common.states wird jetzt pro Sprache auf reine Strings statt Übersetzungsobjekte aufgelöst, bestehende Installationen werden automatisch selbst geheilt. common.desc (Englisch/Deutsch) für Steuer- und Status-Datenpunkte ergänzt.",
@@ -80,19 +93,6 @@
         "pl": "Dodano CHANGELOG_OLD.md (W6020); tsconfig.json i @tsconfig/node22 dodane (S0085/S0087); link w README",
         "uk": "Додано CHANGELOG_OLD.md (W6020); tsconfig.json та @tsconfig/node22 додані (S0085/S0087); посилання у README",
         "zh-cn": "添加 CHANGELOG_OLD.md（W6020）；添加 tsconfig.json 和 @tsconfig/node22（S0085/S0087）；README 链接"
-      },
-      "1.0.10": {
-        "en": "Fix W5005: use adapter.setTimeout in modbus.js; update eslint-config to 2.3.4; remove CHANGELOG_OLD.md",
-        "de": "W5005 behoben: adapter.setTimeout in modbus.js verwendet; eslint-config auf 2.3.4 aktualisiert; CHANGELOG_OLD.md entfernt",
-        "ru": "Исправлен W5005: adapter.setTimeout в modbus.js; eslint-config обновлён до 2.3.4; удалён CHANGELOG_OLD.md",
-        "pt": "Corrigido W5005: adapter.setTimeout em modbus.js; eslint-config actualizado para 2.3.4; CHANGELOG_OLD.md removido",
-        "nl": "W5005 opgelost: adapter.setTimeout in modbus.js; eslint-config bijgewerkt naar 2.3.4; CHANGELOG_OLD.md verwijderd",
-        "fr": "W5005 corrigé: adapter.setTimeout dans modbus.js; eslint-config mis à jour vers 2.3.4; CHANGELOG_OLD.md supprimé",
-        "it": "W5005 corretto: adapter.setTimeout in modbus.js; eslint-config aggiornato a 2.3.4; CHANGELOG_OLD.md rimosso",
-        "es": "W5005 corregido: adapter.setTimeout en modbus.js; eslint-config actualizado a 2.3.4; CHANGELOG_OLD.md eliminado",
-        "pl": "Naprawiono W5005: adapter.setTimeout w modbus.js; eslint-config zaktualizowano do 2.3.4; usunięto CHANGELOG_OLD.md",
-        "uk": "Виправлено W5005: adapter.setTimeout у modbus.js; eslint-config оновлено до 2.3.4; видалено CHANGELOG_OLD.md",
-        "zh-cn": "修复 W5005：在 modbus.js 中使用 adapter.setTimeout；eslint-config 更新至 2.3.4；删除 CHANGELOG_OLD.md"
       }
     },
     "titleLang": {
