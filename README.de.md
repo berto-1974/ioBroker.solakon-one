@@ -168,6 +168,10 @@ Alle Datenpunkte werden unter `solakon-one.<Instanz>.*` erstellt (z.B. `solakon-
 
 ## Changelog
 
+### 1.0.16 (2026-07-23)
+- Admin-GUI-Absturz beim Hovern von Enum-Werten im Object Tree behoben (#44): common.states wird jetzt pro Sprache auf reine Strings statt Übersetzungsobjekte aufgelöst, bestehende Installationen werden automatisch selbst geheilt
+- common.desc (Englisch/Deutsch) für Steuer- und Status-Datenpunkte ergänzt
+
 ### 1.0.15 (2026-06-28)
 - README-Herstellerlink korrigiert: solakon.de statt des nicht verwandten Home-Assistant-Integration-Repos
 

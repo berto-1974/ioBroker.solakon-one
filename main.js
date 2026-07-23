@@ -12,12 +12,23 @@
 const utils = require('@iobroker/adapter-core');
 const { SolakonModbusHub } = require('./lib/modbus');
 const {
-    REMOTE_CONTROL_MODES,
-    EPS_OUTPUT_MODES,
-    OPERATING_MODES,
-    NETWORK_STATUS,
+    REMOTE_CONTROL_MODES_I18N,
+    EPS_OUTPUT_MODES_I18N,
+    OPERATING_MODES_I18N,
+    NETWORK_STATUS_I18N,
     GRID_STANDARD,
+    resolveStates,
 } = require('./lib/registers');
+
+// i18n-Quellen der States-Maps, indiziert über den `statesKey` der Definitionen unten.
+// Wird in onReady() einmalig pro Systemsprache zu reinen String-Maps aufgelöst
+// (common.states darf laut ioBroker-Spezifikation keine Übersetzungsobjekte enthalten).
+const STATES_I18N_BY_KEY = {
+    REMOTE_CONTROL_MODES: REMOTE_CONTROL_MODES_I18N,
+    EPS_OUTPUT_MODES: EPS_OUTPUT_MODES_I18N,
+    OPERATING_MODES: OPERATING_MODES_I18N,
+    NETWORK_STATUS: NETWORK_STATUS_I18N,
+};
 
 // ─────────────────────────────────────────────────────────────────────────────
 // State-Definitionen
@@ -884,6 +895,10 @@ const SENSOR_STATES = [
             uk: 'Стандарт мережі',
             'zh-cn': '电网标准',
         },
+        desc: {
+            en: 'Shows which German grid connection standard (VDE code) the inverter is currently configured for; determines its grid protection thresholds and feed-in behavior.',
+            de: 'Zeigt den aktuell im Wechselrichter eingestellten Netzanschluss-Standard (VDE-Norm) an, nach dem sich Schutzfunktionen und Netzeinspeiseverhalten richten.',
+        },
         type: 'number',
         role: 'value',
         states: GRID_STANDARD,
@@ -991,9 +1006,13 @@ const SENSOR_STATES = [
             uk: 'Режим роботи',
             'zh-cn': '运行模式',
         },
+        desc: {
+            en: "Sets the inverter's overall operating strategy, e.g. whether it prioritizes self-consumption, grid feed-in, reserving capacity for backup, or actively forces charging/discharging.",
+            de: 'Legt die übergeordnete Betriebsstrategie des Wechselrichters fest, z. B. ob primär der Eigenverbrauch optimiert, ins Netz eingespeist, Kapazität für Backup reserviert oder gezielt geladen/entladen werden soll.',
+        },
         type: 'number',
         role: 'value',
-        states: OPERATING_MODES,
+        statesKey: 'OPERATING_MODES',
     },
     {
         reg: 'network_status',
@@ -1012,9 +1031,13 @@ const SENSOR_STATES = [
             uk: 'Статус мережі',
             'zh-cn': '网络状态',
         },
+        desc: {
+            en: 'Indicates whether the inverter is currently connected to the public utility grid (relevant e.g. during off-grid/island operation or a grid outage).',
+            de: 'Zeigt an, ob der Wechselrichter aktuell mit dem öffentlichen Stromnetz verbunden ist (relevant z. B. bei Inselbetrieb oder Netzausfall).',
+        },
         type: 'number',
         role: 'value',
-        states: NETWORK_STATUS,
+        statesKey: 'NETWORK_STATUS',
     },
 
     // EPS / Notstrom
@@ -1100,9 +1123,13 @@ const SENSOR_STATES = [
             uk: 'Режим дистанційного керування',
             'zh-cn': '远程控制模式',
         },
+        desc: {
+            en: 'Shows the currently active remote-control mode (enable, direction, target) of the inverter.',
+            de: 'Zeigt den aktuell aktiven Fernsteuerungsmodus (Freigabe, Richtung, Ziel) des Wechselrichters.',
+        },
         type: 'number',
         role: 'value',
-        states: REMOTE_CONTROL_MODES,
+        statesKey: 'REMOTE_CONTROL_MODES',
     },
     {
         reg: 'remote_timeout_countdown',
@@ -1120,6 +1147,10 @@ const SENSOR_STATES = [
             pl: 'Odliczanie zdalnego sterowania',
             uk: 'Зворотний відлік дистанційного керування',
             'zh-cn': '远程控制倒计时',
+        },
+        desc: {
+            en: 'Remaining time in seconds until active remote control is automatically disabled (see remote_timeout).',
+            de: 'Restzeit in Sekunden, bis die aktive Fernsteuerung automatisch deaktiviert wird (siehe remote_timeout).',
         },
         type: 'number',
         role: 'value',
@@ -1145,11 +1176,15 @@ const CONTROL_STATES = [
             uk: 'Режим дистанційного керування',
             'zh-cn': '远程控制模式',
         },
+        desc: {
+            en: 'Enables remote control of the inverter and defines the direction (charge/discharge, export/import) and target (AC output, battery, or grid) for energy flow — e.g. for external energy management systems. Works together with remote_active_power/remote_reactive_power and automatically expires after remote_timeout.',
+            de: 'Aktiviert die Fernsteuerung des Wechselrichters und legt Richtung (Laden/Entladen bzw. Einspeisen/Beziehen) und Ziel (AC-Ausgang, Batterie oder Netz) fest – z. B. für externe Energiemanagement-Systeme. Wirkt zusammen mit remote_active_power/remote_reactive_power und endet automatisch nach remote_timeout.',
+        },
         type: 'number',
         role: 'level',
         min: 0,
         max: 15,
-        states: REMOTE_CONTROL_MODES,
+        statesKey: 'REMOTE_CONTROL_MODES',
         writeReg: 'remote_control',
     },
     {
@@ -1167,6 +1202,10 @@ const CONTROL_STATES = [
             pl: 'Limit czasu zdalnego sterowania',
             uk: 'Тайм-аут дистанційного керування',
             'zh-cn': '远程控制超时',
+        },
+        desc: {
+            en: 'Time in seconds after which active remote control automatically expires if not refreshed (safety timeout).',
+            de: 'Zeitspanne in Sekunden, nach der eine aktivierte Fernsteuerung automatisch endet, falls sie nicht erneut angesprochen wird (Sicherheits-Timeout).',
         },
         type: 'number',
         role: 'level',
@@ -1191,6 +1230,10 @@ const CONTROL_STATES = [
             uk: 'Активна потужність дистанційного керування',
             'zh-cn': '远程有功功率',
         },
+        desc: {
+            en: 'Setpoint for the active power the inverter should apply while in remote-control mode; only effective while remote control is active (remote_control_mode).',
+            de: 'Sollwert für die vom Wechselrichter im Fernsteuerungsmodus umzusetzende Wirkleistung; nur wirksam bei aktiver Fernsteuerung (remote_control_mode).',
+        },
         type: 'number',
         role: 'level',
         min: -100000,
@@ -1213,6 +1256,10 @@ const CONTROL_STATES = [
             pl: 'Moc bierna zdalnego sterowania',
             uk: 'Реактивна потужність дистанційного керування',
             'zh-cn': '远程无功功率',
+        },
+        desc: {
+            en: 'Setpoint for the reactive power the inverter should apply while in remote-control mode; only effective while remote control is active (remote_control_mode).',
+            de: 'Sollwert für die vom Wechselrichter im Fernsteuerungsmodus umzusetzende Blindleistung; nur wirksam bei aktiver Fernsteuerung (remote_control_mode).',
         },
         type: 'number',
         role: 'level',
@@ -1237,11 +1284,15 @@ const CONTROL_STATES = [
             uk: 'Режим виходу EPS/UPS',
             'zh-cn': 'EPS/UPS输出模式',
         },
+        desc: {
+            en: 'Sets the operating mode of the emergency power output: off, backup power that switches in on a grid outage (EPS), or uninterruptible supply with no switch-over gap (UPS).',
+            de: 'Legt den Betriebsmodus des Notstromausgangs fest: aus, Notstromversorgung bei Netzausfall (EPS) oder unterbrechungsfreie Versorgung ohne Umschaltpause (UPS).',
+        },
         type: 'number',
         role: 'level',
         min: 0,
         max: 3,
-        states: EPS_OUTPUT_MODES,
+        statesKey: 'EPS_OUTPUT_MODES',
         writeReg: 'eps_output',
     },
     {
@@ -1259,6 +1310,10 @@ const CONTROL_STATES = [
             pl: 'Minimalny SoC',
             uk: 'Мінімальний SoC',
             'zh-cn': '最低荷电状态',
+        },
+        desc: {
+            en: 'Lower state-of-charge limit down to which the battery may be discharged during normal operation; protects the battery from over-discharge.',
+            de: 'Unterer Ladestand (SoC), bis zu dem die Batterie im Normalbetrieb entladen werden darf; schützt die Batterie vor Tiefentladung.',
         },
         type: 'number',
         role: 'level',
@@ -1283,6 +1338,10 @@ const CONTROL_STATES = [
             uk: 'Максимальний SoC',
             'zh-cn': '最高荷电状态',
         },
+        desc: {
+            en: 'Upper state-of-charge limit up to which the battery may be charged.',
+            de: 'Oberer Ladestand (SoC), bis zu dem die Batterie geladen werden darf.',
+        },
         type: 'number',
         role: 'level',
         min: 0,
@@ -1305,6 +1364,10 @@ const CONTROL_STATES = [
             pl: 'Minimalny SoC przy pracy sieciowej',
             uk: 'Мінімальний SoC при роботі в мережі',
             'zh-cn': '并网最低荷电状态',
+        },
+        desc: {
+            en: 'Minimum state-of-charge down to which the battery may be discharged while the inverter operates grid-connected — may differ from the general minimum_soc, which can be reserved e.g. for off-grid/backup operation.',
+            de: 'Minimaler Ladestand, bis zu dem die Batterie entladen werden darf, solange der Wechselrichter netzgekoppelt betrieben wird – kann sich vom allgemeinen minimum_soc unterscheiden, das z. B. für Inselbetrieb/Backup reserviert bleibt.',
         },
         type: 'number',
         role: 'level',
@@ -1375,11 +1438,15 @@ const CONTROL_STATES = [
             uk: 'Режим роботи',
             'zh-cn': '运行模式',
         },
+        desc: {
+            en: "Sets the inverter's overall operating strategy, e.g. whether it prioritizes self-consumption, grid feed-in, reserving capacity for backup, or actively forces charging/discharging.",
+            de: 'Legt die übergeordnete Betriebsstrategie des Wechselrichters fest, z. B. ob primär der Eigenverbrauch optimiert, ins Netz eingespeist, Kapazität für Backup reserviert oder gezielt geladen/entladen werden soll.',
+        },
         type: 'number',
         role: 'level',
         min: 0,
         max: 7,
-        states: OPERATING_MODES,
+        statesKey: 'OPERATING_MODES',
         writeReg: 'operating_mode',
     },
 ];
@@ -1414,6 +1481,17 @@ class SolakonOneAdapter extends utils.Adapter {
         }
 
         this.log.info(`Connecting to Solakon ONE: ${host}:${port || 502} (Unit ID: ${slaveId || 1})`);
+
+        // Systemsprache ermitteln und States-Maps (common.states) einmalig dafür auflösen.
+        // TODO: reagiert aktuell nicht auf spätere Sprachänderungen zur Laufzeit;
+        // ein erneuter Adapter-Neustart löst common.states neu für die dann aktuelle Sprache auf.
+        const systemConfigObj = await this.getForeignObjectAsync('system.config');
+        this.systemLang = (systemConfigObj && systemConfigObj.common && systemConfigObj.common.language) || 'en';
+
+        this.resolvedStatesByKey = {};
+        for (const key of Object.keys(STATES_I18N_BY_KEY)) {
+            this.resolvedStatesByKey[key] = resolveStates(STATES_I18N_BY_KEY[key], this.systemLang);
+        }
 
         // Alle ioBroker-Objekte (Datenpunkte) anlegen
         await this.createAllObjects();
@@ -1517,6 +1595,45 @@ class SolakonOneAdapter extends utils.Adapter {
     }
 
     // ─── Objekte anlegen ───────────────────────────────────────────────────
+
+    /**
+     * Legt ein State-Objekt an, falls es noch nicht existiert, und heilt
+     * andernfalls dessen common.states/common.desc, falls sie von der
+     * aktuell korrekten Definition abweichen. setObjectNotExistsAsync allein
+     * aktualisiert diese Felder bei bereits bestehenden Objekten nie, daher
+     * dieser zusätzliche Selbstheilungs-Schritt (siehe GitHub Issue #44).
+     * Nur common.states/common.desc werden angepasst – Name, Einheit, min/max,
+     * native und sonstige Nutzer-Anpassungen bleiben unangetastet; state.val
+     * wird nie berührt.
+     *
+     * @param {string} fullId - vollständige State-ID
+     * @param {object} common - vorbereitetes common-Objekt für dieses State-Objekt
+     */
+    async _createOrHealStateObject(fullId, common) {
+        await this.setObjectNotExistsAsync(fullId, { type: 'state', common, native: {} });
+
+        if (!common.states && !common.desc) {
+            return;
+        }
+
+        const existing = await this.getObjectAsync(fullId);
+        if (!existing || !existing.common) {
+            return;
+        }
+
+        const patch = {};
+        if (common.states && JSON.stringify(existing.common.states) !== JSON.stringify(common.states)) {
+            patch.states = common.states;
+        }
+        if (common.desc && JSON.stringify(existing.common.desc) !== JSON.stringify(common.desc)) {
+            patch.desc = common.desc;
+        }
+
+        if (Object.keys(patch).length > 0) {
+            await this.extendObjectAsync(fullId, { common: patch });
+            this.log.debug(`Updated common fields (${Object.keys(patch).join(', ')}) for ${fullId}`);
+        }
+    }
 
     async createAllObjects() {
         // Channels anlegen
@@ -1649,15 +1766,16 @@ class SolakonOneAdapter extends utils.Adapter {
             if (def.unit) {
                 common.unit = def.unit;
             }
+            if (def.desc) {
+                common.desc = def.desc;
+            }
             if (def.states) {
-                common.states = def.states;
+                common.states = def.states; // GRID_STANDARD: bereits reine Strings
+            } else if (def.statesKey) {
+                common.states = this.resolvedStatesByKey[def.statesKey];
             }
 
-            await this.setObjectNotExistsAsync(fullId, {
-                type: 'state',
-                common,
-                native: {},
-            });
+            await this._createOrHealStateObject(fullId, common);
         }
 
         // Steuer-States anlegen (lesen und schreiben)
@@ -1679,15 +1797,16 @@ class SolakonOneAdapter extends utils.Adapter {
             if (def.max !== undefined) {
                 common.max = def.max;
             }
+            if (def.desc) {
+                common.desc = def.desc;
+            }
             if (def.states) {
-                common.states = def.states;
+                common.states = def.states; // GRID_STANDARD: bereits reine Strings
+            } else if (def.statesKey) {
+                common.states = this.resolvedStatesByKey[def.statesKey];
             }
 
-            await this.setObjectNotExistsAsync(fullId, {
-                type: 'state',
-                common,
-                native: {},
-            });
+            await this._createOrHealStateObject(fullId, common);
         }
     }
 

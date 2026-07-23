@@ -1,6 +1,6 @@
-{
-  "solakon-one.0.info": {
-    "_id": "solakon-one.0.info",
+[
+  {
+    "_id": "info",
     "type": "channel",
     "common": {
       "name": {
@@ -19,8 +19,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.device": {
-    "_id": "solakon-one.0.device",
+  {
+    "_id": "device",
     "type": "channel",
     "common": {
       "name": {
@@ -39,8 +39,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv": {
-    "_id": "solakon-one.0.pv",
+  {
+    "_id": "pv",
     "type": "channel",
     "common": {
       "name": {
@@ -59,8 +59,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery": {
-    "_id": "solakon-one.0.battery",
+  {
+    "_id": "battery",
     "type": "channel",
     "common": {
       "name": {
@@ -79,8 +79,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid": {
-    "_id": "solakon-one.0.grid",
+  {
+    "_id": "grid",
     "type": "channel",
     "common": {
       "name": {
@@ -99,8 +99,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.inverter": {
-    "_id": "solakon-one.0.inverter",
+  {
+    "_id": "inverter",
     "type": "channel",
     "common": {
       "name": {
@@ -119,8 +119,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.eps": {
-    "_id": "solakon-one.0.eps",
+  {
+    "_id": "eps",
     "type": "channel",
     "common": {
       "name": {
@@ -139,8 +139,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.status": {
-    "_id": "solakon-one.0.status",
+  {
+    "_id": "status",
     "type": "channel",
     "common": {
       "name": {
@@ -159,8 +159,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.control": {
-    "_id": "solakon-one.0.control",
+  {
+    "_id": "control",
     "type": "channel",
     "common": {
       "name": {
@@ -179,8 +179,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.info.connection": {
-    "_id": "solakon-one.0.info.connection",
+  {
+    "_id": "info.connection",
     "type": "state",
     "common": {
       "name": {
@@ -204,8 +204,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.device.model": {
-    "_id": "solakon-one.0.device.model",
+  {
+    "_id": "device.model",
     "type": "state",
     "common": {
       "name": {
@@ -228,8 +228,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.device.serial": {
-    "_id": "solakon-one.0.device.serial",
+  {
+    "_id": "device.serial",
     "type": "state",
     "common": {
       "name": {
@@ -252,8 +252,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.device.fw_master": {
-    "_id": "solakon-one.0.device.fw_master",
+  {
+    "_id": "device.fw_master",
     "type": "state",
     "common": {
       "name": {
@@ -276,8 +276,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.device.fw_slave": {
-    "_id": "solakon-one.0.device.fw_slave",
+  {
+    "_id": "device.fw_slave",
     "type": "state",
     "common": {
       "name": {
@@ -300,8 +300,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.total_power": {
-    "_id": "solakon-one.0.pv.total_power",
+  {
+    "_id": "pv.total_power",
     "type": "state",
     "common": {
       "name": {
@@ -325,8 +325,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.total_energy": {
-    "_id": "solakon-one.0.pv.total_energy",
+  {
+    "_id": "pv.total_energy",
     "type": "state",
     "common": {
       "name": {
@@ -350,8 +350,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv1_voltage": {
-    "_id": "solakon-one.0.pv.pv1_voltage",
+  {
+    "_id": "pv.pv1_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -375,8 +375,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv1_current": {
-    "_id": "solakon-one.0.pv.pv1_current",
+  {
+    "_id": "pv.pv1_current",
     "type": "state",
     "common": {
       "name": {
@@ -400,8 +400,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv1_power": {
-    "_id": "solakon-one.0.pv.pv1_power",
+  {
+    "_id": "pv.pv1_power",
     "type": "state",
     "common": {
       "name": {
@@ -425,8 +425,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv2_voltage": {
-    "_id": "solakon-one.0.pv.pv2_voltage",
+  {
+    "_id": "pv.pv2_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -450,8 +450,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv2_current": {
-    "_id": "solakon-one.0.pv.pv2_current",
+  {
+    "_id": "pv.pv2_current",
     "type": "state",
     "common": {
       "name": {
@@ -475,8 +475,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv2_power": {
-    "_id": "solakon-one.0.pv.pv2_power",
+  {
+    "_id": "pv.pv2_power",
     "type": "state",
     "common": {
       "name": {
@@ -500,8 +500,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv3_voltage": {
-    "_id": "solakon-one.0.pv.pv3_voltage",
+  {
+    "_id": "pv.pv3_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -525,8 +525,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv3_current": {
-    "_id": "solakon-one.0.pv.pv3_current",
+  {
+    "_id": "pv.pv3_current",
     "type": "state",
     "common": {
       "name": {
@@ -550,8 +550,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv3_power": {
-    "_id": "solakon-one.0.pv.pv3_power",
+  {
+    "_id": "pv.pv3_power",
     "type": "state",
     "common": {
       "name": {
@@ -575,8 +575,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv4_voltage": {
-    "_id": "solakon-one.0.pv.pv4_voltage",
+  {
+    "_id": "pv.pv4_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -600,8 +600,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv4_current": {
-    "_id": "solakon-one.0.pv.pv4_current",
+  {
+    "_id": "pv.pv4_current",
     "type": "state",
     "common": {
       "name": {
@@ -625,8 +625,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.pv.pv4_power": {
-    "_id": "solakon-one.0.pv.pv4_power",
+  {
+    "_id": "pv.pv4_power",
     "type": "state",
     "common": {
       "name": {
@@ -650,8 +650,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.soc": {
-    "_id": "solakon-one.0.battery.soc",
+  {
+    "_id": "battery.soc",
     "type": "state",
     "common": {
       "name": {
@@ -675,8 +675,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.voltage": {
-    "_id": "solakon-one.0.battery.voltage",
+  {
+    "_id": "battery.voltage",
     "type": "state",
     "common": {
       "name": {
@@ -700,8 +700,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.current": {
-    "_id": "solakon-one.0.battery.current",
+  {
+    "_id": "battery.current",
     "type": "state",
     "common": {
       "name": {
@@ -725,8 +725,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.power": {
-    "_id": "solakon-one.0.battery.power",
+  {
+    "_id": "battery.power",
     "type": "state",
     "common": {
       "name": {
@@ -750,8 +750,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.combined_power": {
-    "_id": "solakon-one.0.battery.combined_power",
+  {
+    "_id": "battery.combined_power",
     "type": "state",
     "common": {
       "name": {
@@ -775,8 +775,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.total_charge": {
-    "_id": "solakon-one.0.battery.total_charge",
+  {
+    "_id": "battery.total_charge",
     "type": "state",
     "common": {
       "name": {
@@ -800,8 +800,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.total_discharge": {
-    "_id": "solakon-one.0.battery.total_discharge",
+  {
+    "_id": "battery.total_discharge",
     "type": "state",
     "common": {
       "name": {
@@ -825,8 +825,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.bms1_soh": {
-    "_id": "solakon-one.0.battery.bms1_soh",
+  {
+    "_id": "battery.bms1_soh",
     "type": "state",
     "common": {
       "name": {
@@ -850,8 +850,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.design_energy": {
-    "_id": "solakon-one.0.battery.design_energy",
+  {
+    "_id": "battery.design_energy",
     "type": "state",
     "common": {
       "name": {
@@ -875,8 +875,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.ambient_temp": {
-    "_id": "solakon-one.0.battery.ambient_temp",
+  {
+    "_id": "battery.ambient_temp",
     "type": "state",
     "common": {
       "name": {
@@ -900,8 +900,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.max_temp": {
-    "_id": "solakon-one.0.battery.max_temp",
+  {
+    "_id": "battery.max_temp",
     "type": "state",
     "common": {
       "name": {
@@ -925,8 +925,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.battery.min_temp": {
-    "_id": "solakon-one.0.battery.min_temp",
+  {
+    "_id": "battery.min_temp",
     "type": "state",
     "common": {
       "name": {
@@ -950,8 +950,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.off_grid": {
-    "_id": "solakon-one.0.grid.off_grid",
+  {
+    "_id": "grid.off_grid",
     "type": "state",
     "common": {
       "name": {
@@ -974,8 +974,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.r_voltage": {
-    "_id": "solakon-one.0.grid.r_voltage",
+  {
+    "_id": "grid.r_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -999,8 +999,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.s_voltage": {
-    "_id": "solakon-one.0.grid.s_voltage",
+  {
+    "_id": "grid.s_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -1024,8 +1024,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.t_voltage": {
-    "_id": "solakon-one.0.grid.t_voltage",
+  {
+    "_id": "grid.t_voltage",
     "type": "state",
     "common": {
       "name": {
@@ -1049,8 +1049,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.frequency": {
-    "_id": "solakon-one.0.grid.frequency",
+  {
+    "_id": "grid.frequency",
     "type": "state",
     "common": {
       "name": {
@@ -1074,8 +1074,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.active_power": {
-    "_id": "solakon-one.0.grid.active_power",
+  {
+    "_id": "grid.active_power",
     "type": "state",
     "common": {
       "name": {
@@ -1099,8 +1099,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.reactive_power": {
-    "_id": "solakon-one.0.grid.reactive_power",
+  {
+    "_id": "grid.reactive_power",
     "type": "state",
     "common": {
       "name": {
@@ -1124,8 +1124,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.power_factor": {
-    "_id": "solakon-one.0.grid.power_factor",
+  {
+    "_id": "grid.power_factor",
     "type": "state",
     "common": {
       "name": {
@@ -1148,8 +1148,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.total_export": {
-    "_id": "solakon-one.0.grid.total_export",
+  {
+    "_id": "grid.total_export",
     "type": "state",
     "common": {
       "name": {
@@ -1173,8 +1173,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.total_import": {
-    "_id": "solakon-one.0.grid.total_import",
+  {
+    "_id": "grid.total_import",
     "type": "state",
     "common": {
       "name": {
@@ -1198,8 +1198,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.grid.standard": {
-    "_id": "solakon-one.0.grid.standard",
+  {
+    "_id": "grid.standard",
     "type": "state",
     "common": {
       "name": {
@@ -1219,6 +1219,10 @@
       "role": "value",
       "read": true,
       "write": false,
+      "desc": {
+        "en": "Shows which German grid connection standard (VDE code) the inverter is currently configured for; determines its grid protection thresholds and feed-in behavior.",
+        "de": "Zeigt den aktuell im Wechselrichter eingestellten Netzanschluss-Standard (VDE-Norm) an, nach dem sich Schutzfunktionen und Netzeinspeiseverhalten richten."
+      },
       "states": {
         "6": "VDE0126",
         "7": "VDE4105_DE"
@@ -1226,8 +1230,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.inverter.temperature": {
-    "_id": "solakon-one.0.inverter.temperature",
+  {
+    "_id": "inverter.temperature",
     "type": "state",
     "common": {
       "name": {
@@ -1251,8 +1255,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.inverter.frequency": {
-    "_id": "solakon-one.0.inverter.frequency",
+  {
+    "_id": "inverter.frequency",
     "type": "state",
     "common": {
       "name": {
@@ -1276,8 +1280,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.inverter.daily_energy": {
-    "_id": "solakon-one.0.inverter.daily_energy",
+  {
+    "_id": "inverter.daily_energy",
     "type": "state",
     "common": {
       "name": {
@@ -1301,8 +1305,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.inverter.total_energy": {
-    "_id": "solakon-one.0.inverter.total_energy",
+  {
+    "_id": "inverter.total_energy",
     "type": "state",
     "common": {
       "name": {
@@ -1326,8 +1330,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.inverter.operating_mode": {
-    "_id": "solakon-one.0.inverter.operating_mode",
+  {
+    "_id": "inverter.operating_mode",
     "type": "state",
     "common": {
       "name": {
@@ -1347,104 +1351,24 @@
       "role": "value",
       "read": true,
       "write": false,
+      "desc": {
+        "en": "Sets the inverter's overall operating strategy, e.g. whether it prioritizes self-consumption, grid feed-in, reserving capacity for backup, or actively forces charging/discharging.",
+        "de": "Legt die übergeordnete Betriebsstrategie des Wechselrichters fest, z. B. ob primär der Eigenverbrauch optimiert, ins Netz eingespeist, Kapazität für Backup reserviert oder gezielt geladen/entladen werden soll."
+      },
       "states": {
-        "0": {
-          "en": "Unspecified",
-          "de": "Nicht festgelegt",
-          "ru": "Не указано",
-          "pt": "Não especificado",
-          "nl": "Niet gespecificeerd",
-          "fr": "Non spécifié",
-          "it": "Non specificato",
-          "es": "No especificado",
-          "pl": "Nieokreślone",
-          "uk": "Не вказано",
-          "zh-cn": "未指定"
-        },
-        "1": {
-          "en": "Self-consumption",
-          "de": "Eigenverbrauch",
-          "ru": "Собственное потребление",
-          "pt": "Autoconsumo",
-          "nl": "Eigen verbruik",
-          "fr": "Autoconsommation",
-          "it": "Autoconsumo",
-          "es": "Autoconsumo",
-          "pl": "Zużycie własne",
-          "uk": "Власне споживання",
-          "zh-cn": "自发自用"
-        },
-        "2": {
-          "en": "Feed-in priority",
-          "de": "Einspeisepriorität",
-          "ru": "Приоритет подачи в сеть",
-          "pt": "Prioridade de injeção",
-          "nl": "Terugleverprioriteit",
-          "fr": "Priorité d'injection",
-          "it": "Priorità di immissione",
-          "es": "Prioridad de inyección",
-          "pl": "Priorytet wprowadzania do sieci",
-          "uk": "Пріоритет подачі в мережу",
-          "zh-cn": "上网优先"
-        },
-        "3": {
-          "en": "Backup",
-          "de": "Backup",
-          "ru": "Резерв",
-          "pt": "Backup",
-          "nl": "Backup",
-          "fr": "Sauvegarde",
-          "it": "Backup",
-          "es": "Respaldo",
-          "pl": "Zapasowy",
-          "uk": "Резерв",
-          "zh-cn": "备用"
-        },
-        "4": {
-          "en": "Peak shaving",
-          "de": "Spitzenlastkappung",
-          "ru": "Срезание пиков нагрузки",
-          "pt": "Corte de picos",
-          "nl": "Piekafvlakking",
-          "fr": "Écrêtage de pointe",
-          "it": "Riduzione dei picchi",
-          "es": "Reducción de picos",
-          "pl": "Ścinanie szczytów obciążenia",
-          "uk": "Зрізання піків навантаження",
-          "zh-cn": "削峰"
-        },
-        "6": {
-          "en": "Force charge",
-          "de": "Laden erzwingen",
-          "ru": "Принудительный заряд",
-          "pt": "Forçar carga",
-          "nl": "Geforceerd opladen",
-          "fr": "Charge forcée",
-          "it": "Carica forzata",
-          "es": "Forzar carga",
-          "pl": "Wymuszone ładowanie",
-          "uk": "Примусовий заряд",
-          "zh-cn": "强制充电"
-        },
-        "7": {
-          "en": "Force discharge",
-          "de": "Entladen erzwingen",
-          "ru": "Принудительный разряд",
-          "pt": "Forçar descarga",
-          "nl": "Geforceerd ontladen",
-          "fr": "Décharge forcée",
-          "it": "Scarica forzata",
-          "es": "Forzar descarga",
-          "pl": "Wymuszone rozładowanie",
-          "uk": "Примусовий розряд",
-          "zh-cn": "强制放电"
-        }
+        "0": "Unspecified",
+        "1": "Self-consumption",
+        "2": "Feed-in priority",
+        "3": "Backup",
+        "4": "Peak shaving",
+        "6": "Force charge",
+        "7": "Force discharge"
       }
     },
     "native": {}
   },
-  "solakon-one.0.inverter.network_status": {
-    "_id": "solakon-one.0.inverter.network_status",
+  {
+    "_id": "inverter.network_status",
     "type": "state",
     "common": {
       "name": {
@@ -1464,52 +1388,20 @@
       "role": "value",
       "read": true,
       "write": false,
+      "desc": {
+        "en": "Indicates whether the inverter is currently connected to the public utility grid (relevant e.g. during off-grid/island operation or a grid outage).",
+        "de": "Zeigt an, ob der Wechselrichter aktuell mit dem öffentlichen Stromnetz verbunden ist (relevant z. B. bei Inselbetrieb oder Netzausfall)."
+      },
       "states": {
-        "0": {
-          "en": "Off",
-          "de": "Aus",
-          "ru": "Выкл",
-          "pt": "Desligado",
-          "nl": "Uit",
-          "fr": "Désactivé",
-          "it": "Spento",
-          "es": "Apagado",
-          "pl": "Wyłączone",
-          "uk": "Вимк.",
-          "zh-cn": "关闭"
-        },
-        "1": {
-          "en": "Disconnected",
-          "de": "Getrennt",
-          "ru": "Отключено",
-          "pt": "Desligado",
-          "nl": "Verbinding verbroken",
-          "fr": "Déconnecté",
-          "it": "Disconnesso",
-          "es": "Desconectado",
-          "pl": "Rozłączono",
-          "uk": "Від'єднано",
-          "zh-cn": "已断开"
-        },
-        "2": {
-          "en": "Connected",
-          "de": "Verbunden",
-          "ru": "Подключено",
-          "pt": "Ligado",
-          "nl": "Verbonden",
-          "fr": "Connecté",
-          "it": "Connesso",
-          "es": "Conectado",
-          "pl": "Połączono",
-          "uk": "З'єднано",
-          "zh-cn": "已连接"
-        }
+        "0": "Off",
+        "1": "Disconnected",
+        "2": "Connected"
       }
     },
     "native": {}
   },
-  "solakon-one.0.eps.voltage": {
-    "_id": "solakon-one.0.eps.voltage",
+  {
+    "_id": "eps.voltage",
     "type": "state",
     "common": {
       "name": {
@@ -1533,8 +1425,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.eps.current": {
-    "_id": "solakon-one.0.eps.current",
+  {
+    "_id": "eps.current",
     "type": "state",
     "common": {
       "name": {
@@ -1558,8 +1450,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.eps.power": {
-    "_id": "solakon-one.0.eps.power",
+  {
+    "_id": "eps.power",
     "type": "state",
     "common": {
       "name": {
@@ -1583,8 +1475,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.status.remote_control": {
-    "_id": "solakon-one.0.status.remote_control",
+  {
+    "_id": "status.remote_control",
     "type": "state",
     "common": {
       "name": {
@@ -1604,130 +1496,26 @@
       "role": "value",
       "read": true,
       "write": false,
+      "desc": {
+        "en": "Shows the currently active remote-control mode (enable, direction, target) of the inverter.",
+        "de": "Zeigt den aktuell aktiven Fernsteuerungsmodus (Freigabe, Richtung, Ziel) des Wechselrichters."
+      },
       "states": {
-        "0": {
-          "en": "Off",
-          "de": "Aus",
-          "ru": "Выкл",
-          "pt": "Desligado",
-          "nl": "Uit",
-          "fr": "Désactivé",
-          "it": "Spento",
-          "es": "Apagado",
-          "pl": "Wyłączone",
-          "uk": "Вимк.",
-          "zh-cn": "关闭"
-        },
-        "1": {
-          "en": "Inverter export (PV priority)",
-          "de": "Wechselrichter Export (PV Priorität)",
-          "ru": "Экспорт инвертора (приоритет PV)",
-          "pt": "Exportação do inversor (prioridade PV)",
-          "nl": "Omvormer export (PV-prioriteit)",
-          "fr": "Export onduleur (priorité PV)",
-          "it": "Esportazione inverter (priorità PV)",
-          "es": "Exportación del inversor (prioridad PV)",
-          "pl": "Eksport falownika (priorytet PV)",
-          "uk": "Експорт інвертора (пріоритет PV)",
-          "zh-cn": "逆变器输出（光伏优先）"
-        },
-        "3": {
-          "en": "Inverter import (PV priority)",
-          "de": "Wechselrichter Import (PV Priorität)",
-          "ru": "Импорт инвертора (приоритет PV)",
-          "pt": "Importação do inversor (prioridade PV)",
-          "nl": "Omvormer import (PV-prioriteit)",
-          "fr": "Import onduleur (priorité PV)",
-          "it": "Importazione inverter (priorità PV)",
-          "es": "Importación del inversor (prioridad PV)",
-          "pl": "Import falownika (priorytet PV)",
-          "uk": "Імпорт інвертора (пріоритет PV)",
-          "zh-cn": "逆变器输入（光伏优先）"
-        },
-        "5": {
-          "en": "Battery discharge",
-          "de": "Batterie Entladen",
-          "ru": "Разряд батареи",
-          "pt": "Descarga da bateria",
-          "nl": "Batterij ontladen",
-          "fr": "Décharge de la batterie",
-          "it": "Scarica batteria",
-          "es": "Descarga de la batería",
-          "pl": "Rozładowanie baterii",
-          "uk": "Розряд батареї",
-          "zh-cn": "电池放电"
-        },
-        "7": {
-          "en": "Battery charge",
-          "de": "Batterie Laden",
-          "ru": "Заряд батареи",
-          "pt": "Carga da bateria",
-          "nl": "Batterij opladen",
-          "fr": "Charge de la batterie",
-          "it": "Carica batteria",
-          "es": "Carga de la batería",
-          "pl": "Ładowanie baterii",
-          "uk": "Заряд батареї",
-          "zh-cn": "电池充电"
-        },
-        "9": {
-          "en": "Grid export",
-          "de": "Netz Export",
-          "ru": "Экспорт в сеть",
-          "pt": "Exportação para a rede",
-          "nl": "Netexport",
-          "fr": "Export réseau",
-          "it": "Esportazione rete",
-          "es": "Exportación a la red",
-          "pl": "Eksport do sieci",
-          "uk": "Експорт у мережу",
-          "zh-cn": "电网输出"
-        },
-        "11": {
-          "en": "Grid import",
-          "de": "Netz Import",
-          "ru": "Импорт из сети",
-          "pt": "Importação da rede",
-          "nl": "Netimport",
-          "fr": "Import réseau",
-          "it": "Importazione rete",
-          "es": "Importación de la red",
-          "pl": "Import z sieci",
-          "uk": "Імпорт із мережі",
-          "zh-cn": "电网输入"
-        },
-        "13": {
-          "en": "Inverter export (grid priority)",
-          "de": "Wechselrichter Export (Netz Priorität)",
-          "ru": "Экспорт инвертора (приоритет сети)",
-          "pt": "Exportação do inversor (prioridade rede)",
-          "nl": "Omvormer export (netprioriteit)",
-          "fr": "Export onduleur (priorité réseau)",
-          "it": "Esportazione inverter (priorità rete)",
-          "es": "Exportación del inversor (prioridad red)",
-          "pl": "Eksport falownika (priorytet sieci)",
-          "uk": "Експорт інвертора (пріоритет мережі)",
-          "zh-cn": "逆变器输出（电网优先）"
-        },
-        "15": {
-          "en": "Inverter import (grid priority)",
-          "de": "Wechselrichter Import (Netz Priorität)",
-          "ru": "Импорт инвертора (приоритет сети)",
-          "pt": "Importação do inversor (prioridade rede)",
-          "nl": "Omvormer import (netprioriteit)",
-          "fr": "Import onduleur (priorité réseau)",
-          "it": "Importazione inverter (priorità rete)",
-          "es": "Importación del inversor (prioridad red)",
-          "pl": "Import falownika (priorytet sieci)",
-          "uk": "Імпорт інвертора (пріоритет мережі)",
-          "zh-cn": "逆变器输入（电网优先）"
-        }
+        "0": "Off",
+        "1": "Inverter export (PV priority)",
+        "3": "Inverter import (PV priority)",
+        "5": "Battery discharge",
+        "7": "Battery charge",
+        "9": "Grid export",
+        "11": "Grid import",
+        "13": "Inverter export (grid priority)",
+        "15": "Inverter import (grid priority)"
       }
     },
     "native": {}
   },
-  "solakon-one.0.status.remote_countdown": {
-    "_id": "solakon-one.0.status.remote_countdown",
+  {
+    "_id": "status.remote_countdown",
     "type": "state",
     "common": {
       "name": {
@@ -1747,12 +1535,16 @@
       "role": "value",
       "read": true,
       "write": false,
-      "unit": "s"
+      "unit": "s",
+      "desc": {
+        "en": "Remaining time in seconds until active remote control is automatically disabled (see remote_timeout).",
+        "de": "Restzeit in Sekunden, bis die aktive Fernsteuerung automatisch deaktiviert wird (siehe remote_timeout)."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.remote_control_mode": {
-    "_id": "solakon-one.0.control.remote_control_mode",
+  {
+    "_id": "control.remote_control_mode",
     "type": "state",
     "common": {
       "name": {
@@ -1774,130 +1566,26 @@
       "write": true,
       "min": 0,
       "max": 15,
+      "desc": {
+        "en": "Enables remote control of the inverter and defines the direction (charge/discharge, export/import) and target (AC output, battery, or grid) for energy flow — e.g. for external energy management systems. Works together with remote_active_power/remote_reactive_power and automatically expires after remote_timeout.",
+        "de": "Aktiviert die Fernsteuerung des Wechselrichters und legt Richtung (Laden/Entladen bzw. Einspeisen/Beziehen) und Ziel (AC-Ausgang, Batterie oder Netz) fest – z. B. für externe Energiemanagement-Systeme. Wirkt zusammen mit remote_active_power/remote_reactive_power und endet automatisch nach remote_timeout."
+      },
       "states": {
-        "0": {
-          "en": "Off",
-          "de": "Aus",
-          "ru": "Выкл",
-          "pt": "Desligado",
-          "nl": "Uit",
-          "fr": "Désactivé",
-          "it": "Spento",
-          "es": "Apagado",
-          "pl": "Wyłączone",
-          "uk": "Вимк.",
-          "zh-cn": "关闭"
-        },
-        "1": {
-          "en": "Inverter export (PV priority)",
-          "de": "Wechselrichter Export (PV Priorität)",
-          "ru": "Экспорт инвертора (приоритет PV)",
-          "pt": "Exportação do inversor (prioridade PV)",
-          "nl": "Omvormer export (PV-prioriteit)",
-          "fr": "Export onduleur (priorité PV)",
-          "it": "Esportazione inverter (priorità PV)",
-          "es": "Exportación del inversor (prioridad PV)",
-          "pl": "Eksport falownika (priorytet PV)",
-          "uk": "Експорт інвертора (пріоритет PV)",
-          "zh-cn": "逆变器输出（光伏优先）"
-        },
-        "3": {
-          "en": "Inverter import (PV priority)",
-          "de": "Wechselrichter Import (PV Priorität)",
-          "ru": "Импорт инвертора (приоритет PV)",
-          "pt": "Importação do inversor (prioridade PV)",
-          "nl": "Omvormer import (PV-prioriteit)",
-          "fr": "Import onduleur (priorité PV)",
-          "it": "Importazione inverter (priorità PV)",
-          "es": "Importación del inversor (prioridad PV)",
-          "pl": "Import falownika (priorytet PV)",
-          "uk": "Імпорт інвертора (пріоритет PV)",
-          "zh-cn": "逆变器输入（光伏优先）"
-        },
-        "5": {
-          "en": "Battery discharge",
-          "de": "Batterie Entladen",
-          "ru": "Разряд батареи",
-          "pt": "Descarga da bateria",
-          "nl": "Batterij ontladen",
-          "fr": "Décharge de la batterie",
-          "it": "Scarica batteria",
-          "es": "Descarga de la batería",
-          "pl": "Rozładowanie baterii",
-          "uk": "Розряд батареї",
-          "zh-cn": "电池放电"
-        },
-        "7": {
-          "en": "Battery charge",
-          "de": "Batterie Laden",
-          "ru": "Заряд батареи",
-          "pt": "Carga da bateria",
-          "nl": "Batterij opladen",
-          "fr": "Charge de la batterie",
-          "it": "Carica batteria",
-          "es": "Carga de la batería",
-          "pl": "Ładowanie baterii",
-          "uk": "Заряд батареї",
-          "zh-cn": "电池充电"
-        },
-        "9": {
-          "en": "Grid export",
-          "de": "Netz Export",
-          "ru": "Экспорт в сеть",
-          "pt": "Exportação para a rede",
-          "nl": "Netexport",
-          "fr": "Export réseau",
-          "it": "Esportazione rete",
-          "es": "Exportación a la red",
-          "pl": "Eksport do sieci",
-          "uk": "Експорт у мережу",
-          "zh-cn": "电网输出"
-        },
-        "11": {
-          "en": "Grid import",
-          "de": "Netz Import",
-          "ru": "Импорт из сети",
-          "pt": "Importação da rede",
-          "nl": "Netimport",
-          "fr": "Import réseau",
-          "it": "Importazione rete",
-          "es": "Importación de la red",
-          "pl": "Import z sieci",
-          "uk": "Імпорт із мережі",
-          "zh-cn": "电网输入"
-        },
-        "13": {
-          "en": "Inverter export (grid priority)",
-          "de": "Wechselrichter Export (Netz Priorität)",
-          "ru": "Экспорт инвертора (приоритет сети)",
-          "pt": "Exportação do inversor (prioridade rede)",
-          "nl": "Omvormer export (netprioriteit)",
-          "fr": "Export onduleur (priorité réseau)",
-          "it": "Esportazione inverter (priorità rete)",
-          "es": "Exportación del inversor (prioridad red)",
-          "pl": "Eksport falownika (priorytet sieci)",
-          "uk": "Експорт інвертора (пріоритет мережі)",
-          "zh-cn": "逆变器输出（电网优先）"
-        },
-        "15": {
-          "en": "Inverter import (grid priority)",
-          "de": "Wechselrichter Import (Netz Priorität)",
-          "ru": "Импорт инвертора (приоритет сети)",
-          "pt": "Importação do inversor (prioridade rede)",
-          "nl": "Omvormer import (netprioriteit)",
-          "fr": "Import onduleur (priorité réseau)",
-          "it": "Importazione inverter (priorità rete)",
-          "es": "Importación del inversor (prioridad red)",
-          "pl": "Import falownika (priorytet sieci)",
-          "uk": "Імпорт інвертора (пріоритет мережі)",
-          "zh-cn": "逆变器输入（电网优先）"
-        }
+        "0": "Off",
+        "1": "Inverter export (PV priority)",
+        "3": "Inverter import (PV priority)",
+        "5": "Battery discharge",
+        "7": "Battery charge",
+        "9": "Grid export",
+        "11": "Grid import",
+        "13": "Inverter export (grid priority)",
+        "15": "Inverter import (grid priority)"
       }
     },
     "native": {}
   },
-  "solakon-one.0.control.remote_timeout": {
-    "_id": "solakon-one.0.control.remote_timeout",
+  {
+    "_id": "control.remote_timeout",
     "type": "state",
     "common": {
       "name": {
@@ -1919,12 +1607,16 @@
       "write": true,
       "unit": "s",
       "min": 0,
-      "max": 3600
+      "max": 3600,
+      "desc": {
+        "en": "Time in seconds after which active remote control automatically expires if not refreshed (safety timeout).",
+        "de": "Zeitspanne in Sekunden, nach der eine aktivierte Fernsteuerung automatisch endet, falls sie nicht erneut angesprochen wird (Sicherheits-Timeout)."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.remote_active_power": {
-    "_id": "solakon-one.0.control.remote_active_power",
+  {
+    "_id": "control.remote_active_power",
     "type": "state",
     "common": {
       "name": {
@@ -1946,12 +1638,16 @@
       "write": true,
       "unit": "W",
       "min": -100000,
-      "max": 100000
+      "max": 100000,
+      "desc": {
+        "en": "Setpoint for the active power the inverter should apply while in remote-control mode; only effective while remote control is active (remote_control_mode).",
+        "de": "Sollwert für die vom Wechselrichter im Fernsteuerungsmodus umzusetzende Wirkleistung; nur wirksam bei aktiver Fernsteuerung (remote_control_mode)."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.remote_reactive_power": {
-    "_id": "solakon-one.0.control.remote_reactive_power",
+  {
+    "_id": "control.remote_reactive_power",
     "type": "state",
     "common": {
       "name": {
@@ -1973,12 +1669,16 @@
       "write": true,
       "unit": "var",
       "min": -100000,
-      "max": 100000
+      "max": 100000,
+      "desc": {
+        "en": "Setpoint for the reactive power the inverter should apply while in remote-control mode; only effective while remote control is active (remote_control_mode).",
+        "de": "Sollwert für die vom Wechselrichter im Fernsteuerungsmodus umzusetzende Blindleistung; nur wirksam bei aktiver Fernsteuerung (remote_control_mode)."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.eps_output": {
-    "_id": "solakon-one.0.control.eps_output",
+  {
+    "_id": "control.eps_output",
     "type": "state",
     "common": {
       "name": {
@@ -2000,52 +1700,20 @@
       "write": true,
       "min": 0,
       "max": 3,
+      "desc": {
+        "en": "Sets the operating mode of the emergency power output: off, backup power that switches in on a grid outage (EPS), or uninterruptible supply with no switch-over gap (UPS).",
+        "de": "Legt den Betriebsmodus des Notstromausgangs fest: aus, Notstromversorgung bei Netzausfall (EPS) oder unterbrechungsfreie Versorgung ohne Umschaltpause (UPS)."
+      },
       "states": {
-        "0": {
-          "en": "Off",
-          "de": "Aus",
-          "ru": "Выкл",
-          "pt": "Desligado",
-          "nl": "Uit",
-          "fr": "Désactivé",
-          "it": "Spento",
-          "es": "Apagado",
-          "pl": "Wyłączone",
-          "uk": "Вимк.",
-          "zh-cn": "关闭"
-        },
-        "2": {
-          "en": "Emergency power supply (EPS)",
-          "de": "Notstromversorgung (EPS)",
-          "ru": "Аварийное питание (EPS)",
-          "pt": "Alimentação de emergência (EPS)",
-          "nl": "Noodstroomvoorziening (EPS)",
-          "fr": "Alimentation de secours (EPS)",
-          "it": "Alimentazione di emergenza (EPS)",
-          "es": "Alimentación de emergencia (EPS)",
-          "pl": "Zasilanie awaryjne (EPS)",
-          "uk": "Аварійне живлення (EPS)",
-          "zh-cn": "紧急电源（EPS）"
-        },
-        "3": {
-          "en": "Uninterruptible power supply (UPS)",
-          "de": "Unterbrechungsfreie Stromversorgung (UPS)",
-          "ru": "Источник бесперебойного питания (UPS)",
-          "pt": "Fonte de alimentação ininterrupta (UPS)",
-          "nl": "Ononderbroken stroomvoorziening (UPS)",
-          "fr": "Alimentation sans interruption (UPS)",
-          "it": "Gruppo di continuità (UPS)",
-          "es": "Sistema de alimentación ininterrumpida (UPS)",
-          "pl": "Zasilacz bezprzerwowy (UPS)",
-          "uk": "Джерело безперебійного живлення (UPS)",
-          "zh-cn": "不间断电源（UPS）"
-        }
+        "0": "Off",
+        "2": "Emergency power supply (EPS)",
+        "3": "Uninterruptible power supply (UPS)"
       }
     },
     "native": {}
   },
-  "solakon-one.0.control.minimum_soc": {
-    "_id": "solakon-one.0.control.minimum_soc",
+  {
+    "_id": "control.minimum_soc",
     "type": "state",
     "common": {
       "name": {
@@ -2067,12 +1735,16 @@
       "write": true,
       "unit": "%",
       "min": 10,
-      "max": 100
+      "max": 100,
+      "desc": {
+        "en": "Lower state-of-charge limit down to which the battery may be discharged during normal operation; protects the battery from over-discharge.",
+        "de": "Unterer Ladestand (SoC), bis zu dem die Batterie im Normalbetrieb entladen werden darf; schützt die Batterie vor Tiefentladung."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.maximum_soc": {
-    "_id": "solakon-one.0.control.maximum_soc",
+  {
+    "_id": "control.maximum_soc",
     "type": "state",
     "common": {
       "name": {
@@ -2094,12 +1766,16 @@
       "write": true,
       "unit": "%",
       "min": 0,
-      "max": 100
+      "max": 100,
+      "desc": {
+        "en": "Upper state-of-charge limit up to which the battery may be charged.",
+        "de": "Oberer Ladestand (SoC), bis zu dem die Batterie geladen werden darf."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.minimum_soc_ongrid": {
-    "_id": "solakon-one.0.control.minimum_soc_ongrid",
+  {
+    "_id": "control.minimum_soc_ongrid",
     "type": "state",
     "common": {
       "name": {
@@ -2121,12 +1797,16 @@
       "write": true,
       "unit": "%",
       "min": 10,
-      "max": 100
+      "max": 100,
+      "desc": {
+        "en": "Minimum state-of-charge down to which the battery may be discharged while the inverter operates grid-connected — may differ from the general minimum_soc, which can be reserved e.g. for off-grid/backup operation.",
+        "de": "Minimaler Ladestand, bis zu dem die Batterie entladen werden darf, solange der Wechselrichter netzgekoppelt betrieben wird – kann sich vom allgemeinen minimum_soc unterscheiden, das z. B. für Inselbetrieb/Backup reserviert bleibt."
+      }
     },
     "native": {}
   },
-  "solakon-one.0.control.max_charge_current": {
-    "_id": "solakon-one.0.control.max_charge_current",
+  {
+    "_id": "control.max_charge_current",
     "type": "state",
     "common": {
       "name": {
@@ -2152,8 +1832,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.control.max_discharge_current": {
-    "_id": "solakon-one.0.control.max_discharge_current",
+  {
+    "_id": "control.max_discharge_current",
     "type": "state",
     "common": {
       "name": {
@@ -2179,8 +1859,8 @@
     },
     "native": {}
   },
-  "solakon-one.0.control.operating_mode": {
-    "_id": "solakon-one.0.control.operating_mode",
+  {
+    "_id": "control.operating_mode",
     "type": "state",
     "common": {
       "name": {
@@ -2202,100 +1882,20 @@
       "write": true,
       "min": 0,
       "max": 7,
+      "desc": {
+        "en": "Sets the inverter's overall operating strategy, e.g. whether it prioritizes self-consumption, grid feed-in, reserving capacity for backup, or actively forces charging/discharging.",
+        "de": "Legt die übergeordnete Betriebsstrategie des Wechselrichters fest, z. B. ob primär der Eigenverbrauch optimiert, ins Netz eingespeist, Kapazität für Backup reserviert oder gezielt geladen/entladen werden soll."
+      },
       "states": {
-        "0": {
-          "en": "Unspecified",
-          "de": "Nicht festgelegt",
-          "ru": "Не указано",
-          "pt": "Não especificado",
-          "nl": "Niet gespecificeerd",
-          "fr": "Non spécifié",
-          "it": "Non specificato",
-          "es": "No especificado",
-          "pl": "Nieokreślone",
-          "uk": "Не вказано",
-          "zh-cn": "未指定"
-        },
-        "1": {
-          "en": "Self-consumption",
-          "de": "Eigenverbrauch",
-          "ru": "Собственное потребление",
-          "pt": "Autoconsumo",
-          "nl": "Eigen verbruik",
-          "fr": "Autoconsommation",
-          "it": "Autoconsumo",
-          "es": "Autoconsumo",
-          "pl": "Zużycie własne",
-          "uk": "Власне споживання",
-          "zh-cn": "自发自用"
-        },
-        "2": {
-          "en": "Feed-in priority",
-          "de": "Einspeisepriorität",
-          "ru": "Приоритет подачи в сеть",
-          "pt": "Prioridade de injeção",
-          "nl": "Terugleverprioriteit",
-          "fr": "Priorité d'injection",
-          "it": "Priorità di immissione",
-          "es": "Prioridad de inyección",
-          "pl": "Priorytet wprowadzania do sieci",
-          "uk": "Пріоритет подачі в мережу",
-          "zh-cn": "上网优先"
-        },
-        "3": {
-          "en": "Backup",
-          "de": "Backup",
-          "ru": "Резерв",
-          "pt": "Backup",
-          "nl": "Backup",
-          "fr": "Sauvegarde",
-          "it": "Backup",
-          "es": "Respaldo",
-          "pl": "Zapasowy",
-          "uk": "Резерв",
-          "zh-cn": "备用"
-        },
-        "4": {
-          "en": "Peak shaving",
-          "de": "Spitzenlastkappung",
-          "ru": "Срезание пиков нагрузки",
-          "pt": "Corte de picos",
-          "nl": "Piekafvlakking",
-          "fr": "Écrêtage de pointe",
-          "it": "Riduzione dei picchi",
-          "es": "Reducción de picos",
-          "pl": "Ścinanie szczytów obciążenia",
-          "uk": "Зрізання піків навантаження",
-          "zh-cn": "削峰"
-        },
-        "6": {
-          "en": "Force charge",
-          "de": "Laden erzwingen",
-          "ru": "Принудительный заряд",
-          "pt": "Forçar carga",
-          "nl": "Geforceerd opladen",
-          "fr": "Charge forcée",
-          "it": "Carica forzata",
-          "es": "Forzar carga",
-          "pl": "Wymuszone ładowanie",
-          "uk": "Примусовий заряд",
-          "zh-cn": "强制充电"
-        },
-        "7": {
-          "en": "Force discharge",
-          "de": "Entladen erzwingen",
-          "ru": "Принудительный разряд",
-          "pt": "Forçar descarga",
-          "nl": "Geforceerd ontladen",
-          "fr": "Décharge forcée",
-          "it": "Scarica forzata",
-          "es": "Forzar descarga",
-          "pl": "Wymuszone rozładowanie",
-          "uk": "Примусовий розряд",
-          "zh-cn": "强制放电"
-        }
+        "0": "Unspecified",
+        "1": "Self-consumption",
+        "2": "Feed-in priority",
+        "3": "Backup",
+        "4": "Peak shaving",
+        "6": "Force charge",
+        "7": "Force discharge"
       }
     },
     "native": {}
   }
-}
+]

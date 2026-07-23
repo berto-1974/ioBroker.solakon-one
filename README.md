@@ -171,6 +171,10 @@ All data points are created under `solakon-one.<instance>.*` (e.g. `solakon-one.
 
 ## Changelog
 
+### 1.0.16 (2026-07-23)
+- Fix Admin GUI crash when hovering enum values in the object tree (#44): common.states is now resolved to plain per-language strings instead of translation objects, with automatic self-healing for existing installations
+- Add common.desc (English/German) for control and status datapoints
+
 ### 1.0.15 (2026-06-28)
 - Fix README manufacturer link: use solakon.de instead of the unrelated Home Assistant integration repo
 

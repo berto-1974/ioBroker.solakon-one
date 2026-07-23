@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "news": {
+      "1.0.16": {
+        "en": "Fix Admin GUI crash when hovering enum values in the object tree (#44): common.states is now resolved to plain per-language strings instead of translation objects, with automatic self-healing for existing installations. Add common.desc (English/German) for control and status datapoints.",
+        "de": "Admin-GUI-Absturz beim Hovern von Enum-Werten im Object Tree behoben (#44): common.states wird jetzt pro Sprache auf reine Strings statt Übersetzungsobjekte aufgelöst, bestehende Installationen werden automatisch selbst geheilt. common.desc (Englisch/Deutsch) für Steuer- und Status-Datenpunkte ergänzt.",
+        "ru": "Исправлен сбой Admin GUI при наведении на значения перечислений в дереве объектов (#44): common.states теперь для каждого языка преобразуется в обычные строки вместо объектов перевода, существующие установки автоматически самовосстанавливаются. Добавлено common.desc (английский/немецкий) для управляющих и статусных точек данных.",
+        "pt": "Corrigida falha na GUI do Admin ao passar o cursor sobre valores enumerados na árvore de objetos (#44): common.states agora é resolvido para strings simples por idioma em vez de objetos de tradução, com autocorreção automática para instalações existentes. Adicionado common.desc (inglês/alemão) para pontos de dados de controlo e estado.",
+        "nl": "GUI-crash in Admin bij het aanwijzen van enum-waarden in de objectboom verholpen (#44): common.states wordt nu per taal omgezet naar platte tekenreeksen in plaats van vertaalobjecten, bestaande installaties herstellen zichzelf automatisch. common.desc (Engels/Duits) toegevoegd voor besturings- en statusdatapunten.",
+        "fr": "Correction d'un plantage de l'interface Admin lors du survol de valeurs énumérées dans l'arborescence des objets (#44) : common.states est désormais résolu en chaînes simples par langue au lieu d'objets de traduction, avec auto-réparation automatique pour les installations existantes. Ajout de common.desc (anglais/allemand) pour les points de données de contrôle et de statut.",
+        "it": "Corretto un crash della GUI Admin passando il mouse su valori enum nell'albero degli oggetti (#44): common.states viene ora risolto in stringhe semplici per lingua invece di oggetti di traduzione, con auto-riparazione automatica per le installazioni esistenti. Aggiunto common.desc (inglese/tedesco) per i datapoint di controllo e stato.",
+        "es": "Corregido un fallo en la GUI de Admin al pasar el cursor sobre valores enumerados en el árbol de objetos (#44): common.states ahora se resuelve en cadenas simples por idioma en lugar de objetos de traducción, con autorreparación automática para instalaciones existentes. Se añadió common.desc (inglés/alemán) para los puntos de datos de control y estado.",
+        "pl": "Naprawiono awarię GUI Admina przy najechaniu na wartości wyliczeniowe w drzewie obiektów (#44): common.states jest teraz rozwiązywane do zwykłych ciągów znaków dla danego języka zamiast obiektów tłumaczeń, istniejące instalacje samoczynnie się naprawiają. Dodano common.desc (angielski/niemiecki) dla punktów danych sterowania i stanu.",
+        "uk": "Виправлено збій Admin GUI при наведенні на значення переліків у дереві об'єктів (#44): common.states тепер перетворюється на звичайні рядки для кожної мови замість об'єктів перекладу, наявні інсталяції автоматично самовідновлюються. Додано common.desc (англійська/німецька) для точок даних керування та статусу.",
+        "zh-cn": "修复了在对象树中悬停枚举值时 Admin 界面崩溃的问题 (#44)：common.states 现在按语言解析为纯字符串，而不是翻译对象，现有安装会自动自我修复。为控制和状态数据点新增了 common.desc（英文/德文）。"
+      },
       "1.0.15": {
         "en": "Fix README manufacturer link: use solakon.de instead of the unrelated Home Assistant integration repo",
         "de": "README-Herstellerlink korrigiert: solakon.de statt des nicht verwandten Home-Assistant-Integration-Repos",
@@ -80,19 +93,6 @@
         "pl": "Naprawiono W5005: adapter.setTimeout w modbus.js; eslint-config zaktualizowano do 2.3.4; usunięto CHANGELOG_OLD.md",
         "uk": "Виправлено W5005: adapter.setTimeout у modbus.js; eslint-config оновлено до 2.3.4; видалено CHANGELOG_OLD.md",
         "zh-cn": "修复 W5005：在 modbus.js 中使用 adapter.setTimeout；eslint-config 更新至 2.3.4；删除 CHANGELOG_OLD.md"
-      },
-      "1.0.9": {
-        "en": "Fix JSON syntax error in io-package.json (trailing comma); limit news entries to 7 (E1032)",
-        "de": "JSON-Syntaxfehler in io-package.json behoben (Trailing Comma); News-Einträge auf 7 begrenzt (E1032)",
-        "ru": "Исправлена синтаксическая ошибка JSON в io-package.json; количество новостей ограничено до 7 (E1032)",
-        "pt": "Corrigido erro de sintaxe JSON em io-package.json; entradas de notícias limitadas a 7 (E1032)",
-        "nl": "JSON-syntaxfout hersteld in io-package.json; nieuwsvermeldingen beperkt tot 7 (E1032)",
-        "fr": "Correction d'erreur de syntaxe JSON dans io-package.json; news limitées à 7 (E1032)",
-        "it": "Corretto errore di sintassi JSON in io-package.json; voci news limitate a 7 (E1032)",
-        "es": "Corregido error de sintaxis JSON en io-package.json; entradas de noticias limitadas a 7 (E1032)",
-        "pl": "Naprawiono błąd składni JSON w io-package.json; wpisy news ograniczone do 7 (E1032)",
-        "uk": "Виправлено синтаксичну помилку JSON у io-package.json; новини обмежені до 7 (E1032)",
-        "zh-cn": "修复 io-package.json 中的 JSON 语法错误（多余逗号）；新闻条目限制为 7 条（E1032）"
       }
     },
     "titleLang": {
