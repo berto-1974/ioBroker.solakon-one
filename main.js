@@ -1573,6 +1573,12 @@ class SolakonOneAdapter extends utils.Adapter {
             if (Object.keys(data).length === 0) {
                 this.log.warn('No data received from device');
                 await this.setStateAsync('info.connection', { val: false, ack: true });
+                // Verbindung gilt als tot (jeder einzelne Register-Read ist fehlgeschlagen,
+                // obwohl isConnected() true meldete) – grazil trennen, damit der nächste
+                // Poll garantiert frisch neu verbindet, statt sie weiterzuverwenden.
+                if (this.hub) {
+                    await this.hub.disconnect();
+                }
                 return;
             }
 

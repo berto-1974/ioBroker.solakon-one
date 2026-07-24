@@ -1,8 +1,21 @@
 {
   "common": {
     "name":    "solakon-one",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "news": {
+      "1.0.18": {
+        "en": "Fix stale Modbus connection not being reset after a poll returns no data, which could cause the adapter to keep reusing a dead connection instead of reconnecting.",
+        "de": "Fehler behoben: Bei einem Poll ohne Daten wurde die (vermutlich tote) Modbus-Verbindung nicht zurückgesetzt, wodurch der Adapter sie fälschlich weiterverwendete statt neu zu verbinden.",
+        "ru": "Исправлена ошибка: при опросе без данных «мёртвое» Modbus-соединение не сбрасывалось, из-за чего адаптер ошибочно продолжал его использовать вместо переподключения.",
+        "pt": "Corrigido: quando um ciclo de leitura não retornava dados, a ligação Modbus (provavelmente morta) não era reiniciada, fazendo com que o adaptador continuasse a reutilizá-la em vez de reconectar.",
+        "nl": "Fout opgelost: bij een poll zonder gegevens werd de (vermoedelijk dode) Modbus-verbinding niet gereset, waardoor de adapter deze ten onrechte bleef hergebruiken in plaats van opnieuw te verbinden.",
+        "fr": "Correction : lorsqu'un cycle d'interrogation ne renvoyait aucune donnée, la connexion Modbus (probablement morte) n'était pas réinitialisée, ce qui amenait l'adaptateur à continuer à l'utiliser au lieu de se reconnecter.",
+        "it": "Corretto: quando un ciclo di polling non restituiva dati, la connessione Modbus (probabilmente morta) non veniva reimpostata, facendo sì che l'adapter continuasse a riutilizzarla invece di riconnettersi.",
+        "es": "Corregido: cuando un ciclo de sondeo no devolvía datos, la conexión Modbus (probablemente muerta) no se reiniciaba, lo que hacía que el adaptador siguiera reutilizándola en lugar de reconectar.",
+        "pl": "Naprawiono: gdy cykl odpytywania nie zwracał danych, (prawdopodobnie martwe) połączenie Modbus nie było resetowane, przez co adapter błędnie nadal go używał zamiast nawiązać nowe połączenie.",
+        "uk": "Виправлено: коли цикл опитування не повертав дані, (ймовірно, мертве) з'єднання Modbus не скидалося, через що адаптер помилково продовжував його використовувати замість повторного підключення.",
+        "zh-cn": "修复：当轮询周期未返回数据时，（可能已失效的）Modbus 连接未被重置，导致适配器错误地继续复用该连接而不是重新连接。"
+      },
       "1.0.17": {
         "en": "Speed up adapter startup by creating/healing all datapoints in parallel instead of sequentially; make Modbus reconnect more robust (graceful socket close, automatic connect retry) to reduce ECONNRESET disconnects.",
         "de": "Adapter-Start beschleunigt: alle Datenpunkte werden jetzt parallel statt sequentiell angelegt/geheilt; Modbus-Reconnect robuster gemacht (graziler Verbindungsabbau, automatischer Verbindungs-Retry), um ECONNRESET-Trennungen zu reduzieren.",
@@ -80,19 +93,6 @@
         "pl": "@tsconfig/node22 zaktualizowany do ^22.0.5 (W0083); i18n zmigrowany do krótkiego formatu (S5601)",
         "uk": "@tsconfig/node22 оновлено до ^22.0.5 (W0083); i18n переведено у короткий формат (S5601)",
         "zh-cn": "将 @tsconfig/node22 更新至 ^22.0.5（W0083）；i18n 迁移至短格式（S5601）"
-      },
-      "1.0.11": {
-        "en": "Add CHANGELOG_OLD.md (W6020); add tsconfig.json and @tsconfig/node22 (S0085/S0087); add README link",
-        "de": "CHANGELOG_OLD.md ergänzt (W6020); tsconfig.json und @tsconfig/node22 hinzugefügt (S0085/S0087); README-Link ergänzt",
-        "ru": "Добавлен CHANGELOG_OLD.md (W6020); добавлены tsconfig.json и @tsconfig/node22 (S0085/S0087); ссылка в README",
-        "pt": "Adicionado CHANGELOG_OLD.md (W6020); tsconfig.json e @tsconfig/node22 adicionados (S0085/S0087); link no README",
-        "nl": "CHANGELOG_OLD.md toegevoegd (W6020); tsconfig.json en @tsconfig/node22 toegevoegd (S0085/S0087); link in README",
-        "fr": "Ajout de CHANGELOG_OLD.md (W6020); tsconfig.json et @tsconfig/node22 ajoutés (S0085/S0087); lien dans README",
-        "it": "Aggiunto CHANGELOG_OLD.md (W6020); tsconfig.json e @tsconfig/node22 aggiunti (S0085/S0087); link nel README",
-        "es": "Añadido CHANGELOG_OLD.md (W6020); tsconfig.json y @tsconfig/node22 añadidos (S0085/S0087); enlace en README",
-        "pl": "Dodano CHANGELOG_OLD.md (W6020); tsconfig.json i @tsconfig/node22 dodane (S0085/S0087); link w README",
-        "uk": "Додано CHANGELOG_OLD.md (W6020); tsconfig.json та @tsconfig/node22 додані (S0085/S0087); посилання у README",
-        "zh-cn": "添加 CHANGELOG_OLD.md（W6020）；添加 tsconfig.json 和 @tsconfig/node22（S0085/S0087）；README 链接"
       }
     },
     "titleLang": {

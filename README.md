@@ -171,6 +171,9 @@ All data points are created under `solakon-one.<instance>.*` (e.g. `solakon-one.
 
 ## Changelog
 
+### 1.0.18 (2026-07-24)
+- Fix stale Modbus connection not being reset after a poll returns no data, which could cause the adapter to keep reusing a dead connection instead of reconnecting
+
 ### 1.0.17 (2026-07-24)
 - Speed up adapter startup by creating/healing all datapoints in parallel instead of sequentially
 - Make Modbus reconnect more robust (graceful socket close, automatic connect retry) to reduce ECONNRESET disconnects

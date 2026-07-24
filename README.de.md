@@ -168,6 +168,9 @@ Alle Datenpunkte werden unter `solakon-one.<Instanz>.*` erstellt (z.B. `solakon-
 
 ## Changelog
 
+### 1.0.18 (2026-07-24)
+- Fehler behoben: Bei einem Poll ohne Daten wurde die (vermutlich tote) Modbus-Verbindung nicht zurückgesetzt, wodurch der Adapter sie fälschlich weiterverwendete statt neu zu verbinden
+
 ### 1.0.17 (2026-07-24)
 - Adapter-Start beschleunigt: alle Datenpunkte werden jetzt parallel statt sequentiell angelegt/geheilt
 - Modbus-Reconnect robuster gemacht (graziler Verbindungsabbau, automatischer Verbindungs-Retry), um ECONNRESET-Trennungen zu reduzieren
