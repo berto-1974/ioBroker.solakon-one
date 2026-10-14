@@ -168,6 +168,11 @@ Alle Datenpunkte werden unter `solakon-one.<Instanz>.*` erstellt (z.B. `solakon-
 
 ## Changelog
 
+### 1.0.19 (2026-10-14)
+- Adapter benötigt jetzt Admin >= 7.8.23
+- Abhängigkeiten aktualisiert (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)
+- Node.js 26 in die CI-Testmatrix aufgenommen
+
 ### 1.0.18 (2026-07-24)
 - Fehler behoben: Bei einem Poll ohne Daten wurde die (vermutlich tote) Modbus-Verbindung nicht zurückgesetzt, wodurch der Adapter sie fälschlich weiterverwendete statt neu zu verbinden
 
