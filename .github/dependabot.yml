@@ -1,4 +1,5 @@
-# Dependabot will run on day 15 of each month at 03:19 (Europe/Berlin timezone)
+# Dependabot configuration
+# Cooldown delays npm updates by 7 days; security updates are processed immediately.
 version: 2
 updates:
 
@@ -10,7 +11,7 @@ updates:
       time: '03:17'
       timezone: 'Europe/Berlin'
     cooldown:
-      default: 7
+      default-days: 7
     ignore:
       - dependency-name: '@types/node'
         update-types:
@@ -25,5 +26,5 @@ updates:
       time: '04:23'
       timezone: 'Europe/Berlin'
     cooldown:
-      default: 7
+      default-days: 7
     open-pull-requests-limit: 15

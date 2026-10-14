@@ -171,6 +171,11 @@ All data points are created under `solakon-one.<instance>.*` (e.g. `solakon-one.
 
 ## Changelog
 
+### **WORK IN PROGRESS**
+- (berto-1974) Adapter requires admin >= 7.8.23 now
+- (berto-1974) Dependencies updated (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)
+- (berto-1974) Node.js 26 added to the test matrix
+
 ### 1.0.18 (2026-07-24)
 - Fix stale Modbus connection not being reset after a poll returns no data, which could cause the adapter to keep reusing a dead connection instead of reconnecting
 
@@ -240,5 +245,7 @@ For older changelog entries see [CHANGELOG_OLD.md](CHANGELOG_OLD.md).
 MIT License
 
 Copyright (c) 2026 Marco Bertulies <berto74online@gmail.com>
+
+See [LICENSE](LICENSE) for the full license text.
 
 Based on the [Home Assistant integration for Solakon ONE](https://github.com/solakon-de/solakon-one-homeassistant).
