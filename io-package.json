@@ -1,8 +1,21 @@
 {
   "common": {
-    "name":    "solakon-one",
-    "version": "1.0.18",
+    "name": "solakon-one",
+    "version": "1.0.19",
     "news": {
+      "1.0.19": {
+        "en": "Adapter requires admin >= 7.8.23 now\nDependencies updated (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 added to the test matrix",
+        "de": "Adapter benötigt jetzt admin >= 7.8.23\nAbhängigkeiten aktualisiert (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 zur Testmatrix hinzugefügt",
+        "ru": "Для адаптера теперь требуется администратор >= 7.8.23\nОбновлены зависимости (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 добавлен в тестовую матрицу",
+        "pt": "Adapter exige admin >= 7.8.23 agora\nDependências atualizadas (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 na matriz de teste",
+        "nl": "Adapter vereist nu admin >= 7.8.23\nAfhankelijkheden bijgewerkt (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 toegevoegd aan de testmatrix",
+        "fr": "Adapter nécessite admin >= 7.8.23\nDépendances mises à jour (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 ajouté au test matrix",
+        "it": "Adapter richiede admin >= 7.8.23 ora\nDipendenze aggiornate (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 aggiunto al test",
+        "es": "El adaptador necesita admin >= 7.8.23 ahora\nDependencias actualizadas (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 añadido a la matriz de pruebas",
+        "pl": "Adapter wymaga administratora >= 7.8.23 teraz\nZaktualizowano zależności (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 dodany do macierzy testowej",
+        "uk": "Адаптер вимагає адміністратора >= 7.8.23 зараз\nОновлені залежності (@iobroker/adapter-core 3.4.3, @iobroker/testing 6.3.1)\nNode.js 26 додано до тестової матриці",
+        "zh-cn": "适配器现在需要管理员 >= 7.8.23\n依赖关系已更新 (@iobroker/adapter-core 3.4.3、@iobroker/testing 6.3.1)\nNode.js 26 已添加到测试矩阵中"
+      },
       "1.0.18": {
         "en": "Fix stale Modbus connection not being reset after a poll returns no data, which could cause the adapter to keep reusing a dead connection instead of reconnecting.",
         "de": "Fehler behoben: Bei einem Poll ohne Daten wurde die (vermutlich tote) Modbus-Verbindung nicht zurückgesetzt, wodurch der Adapter sie fälschlich weiterverwendete statt neu zu verbinden.",
@@ -80,19 +93,6 @@
         "pl": "Poprawiono nieprawidłową rolę 'level.power' (E1008): 'level' używane dla stanów punktu nastawczego mocy",
         "uk": "Виправлено недійсну роль 'level.power' (E1008): 'level' для станів уставки потужності",
         "zh-cn": "修复无效角色 'level.power'（E1008）：功率设定点状态改用 'level'"
-      },
-      "1.0.12": {
-        "en": "Update @tsconfig/node22 to ^22.0.5 (W0083); migrate i18n to short format (S5601)",
-        "de": "@tsconfig/node22 auf ^22.0.5 aktualisiert (W0083); i18n auf Kurzformat migriert (S5601)",
-        "ru": "Обновлён @tsconfig/node22 до ^22.0.5 (W0083); i18n переведён в короткий формат (S5601)",
-        "pt": "@tsconfig/node22 actualizado para ^22.0.5 (W0083); i18n migrado para formato curto (S5601)",
-        "nl": "@tsconfig/node22 bijgewerkt naar ^22.0.5 (W0083); i18n gemigreerd naar kort formaat (S5601)",
-        "fr": "@tsconfig/node22 mis à jour vers ^22.0.5 (W0083); i18n migré vers le format court (S5601)",
-        "it": "@tsconfig/node22 aggiornato a ^22.0.5 (W0083); i18n migrato al formato breve (S5601)",
-        "es": "@tsconfig/node22 actualizado a ^22.0.5 (W0083); i18n migrado a formato corto (S5601)",
-        "pl": "@tsconfig/node22 zaktualizowany do ^22.0.5 (W0083); i18n zmigrowany do krótkiego formatu (S5601)",
-        "uk": "@tsconfig/node22 оновлено до ^22.0.5 (W0083); i18n переведено у короткий формат (S5601)",
-        "zh-cn": "将 @tsconfig/node22 更新至 ^22.0.5（W0083）；i18n 迁移至短格式（S5601）"
       }
     },
     "titleLang": {
@@ -121,38 +121,51 @@
       "uk": "Моніторинг та керування гібридним сонячним інвертором Solakon ONE через Modbus TCP",
       "zh-cn": "通过 Modbus TCP 监控 Solakon ONE 混合太阳能逆变器"
     },
-    "authors":  ["Marco Bertulies <berto74online@gmail.com>"],
-    "keywords": ["solar", "inverter", "solakon", "modbus", "energy", "battery"],
+    "authors": [
+      "Marco Bertulies <berto74online@gmail.com>"
+    ],
+    "keywords": [
+      "solar",
+      "inverter",
+      "solakon",
+      "modbus",
+      "energy",
+      "battery"
+    ],
     "licenseInformation": {
       "license": "MIT",
-      "type":    "free"
+      "type": "free"
     },
     "platform": "Javascript/Node.js",
-    "icon":     "solakon.png",
-    "extIcon":  "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
-    "readme":   "https://github.com/berto-1974/ioBroker.solakon-one#readme",
+    "icon": "solakon.png",
+    "extIcon": "https://raw.githubusercontent.com/berto-1974/ioBroker.solakon-one/main/admin/solakon.png",
+    "readme": "https://github.com/berto-1974/ioBroker.solakon-one#readme",
     "loglevel": "info",
-    "mode":     "daemon",
-    "type":     "energy",
-    "tier":     3,
+    "mode": "daemon",
+    "type": "energy",
+    "tier": 3,
     "connectionType": "local",
-    "dataSource":     "poll",
-    "enabled":  true,
-    "compact":  true,
+    "dataSource": "poll",
+    "enabled": true,
+    "compact": true,
     "adminUI": {
       "config": "json"
     },
     "dependencies": [
-      { "js-controller": ">=6.0.11" }
+      {
+        "js-controller": ">=6.0.11"
+      }
     ],
     "globalDependencies": [
-      { "admin": ">=7.8.23" }
+      {
+        "admin": ">=7.8.23"
+      }
     ]
   },
   "native": {
-    "host":         "192.168.1.100",
-    "port":         502,
-    "slaveId":      1,
+    "host": "192.168.1.100",
+    "port": 502,
+    "slaveId": 1,
     "scanInterval": 30
   },
   "objects": [],
@@ -194,11 +207,11 @@
           "uk": "Підключено",
           "zh-cn": "已连接"
         },
-        "type":  "boolean",
-        "role":  "indicator.connected",
-        "read":  true,
+        "type": "boolean",
+        "role": "indicator.connected",
+        "read": true,
         "write": false,
-        "def":   false
+        "def": false
       },
       "native": {}
     },
